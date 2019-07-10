@@ -1,0 +1,81 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/color_F5F5F5"
+    android:orientation="vertical"
+    xmlns:app="http://schemas.android.com/apk/res-auto">
+
+    <View
+        android:background="@color/white"
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/dp25"/>
+
+    <com.blockadm.common.comstomview.BaseTitleBar
+        android:id="@+id/tilte"
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/dp45"
+        app:centertext="兑换A钻"
+        app:lefticon_is_show="true"
+        app:lefticon_src="@mipmap/ic_back"
+        app:lefttext=""
+        app:lefttext_color="@color/color_0A0A0A"
+        app:lefttext_is_show="true"
+        app:righticon_is_show="true"
+        app:righttext="常见问题"
+        app:righttext_is_show="true" />
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@color/white"
+        android:gravity="center_horizontal"
+        android:orientation="vertical">
+
+        <View
+            android:layout_width="match_parent"
+            android:layout_height="@dimen/dp_0.5"
+            android:background="@color/cl_DDDDDD" />
+
+        <ImageView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="@dimen/dp36"
+            android:background="@drawable/ic_complete" />
+
+        <TextView
+            android:id="@+id/tv_desc"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="19dp"
+            android:text="转入成功"
+            android:textColor="@color/color_333333"
+            android:textSize="@dimen/sp20" />
+
+        <View
+            android:id="@+id/line_white"
+            android:visibility="gone"
+            android:layout_width="wrap_content"
+            android:layout_height="@dimen/dp62"/>
+
+        <TextView
+            android:id="@+id/tv_text"
+            android:layout_marginLeft="@dimen/dp74"
+            android:layout_marginRight="@dimen/dp74"
+            android:gravity="center_horizontal"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="17dp"
+            android:layout_marginBottom="@dimen/dp13"
+            android:text="我们将尽快处理您的兑换申请，可在我的钱包-账单中查看兑换结果"
+            android:textColor="@color/color_97979F"
+            android:textSize="@dimen/sp14" />
+
+    </LinearLayout>
+
+    <Button
+        android:id="@+id/submit"
+        android:text="完成"
+        android:layout_marginTop="@dimen/dp43"
+        style="@style/btn_blue_margin_bg"/>
+</LinearLayout>

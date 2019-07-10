@@ -1,0 +1,171 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:orientation="vertical"
+    android:background="@android:color/background_light"
+    android:fitsSystemWindows="true"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <com.blockadm.common.comstomview.BaseTitleBar
+        android:id="@+id/tilte"
+        app:lefttext_is_show="true"
+        app:righttext_is_show="true"
+        android:layout_alignParentTop="true"
+        app:lefttext_color="@color/color_0A0A0A"
+        app:centertext = "申请认证"
+        app:lefttext=""
+        app:lefticon_is_show="true"
+        app:lefticon_src="@mipmap/ic_back"
+        app:righticon_is_show="true"
+        app:righttext=""
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/dp45" />
+
+    <View
+        android:background="@color/color_fff2f3f4"
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/dp5"/>
+
+    <RelativeLayout
+        android:id="@+id/rl_perernal"
+        android:padding="@dimen/dp15"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+        <ImageView
+            android:id="@+id/iv"
+            android:src="@mipmap/authentication"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content" />
+
+
+        <RelativeLayout
+            android:id="@+id/rl"
+            android:layout_toRightOf="@+id/iv"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+            <TextView
+                android:id="@+id/tv_1"
+                android:layout_marginLeft="@dimen/dp15"
+                android:textColor="@color/color_0A0A0A"
+                android:text="@string/true_name_personnal_auto"
+                android:textSize="@dimen/sp16"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content" />
+
+
+
+             <TextView
+                 android:id="@+id/tv_personal_status"
+                 android:layout_marginLeft="@dimen/dp10"
+                 android:layout_centerVertical="true"
+                 android:layout_toRightOf="@+id/tv_1"
+                 android:textColor="@color/color_FFF85959"
+                 android:textSize="@dimen/sp12"
+                 android:layout_width="wrap_content"
+                 android:layout_height="wrap_content" />
+
+        </RelativeLayout>
+
+
+        <TextView
+            android:layout_marginTop="@dimen/dp5"
+            android:layout_below="@+id/rl"
+            android:layout_toRightOf="@+id/iv"
+            android:layout_marginLeft="@dimen/dp15"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="适合普通用户进行发布内容、提现等操作"
+            android:textColor="#ff97979f"
+            android:textSize="12sp"
+            />
+
+        <ImageView
+            android:src="@mipmap/ic_group2"
+            android:layout_alignParentRight="true"
+            android:layout_centerVertical="true"
+            android:id="@+id/iv_status"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content" />
+
+
+
+    </RelativeLayout>
+
+    <View
+        android:background="@color/color_fff2f3f4"
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/dp1"/>
+
+
+    <RelativeLayout
+        android:id="@+id/rl_jigou"
+        android:padding="@dimen/dp15"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+        <ImageView
+            android:id="@+id/iv2"
+            android:src="@mipmap/mechanism"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content" />
+
+
+        <RelativeLayout
+            android:id="@+id/rl2"
+            android:layout_toRightOf="@+id/iv2"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+            <TextView
+                android:id="@+id/tv_2"
+                android:layout_marginLeft="@dimen/dp15"
+                android:textColor="@color/color_0A0A0A"
+                android:text="机构认证"
+                android:textSize="@dimen/sp16"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content" />
+
+
+
+            <TextView
+                android:id="@+id/tv_jigou_status"
+                android:layout_marginLeft="@dimen/dp10"
+                android:layout_centerVertical="true"
+                android:layout_toRightOf="@+id/tv_2"
+                android:textColor="@color/color_FFF85959"
+                android:textSize="@dimen/sp12"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content" />
+
+        </RelativeLayout>
+
+        <TextView
+            android:layout_marginTop="@dimen/dp5"
+            android:layout_below="@+id/rl2"
+            android:layout_toRightOf="@+id/iv2"
+            android:layout_marginLeft="@dimen/dp15"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="适合各类媒体及内容生产公司/机构认证"
+            android:textColor="#ff97979f"
+            android:textSize="12sp"
+            />
+
+
+
+        <ImageView
+            android:src="@mipmap/ic_group2"
+            android:layout_alignParentRight="true"
+            android:layout_centerVertical="true"
+            android:id="@+id/iv_status2"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content" />
+
+
+
+    </RelativeLayout>
+
+
+
+</LinearLayout>

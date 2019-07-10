@@ -1,0 +1,76 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:orientation="vertical"
+    android:fitsSystemWindows="true"
+    android:background="@color/color_ffffff"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+
+    <com.blockadm.common.comstomview.BaseTitleBar
+        android:id="@+id/tilte"
+        app:lefttext_is_show="true"
+        app:righttext_is_show="true"
+        app:lefttext_color="@color/color_0A0A0A"
+        app:centertext = "关于我们"
+        app:lefticon_src="@mipmap/ic_back"
+        app:lefttext=""
+        app:righttext_color="@color/color_0A0A0A"
+        app:lefticon_is_show="true"
+        app:righticon_is_show="true"
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/dp50"/>
+    <View
+        android:id="@+id/v"
+        android:background="@color/color_fff2f3f4"
+        android:layout_below="@+id/tilte"
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/dp5"/>
+
+
+
+    <ImageView
+        android:id="@+id/iv_logo"
+        android:layout_centerHorizontal="true"
+        android:layout_below="@+id/v"
+        android:layout_marginTop="80dp"
+        android:src="@mipmap/logo_aboutus"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content" />
+
+
+    <TextView
+        android:layout_marginTop="@dimen/dp15"
+        android:layout_below="@+id/iv_logo"
+        android:text="爱德美"
+        android:textColor="#FF494B4E"
+        android:layout_centerHorizontal="true"
+        android:id="@+id/tv_version"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content" />
+
+
+    <ImageView
+        android:layout_below="@+id/tv_version"
+        android:id="@+id/iv_updata"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="100dp"
+        android:src="@mipmap/button_update"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content" />
+
+
+
+    <TextView
+        android:layout_marginBottom="@dimen/dp5"
+        android:layout_alignParentBottom="true"
+        android:layout_width="217dp"
+        android:layout_centerHorizontal="true"
+        android:layout_height="16dp"
+        android:text="爱德媒（深圳）信息技术有限公司 版权所有"
+        android:textColor="#ff97979f"
+        android:textSize="11sp"
+        />
+
+</RelativeLayout>

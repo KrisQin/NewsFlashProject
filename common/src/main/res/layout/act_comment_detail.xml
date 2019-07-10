@@ -1,0 +1,171 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@android:color/background_light"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:android="http://schemas.android.com/apk/res/android">
+<LinearLayout
+    android:orientation="vertical"
+    android:background="@android:color/background_light"
+    android:fitsSystemWindows="true"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+        <com.blockadm.common.comstomview.BaseTitleBar
+            android:id="@+id/tilte"
+            app:lefttext_is_show="true"
+            app:righttext_is_show="true"
+            app:lefttext_color="@color/color_0A0A0A"
+            app:centertext = "跟帖详情"
+            app:lefticon_src="@mipmap/ic_back"
+            app:lefttext=""
+            app:lefticon_is_show="true"
+            app:righticon_is_show="true"
+            app:righttext="分享"
+            android:layout_width="match_parent"
+            android:layout_height="@dimen/dp45" />
+    <View
+        android:background="@color/color_fff2f3f4"
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/dp5"/>
+
+
+    <RelativeLayout
+        android:padding="@dimen/dp10"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+        <com.blockadm.common.comstomview.CircleImageView
+            android:id="@+id/civ_headimage"
+            android:layout_alignParentLeft="true"
+            android:layout_margin="@dimen/dp5"
+            android:layout_centerVertical="true"
+            android:layout_width="@dimen/dp40"
+            android:layout_height="@dimen/dp40"
+            />
+
+        <TextView
+            android:layout_marginLeft="@dimen/dp10"
+            android:id="@+id/tv_nickname"
+            android:layout_toRightOf="@+id/civ_headimage"
+            android:textSize="@dimen/sp14"
+            android:textColor="@color/color_97979F"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content" />
+
+        <TextView
+            android:layout_marginTop="@dimen/dp6"
+            android:layout_below="@+id/tv_nickname"
+            android:id="@+id/tv_content"
+            android:layout_marginLeft="@dimen/dp10"
+            android:layout_toRightOf="@+id/civ_headimage"
+            android:textSize="@dimen/sp14"
+            android:textColor="@color/color_0A0A0A"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content" />
+
+        <TextView
+            android:layout_alignParentRight="true"
+            android:layout_marginTop="@dimen/dp4"
+            android:paddingRight="@dimen/dp10"
+            android:layout_centerVertical="true"
+            android:drawablePadding="@dimen/dp10"
+            android:drawableLeft="@mipmap/reply_agree_default"
+            android:id="@+id/tv_zan"
+            android:textSize="@dimen/sp14"
+            android:textColor="@color/color_FFFF6B00"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content" />
+    </RelativeLayout>
+
+    <RelativeLayout
+        android:background="@color/color_ffffff"
+        android:layout_marginLeft="@dimen/dp48"
+        android:layout_width="match_parent"
+        android:padding="@dimen/dp6"
+        android:layout_height="wrap_content">
+        <TextView
+            android:layout_centerVertical="true"
+            android:id="@+id/tv_cre_time"
+            android:textSize="@dimen/sp14"
+            android:textColor="@color/color_97979F"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content" />
+
+    </RelativeLayout>
+
+    <View
+        android:background="@color/color_fff2f3f4"
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/dp1"/>
+
+    <LinearLayout
+        android:layout_marginLeft="@dimen/dp10"
+        android:layout_marginTop="@dimen/dp20"
+        android:orientation="horizontal"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content">
+
+        <View
+            android:background="@color/color_FF3164FE"
+            android:layout_width="@dimen/dp4"
+            android:layout_height="@dimen/dp18"/>
+
+        <TextView
+            android:textStyle="bold"
+            android:id="@+id/tv_follow_up"
+            android:layout_marginLeft="8dp"
+            android:textSize="@dimen/sp14"
+            android:text="@string/follow_up"
+            android:textColor="@color/color_0A0A0A"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content" />
+
+    </LinearLayout>
+    <com.blockadm.common.comstomview.swipetoloadlayout.SwipeToLoadLayout
+        android:padding="@dimen/dp15"
+        android:id="@+id/swipeToLoadLayout"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:background="@color/color_ffffff"
+        app:default_to_loading_more_scrolling_duration="500"
+        app:default_to_refreshing_scrolling_duration="1000"
+        app:load_more_complete_delay_duration="0"
+        app:load_more_final_drag_offset="@dimen/load_more_final_offset_google"
+        app:load_more_trigger_offset="@dimen/load_more_trigger_offset_google"
+        app:refresh_complete_delay_duration="0"
+        app:refresh_final_drag_offset="@dimen/refresh_final_offset_google"
+        app:refresh_trigger_offset="@dimen/refresh_trigger_offset_google"
+        app:swipe_style="above">
+
+        <include
+            android:id="@id/swipe_refresh_header"
+            layout="@layout/layout_google_header" />
+
+        <com.blockadm.common.comstomview.EmptyRecyclerView
+            android:id="@+id/swipe_target"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"/>
+
+
+
+        <include
+            android:id="@id/swipe_load_more_footer"
+            layout="@layout/layout_google_footer" />
+
+    </com.blockadm.common.comstomview.swipetoloadlayout.SwipeToLoadLayout>
+
+
+
+</LinearLayout>
+
+<include
+android:layout_alignParentBottom="true"
+layout="@layout/layout_detail_foot"
+android:layout_width="match_parent"
+android:layout_height="wrap_content" />
+
+    </RelativeLayout>
+
+

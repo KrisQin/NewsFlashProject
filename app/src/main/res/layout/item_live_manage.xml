@@ -1,0 +1,50 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content">
+
+    <RelativeLayout
+        android:layout_marginTop="@dimen/dp22"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+        <com.blockadm.common.comstomview.CircleImageView
+            android:id="@+id/iv_head_image"
+            android:layout_width="@dimen/dp45"
+            android:layout_height="@dimen/dp45"
+            android:src="@mipmap/picture_default" />
+
+        <TextView
+            android:id="@+id/tv_name"
+            android:layout_centerVertical="true"
+            android:layout_marginLeft="@dimen/dp12"
+            android:layout_toRightOf="@+id/iv_head_image"
+            android:textSize="@dimen/sp15"
+            android:textColor="@color/color_0A0A0A"
+            android:text="管理员的昵称"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content" />
+
+        <RelativeLayout
+            android:id="@+id/layout_dian"
+            android:layout_width="wrap_content"
+            android:layout_height="@dimen/dp35"
+            android:layout_centerVertical="true"
+            android:layout_alignParentRight="true"
+            android:layout_marginRight="@dimen/dp13">
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_centerInParent="true"
+                android:text="· · ·"
+                android:textSize="18sp"
+                android:textStyle="bold" />
+
+        </RelativeLayout>
+
+    </RelativeLayout>
+
+
+</RelativeLayout>

@@ -1,0 +1,69 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/color_ffffff"
+    xmlns:app="http://schemas.android.com/apk/res-auto">
+
+<!--    <include
+        android:id="@+id/main_title"
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/dp50"
+        layout="@layout/layout_main_title"/>-->
+   <RelativeLayout
+        android:id="@+id/main_title"
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/dp40"
+        android:gravity="center_vertical"
+        android:padding="@dimen/dp4">
+
+        <ImageView
+            android:layout_marginLeft="@dimen/dp10"
+            android:id="@+id/iv_logo"
+            android:src="@mipmap/logo"
+            android:gravity="center_vertical"
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent" />
+
+       <TextView
+           android:layout_toRightOf="@+id/iv_logo"
+           android:paddingLeft="@dimen/dp10"
+           android:drawableLeft="@drawable/abc_ic_search_api_material"
+           android:clickable="false"
+           android:layout_marginLeft="@dimen/dp15"
+           android:background="@drawable/bg_r5"
+           android:gravity="center_vertical"
+           android:textColor="@color/color_FFB6B6BA"
+           android:text="请您输入搜索内容"
+           android:layout_width="@dimen/dp300"
+           android:layout_height="@dimen/dp36"
+      />
+
+
+    </RelativeLayout>
+
+
+    <com.blockadm.common.comstomview.MyTabLayout
+        android:layout_below="@+id/main_title"
+        android:background="@color/color_ffffff"
+        app:tabMode="scrollable"
+        android:id="@+id/tl_tab"
+        app:tabIndicatorColor="#FF3164FE"
+        app:tabTextColor="@color/color_97979F"
+        app:tabSelectedTextColor="@color/color_0A0A0A"
+        app:tabTextAppearance="@style/TabLayoutTextStyle"
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/dp50"
+     />
+
+    <android.support.v4.view.ViewPager
+        android:id="@+id/vp"
+        android:layout_below="@+id/tl_tab"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"/>
+
+
+
+
+
+</RelativeLayout>

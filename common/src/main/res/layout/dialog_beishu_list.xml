@@ -1,0 +1,82 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical" android:layout_width="match_parent"
+    android:layout_height="wrap_content">
+
+    <TextView
+        android:id="@+id/tv_idcard"
+        android:text="0.7倍"
+        android:gravity="center"
+        android:textSize="@dimen/sp16"
+        android:textColor="@color/color_0A0A0A"
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/dp48"/>
+    <View
+        android:background="@color/color_fff2f3f4"
+        android:layout_width="match_parent"
+        android:layout_height="1dp"/>
+
+    <TextView
+        android:id="@+id/tv_gangao"
+        android:text="正常倍数"
+        android:gravity="center"
+        android:textSize="@dimen/sp16"
+        android:textColor="@color/color_0A0A0A"
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/dp48"/>
+    <View
+        android:background="@color/color_fff2f3f4"
+        android:layout_width="match_parent"
+        android:layout_height="1dp"/>
+
+    <TextView
+        android:id="@+id/tv_taiwan"
+        android:text="1.25倍数"
+        android:gravity="center"
+        android:textSize="@dimen/sp16"
+        android:textColor="@color/color_0A0A0A"
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/dp48"/>
+    <View
+        android:background="@color/color_fff2f3f4"
+        android:layout_width="match_parent"
+        android:layout_height="1dp"/>
+
+    <TextView
+        android:id="@+id/tv_huzhao"
+        android:text="1.5倍数"
+        android:gravity="center"
+        android:textSize="@dimen/sp16"
+        android:textColor="@color/color_0A0A0A"
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/dp48"/>
+    <View
+        android:background="@color/color_fff2f3f4"
+        android:layout_width="match_parent"
+        android:layout_height="10dp"/>
+    <TextView
+        android:id="@+id/tv_two"
+        android:text="2.0倍数"
+        android:gravity="center"
+        android:textSize="@dimen/sp16"
+        android:textColor="@color/color_0A0A0A"
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/dp48"/>
+    <View
+        android:background="@color/color_fff2f3f4"
+        android:layout_width="match_parent"
+        android:layout_height="10dp"/>
+
+
+    <TextView
+        android:id="@+id/tv_cancel"
+        android:text="取消"
+        android:gravity="center"
+        android:textSize="@dimen/sp16"
+        android:textColor="@color/color_0A0A0A"
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/dp48"/>
+
+
+
+</LinearLayout>

@@ -1,0 +1,49 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:id="@+id/root">
+
+
+
+    <TextView
+        android:id="@+id/tv_limit"
+        android:textColor="@color/white"
+        android:textSize="@dimen/sp11"
+        android:visibility="gone"
+        android:text="0"
+        android:drawablePadding="@dimen/dp9"
+        android:background="@drawable/bg_r3_c2c2c2"
+        android:paddingLeft="@dimen/dp10"
+        android:paddingRight="@dimen/dp10"
+        android:paddingTop="@dimen/dp6"
+        android:paddingBottom="@dimen/dp6"
+        android:layout_marginBottom="@dimen/dp30"
+        android:layout_marginRight="@dimen/dp13"
+        android:layout_marginLeft="@dimen/dp13"
+        android:layout_centerHorizontal="true"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content" />
+
+    <TextView
+        android:id="@+id/tv_receive_hongbao"
+        android:textColor="@color/color_0A0A0A"
+        android:textSize="@dimen/sp13"
+        android:paddingTop="@dimen/dp4"
+        android:paddingBottom="@dimen/dp4"
+        android:visibility="visible"
+        android:text="88888888888"
+        android:drawableLeft="@drawable/ic_hong_bao_bg"
+        android:drawablePadding="@dimen/dp9"
+        android:background="@drawable/bg_r2_white"
+        android:paddingLeft="@dimen/dp10"
+        android:paddingRight="@dimen/dp10"
+        android:layout_marginBottom="@dimen/dp10"
+        android:layout_marginRight="@dimen/dp13"
+        android:layout_marginLeft="@dimen/dp13"
+       android:layout_centerHorizontal="true"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content" />
+
+</RelativeLayout>

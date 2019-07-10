@@ -1,0 +1,126 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:background="@android:color/background_light"
+    android:fitsSystemWindows="true"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+<LinearLayout
+    android:orientation="vertical"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <com.blockadm.common.comstomview.BaseTitleBar
+        android:id="@+id/tilte"
+        app:lefttext_is_show="true"
+        app:righttext_is_show="true"
+        android:layout_alignParentTop="true"
+        app:lefttext_color="@color/color_0A0A0A"
+        app:centertext = "支付宝账号"
+        app:lefttext=""
+        app:lefticon_is_show="true"
+        app:lefticon_src="@mipmap/ic_back"
+        app:righticon_is_show="true"
+        app:righttext=""
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/dp45" />
+
+    <View
+        android:background="@color/color_fff2f3f4"
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/dp5"/>
+
+    <LinearLayout
+        android:padding="@dimen/dp15"
+        android:orientation="vertical"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+
+        <TextView
+            android:text="姓名"
+            android:textSize="@dimen/sp18"
+            android:textColor="@color/color_0A0A0A"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content" />
+
+        <TextView
+            android:layout_marginTop="@dimen/dp5"
+            android:layout_marginBottom="@dimen/dp10"
+            android:text="填写你的真实姓名"
+            android:textSize="@dimen/sp14"
+            android:textColor="@color/color_FFB6B6BA"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content" />
+
+
+        <android.support.v7.widget.AppCompatEditText
+            android:theme="@style/MyEditText"
+            android:singleLine="true"
+            android:layout_width="match_parent"
+            android:textColor="@color/color_0A0A0A"
+            android:textCursorDrawable="@drawable/my_cursor"
+            android:layout_centerInParent="true"
+            android:id="@+id/et_name"
+            android:layout_height="@dimen/dp50" />
+
+    </LinearLayout>
+
+
+    <LinearLayout
+        android:padding="@dimen/dp15"
+        android:orientation="vertical"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+
+        <TextView
+            android:text="支付宝账号"
+            android:textSize="@dimen/sp18"
+            android:textColor="@color/color_0A0A0A"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content" />
+
+        <TextView
+            android:layout_marginTop="@dimen/dp5"
+            android:layout_marginBottom="@dimen/dp10"
+            android:text="请填写正确的支付宝账号"
+            android:textSize="@dimen/sp14"
+            android:textColor="@color/color_FFB6B6BA"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content" />
+
+
+        <android.support.v7.widget.AppCompatEditText
+            android:theme="@style/MyEditText"
+            android:singleLine="true"
+            android:textColor="@color/color_0A0A0A"
+            android:layout_width="match_parent"
+            android:textCursorDrawable="@drawable/my_cursor"
+            android:layout_centerInParent="true"
+            android:id="@+id/et_pay_acount"
+            android:layout_height="@dimen/dp50" />
+
+    </LinearLayout>
+
+
+
+</LinearLayout>
+
+    <com.blockadm.common.comstomview.CheckEmptyTextView
+        android:layout_alignParentBottom="true"
+        android:layout_centerHorizontal="true"
+        android:background="@drawable/alipay_selector_bg"
+        android:textSize="@dimen/sp18"
+        android:enabled="false"
+        android:layout_marginTop="@dimen/dp10"
+        android:gravity="center"
+        android:text="修改"
+        android:id="@+id/add_alipay"
+        android:textColor="@color/color_ffffff"
+        android:layout_height="@dimen/dp50"
+        android:layout_width="match_parent" />
+
+</RelativeLayout>

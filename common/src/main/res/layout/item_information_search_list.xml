@@ -1,0 +1,61 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:orientation="horizontal">
+    <ImageView
+        android:id="@+id/iv"
+        android:layout_width="0dp"
+        android:layout_weight="3"
+        android:layout_alignParentRight="true"
+        android:layout_height="120dp"
+        android:scaleType="fitXY"
+        android:src="@mipmap/default_app"
+        />
+    <RelativeLayout
+        android:padding="@dimen/dp5"
+        android:background="@color/color_ffffff"
+        android:layout_width="0dp"
+        android:layout_weight="3"
+        android:layout_height="match_parent">
+
+        <TextView
+            android:text="one"
+            android:textStyle="bold"
+            android:id="@+id/tv_content"
+            android:ellipsize="end"
+            android:textSize="@dimen/sp14"
+            android:textColor="@color/color_0A0A0A"
+            android:maxLines="3"
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            />
+
+        <TextView
+            android:text="two"
+            android:id="@+id/tv_resName"
+            android:textColor="@color/color_97979F"
+            android:layout_alignParentBottom="true"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            />
+
+
+        <TextView
+            android:layout_marginLeft="@dimen/dp10"
+            android:id="@+id/tv_time"
+            android:text="時間"
+            android:layout_toRightOf="@+id/tv_resName"
+            android:textColor="@color/color_97979F"
+            android:layout_alignParentBottom="true"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            />
+
+    </RelativeLayout>
+
+
+
+
+
+</LinearLayout>

@@ -1,0 +1,62 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@android:color/background_light"
+    android:fitsSystemWindows="true"
+    xmlns:app="http://schemas.android.com/apk/res-auto">
+
+    <RelativeLayout
+        android:id="@+id/main_title"
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/dp40"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentStart="true"
+        android:layout_alignParentTop="true"
+        android:background="@color/color_ffffff"
+        android:gravity="center_vertical"
+        android:padding="@dimen/dp4">
+
+        <ImageView
+            android:id="@+id/iv_back"
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:gravity="center_vertical"
+            android:paddingLeft="@dimen/dp10"
+            android:src="@mipmap/ic_back" />
+
+
+        <android.support.v7.widget.SearchView
+            android:id="@+id/sv"
+            style="@style/MySearchViewStyle"
+            android:layout_width="@dimen/dp300"
+            android:layout_height="@dimen/dp36"
+            android:layout_alignParentRight="true"
+            android:layout_marginLeft="@dimen/dp20"
+            android:background="@drawable/bg_r5" />
+    </RelativeLayout>
+
+
+
+    <com.blockadm.common.comstomview.MyTabLayout
+        android:layout_below="@+id/main_title"
+        android:background="@color/color_ffffff"
+        app:tabMode="scrollable"
+        android:id="@+id/tl_tab"
+        app:tabIndicatorColor="@color/color_FF3164FE"
+        app:tabTextColor="@color/color_97979F"
+        app:tabSelectedTextColor="@color/color_0A0A0A"
+        app:tabTextAppearance="@style/TabLayoutTextStyle"
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/dp50"
+        />
+
+
+
+    <android.support.v4.view.ViewPager
+        android:id="@+id/vp"
+        android:layout_below="@+id/tl_tab"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"/>
+
+</RelativeLayout>

@@ -1,0 +1,125 @@
+<?xml version="1.0" encoding="utf-8"?>
+<TabHost xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id="@android:id/tabhost"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/transparent">
+
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:orientation="vertical">
+
+            <FrameLayout
+                android:id="@android:id/tabcontent"
+                android:layout_width="match_parent"
+                android:layout_height="0dp"
+                android:layout_weight="1"></FrameLayout>
+            <!-- 隐藏TabWidget -->
+            <TabWidget
+                android:id="@android:id/tabs"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:visibility="gone"></TabWidget>
+            <!-- 视觉上,用单选按钮替代TabWidget -->
+            <View
+                android:id="@+id/tab_line"
+                android:layout_width="match_parent"
+                android:layout_height="1px"
+                android:background="@color/line_color_gray"/>
+
+            <LinearLayout
+                android:id="@+id/layout_tab"
+                android:layout_width="match_parent"
+                android:layout_height="50dp"
+                android:background="@color/white"
+                android:gravity="center"
+                android:orientation="horizontal">
+
+                <RadioGroup
+                    android:layout_alignParentBottom="true"
+                    android:id="@+id/rg_main_radio"
+                    android:layout_width="match_parent"
+                    android:layout_height="50dp"
+                    android:background="@mipmap/bottom_bg"
+                    android:paddingTop="@dimen/dp5"
+                    android:orientation="horizontal">
+                    <RadioButton
+                        android:id="@+id/rb_information"
+                        android:text="@string/information"
+                        android:drawableTop="@drawable/selector_task_press"
+                        android:textColor="@drawable/selector_text_color"
+                        android:layout_width="0dp"
+                        android:layout_weight="1"
+                        android:gravity="center"
+                        android:button="@null"
+                        android:textSize="@dimen/sp12"
+                        android:layout_height="match_parent"
+                        />
+                    <RadioButton
+                        android:id="@+id/rb_study"
+                        android:drawableTop="@drawable/selector_main_error_press"
+                        android:textColor="@drawable/selector_text_color"
+                        android:text="@string/study"
+                        android:layout_width="0dp"
+                        android:layout_weight="1"
+                        android:gravity="center"
+                        android:button="@null"
+                        android:textSize="@dimen/sp12"
+                        android:layout_height="match_parent"/>
+
+                    <RadioButton
+                        android:id="@+id/rb_community"
+                        android:drawableTop="@drawable/selector_community"
+                        android:textColor="@drawable/selector_text_color"
+                        android:text="@string/im_string"
+                        android:layout_width="0dp"
+                        android:layout_weight="1"
+                        android:gravity="center"
+                        android:button="@null"
+                        android:textSize="@dimen/sp12"
+                        android:layout_height="match_parent"/>
+
+                    <RadioButton
+                        android:id="@+id/rb_user"
+                        android:textColor="@drawable/selector_text_color"
+                        android:drawableTop="@drawable/selector_micro_class_press"
+                        android:text="@string/my"
+                        android:layout_width="0dp"
+                        android:gravity="center"
+                        android:button="@null"
+                        android:textSize="@dimen/sp12"
+                        android:layout_weight="1"
+                        android:layout_height="match_parent"/>
+
+                </RadioGroup>
+            </LinearLayout>
+        </LinearLayout>
+
+</TabHost>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+

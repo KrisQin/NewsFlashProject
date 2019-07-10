@@ -1,0 +1,322 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:fitsSystemWindows="true"
+    android:orientation="vertical">
+
+    <com.blockadm.common.comstomview.BaseTitleBar
+        android:id="@+id/tilte"
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/dp45"
+        app:centertext="我的钱包"
+        app:lefticon_is_show="true"
+        app:lefticon_src="@mipmap/ic_back"
+        app:lefttext=""
+        app:lefttext_color="@color/color_0A0A0A"
+        app:lefttext_is_show="true"
+        app:righticon_is_show="true"
+        app:righttext="常见问题"
+        app:righttext_is_show="true" />
+
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:fillViewport="true"
+        android:orientation="vertical">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:fitsSystemWindows="true"
+            android:orientation="vertical">
+
+
+            <RelativeLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:background="@color/color_fff2f3f4"
+                android:padding="@dimen/dp15">
+
+                <ImageView
+                    android:id="@+id/image"
+                    android:layout_width="match_parent"
+                    android:layout_height="118dp"
+                    android:scaleType="fitXY"
+                    android:src="@drawable/ic_my_money_adian" />
+
+                <TextView
+                    android:id="@+id/tv_adian_text"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:gravity="center"
+                    android:padding="@dimen/dp15"
+                    android:text="奖金A点"
+                    android:textColor="@color/color_ffffff"
+                    android:textSize="@dimen/sp14" />
+
+                <TextView
+                    android:id="@+id/tv_adian"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_below="@+id/tv_adian_text"
+                    android:gravity="center"
+                    android:paddingLeft="@dimen/dp15"
+                    android:paddingTop="@dimen/dp5"
+                    android:textColor="@color/color_ffffff"
+                    android:textSize="@dimen/sp20" />
+
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="@dimen/dp54"
+                    android:layout_below="@+id/image"
+                    android:orientation="horizontal">
+
+                    <View
+                        android:layout_width="1dp"
+                        android:layout_height="48dp"
+                        android:background="@color/color_fff2f3f4" />
+
+                    <TextView
+                        android:id="@+id/tv_exchange_azuan"
+                        android:layout_width="0dp"
+                        android:layout_height="match_parent"
+                        android:layout_weight="1"
+                        android:background="@color/color_ffffff"
+                        android:gravity="center"
+                        android:text="兑换A钻"
+                        android:textColor="@color/color_38D4C1"
+                        android:textSize="@dimen/sp16" />
+
+                    <TextView
+                        android:id="@+id/tv_cash_adian"
+                        android:layout_width="0dp"
+                        android:layout_height="match_parent"
+                        android:layout_weight="1"
+                        android:background="@color/color_ffffff"
+                        android:gravity="center"
+                        android:text="转入现金A点"
+                        android:textColor="@color/color_38D4C1"
+                        android:textSize="@dimen/sp16" />
+                </LinearLayout>
+
+
+            </RelativeLayout>
+
+            <RelativeLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:background="@color/color_fff2f3f4"
+                android:padding="@dimen/dp15">
+
+                <ImageView
+                    android:id="@+id/iv"
+                    android:layout_width="match_parent"
+                    android:layout_height="118dp"
+                    android:scaleType="fitXY"
+                    android:src="@mipmap/wallet_bg1" />
+
+                <TextView
+                    android:id="@+id/tv_balance"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:gravity="center"
+                    android:padding="@dimen/dp15"
+                    android:text="现金A点"
+                    android:textColor="@color/color_ffffff"
+                    android:textSize="@dimen/sp14" />
+
+                <TextView
+                    android:id="@+id/tv_money"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_below="@+id/tv_balance"
+                    android:gravity="center"
+                    android:paddingLeft="@dimen/dp15"
+                    android:paddingTop="@dimen/dp5"
+                    android:textColor="@color/color_ffffff"
+                    android:textSize="@dimen/sp20" />
+
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="@dimen/dp54"
+                    android:layout_below="@+id/iv"
+                    android:orientation="horizontal">
+
+                    <View
+                        android:layout_width="1dp"
+                        android:layout_height="48dp"
+                        android:background="@color/color_fff2f3f4" />
+
+                    <TextView
+                        android:id="@+id/tv_recharge"
+                        android:layout_width="0dp"
+                        android:layout_height="match_parent"
+                        android:layout_weight="1"
+                        android:background="@color/color_ffffff"
+                        android:gravity="center"
+                        android:text="A点充值"
+                        android:textColor="@color/color_FF2D9DE4"
+                        android:textSize="@dimen/sp16" />
+
+                    <TextView
+                        android:id="@+id/tv_withdraw"
+                        android:layout_width="0dp"
+                        android:layout_height="match_parent"
+                        android:layout_weight="1"
+                        android:background="@color/color_ffffff"
+                        android:gravity="center"
+                        android:text="提现"
+                        android:textColor="@color/color_FF2D9DE4"
+                        android:textSize="@dimen/sp16" />
+                </LinearLayout>
+
+
+            </RelativeLayout>
+
+            <RelativeLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:background="@color/color_fff2f3f4"
+                android:padding="@dimen/dp15">
+
+                <ImageView
+                    android:id="@+id/iv1"
+                    android:layout_width="match_parent"
+                    android:layout_height="118dp"
+                    android:scaleType="fitXY"
+                    android:src="@mipmap/wallet_bg2" />
+
+                <TextView
+                    android:id="@+id/tv"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:gravity="center"
+                    android:padding="@dimen/dp15"
+                    android:text="A钻账户"
+                    android:textColor="@color/color_ffffff"
+                    android:textSize="@dimen/sp14" />
+
+                <TextView
+                    android:id="@+id/tv_diamond"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_below="@+id/tv"
+                    android:gravity="center"
+                    android:paddingLeft="@dimen/dp15"
+                    android:paddingTop="@dimen/dp5"
+                    android:textColor="@color/color_ffffff"
+                    android:textSize="@dimen/sp20" />
+
+                <TextView
+
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_below="@+id/iv1"
+                    android:background="@color/color_ffffff"
+                    android:gravity="center"
+                    android:padding="@dimen/dp16"
+                    android:text="充值"
+                    android:textColor="#FFFE982E"
+                    android:textSize="@dimen/sp16" />
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="@dimen/dp54"
+                    android:layout_below="@+id/iv1"
+                    android:orientation="horizontal">
+
+                    <View
+                        android:layout_width="1dp"
+                        android:layout_height="48dp"
+                        android:background="@color/color_fff2f3f4" />
+
+                    <TextView
+                        android:id="@+id/tv_diamond_recharge"
+                        android:layout_width="0dp"
+                        android:layout_height="match_parent"
+                        android:layout_weight="1"
+                        android:background="@color/color_ffffff"
+                        android:gravity="center"
+                        android:text="充值"
+                        android:textColor="@color/color_FE982E"
+                        android:textSize="@dimen/sp16" />
+
+                    <TextView
+                        android:id="@+id/tv_exchange"
+                        android:layout_width="0dp"
+                        android:layout_height="match_parent"
+                        android:layout_weight="1"
+                        android:background="@color/color_ffffff"
+                        android:gravity="center"
+                        android:text="兑换"
+                        android:textColor="@color/color_FE982E"
+                        android:textSize="@dimen/sp16" />
+                </LinearLayout>
+
+
+
+            </RelativeLayout>
+
+            <TextView
+                android:id="@+id/tv_bill"
+                android:layout_width="match_parent"
+                android:layout_height="48dp"
+                android:drawableRight="@mipmap/ic_group"
+                android:gravity="center_vertical"
+                android:paddingLeft="@dimen/dp20"
+                android:paddingRight="@dimen/dp10"
+                android:text="@string/bill"
+                android:textColor="@color/color_0A0A0A"
+                android:textSize="@dimen/sp16" />
+
+            <View
+                android:layout_width="match_parent"
+                android:layout_height="1dp"
+                android:background="@color/color_fff2f3f4"
+                android:paddingLeft="@dimen/dp20"
+                android:paddingRight="@dimen/dp10" />
+
+            <TextView
+                android:id="@+id/tv_income"
+                android:layout_width="match_parent"
+                android:layout_height="48dp"
+                android:drawableRight="@mipmap/ic_group"
+                android:gravity="center_vertical"
+                android:paddingLeft="@dimen/dp20"
+                android:paddingRight="@dimen/dp10"
+                android:text="@string/income"
+                android:textColor="@color/color_0A0A0A"
+                android:textSize="@dimen/sp16" />
+
+            <View
+                android:layout_width="match_parent"
+                android:layout_height="1dp"
+                android:background="@color/color_fff2f3f4"
+                android:paddingLeft="@dimen/dp20"
+                android:paddingRight="@dimen/dp10" />
+
+            <TextView
+                android:id="@+id/tv_manager"
+                android:layout_width="match_parent"
+                android:layout_height="48dp"
+                android:drawableRight="@mipmap/ic_group"
+                android:gravity="center_vertical"
+                android:paddingLeft="@dimen/dp20"
+                android:paddingRight="@dimen/dp10"
+                android:text="提现管理"
+                android:textColor="@color/color_0A0A0A"
+                android:textSize="@dimen/sp16" />
+
+
+        </LinearLayout>
+
+    </ScrollView>
+
+
+</LinearLayout>

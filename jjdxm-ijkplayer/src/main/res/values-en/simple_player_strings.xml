@@ -1,0 +1,10 @@
+<resources>
+    <string name="giraffe_player_url_empty">Please appoint address of video</string>
+    <string name="small_problem">Small problem arises, try again later</string>
+    <string name="can_not_play">The video cannot be played</string>
+    <string name="standard_definition">Standard definition</string>
+    <string name="play_complete">Video has completed playing</string>
+    <string name="play_null_error">Source of direct playing cannot be obtained</string>
+    <string name="not_support">Player does not support the device</string>
+    <string name="using_mobile_web">You are using mobile network to play video\n higher data cost may generate</string>
+</resources>

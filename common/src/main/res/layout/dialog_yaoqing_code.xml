@@ -1,0 +1,163 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<RelativeLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical"
+    android:id="@+id/ll_root"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content">
+    <RelativeLayout
+        android:background="@color/color_ffffff"
+        android:id="@+id/title"
+        android:layout_width="match_parent"
+        android:layout_height="48dp">
+
+        <TextView
+            android:id="@+id/tv_cancel"
+            android:paddingLeft="@dimen/dp14"
+            android:gravity="center_vertical"
+            android:textSize="@dimen/sp14"
+            android:textColor="#FF97979F"
+            android:text="取消"
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent" />
+
+        <TextView
+            android:gravity="center_vertical"
+            android:text="邀请码"
+            android:textColor="@color/color_0A0A0A"
+            android:textSize="@dimen/sp16"
+            android:layout_centerHorizontal="true"
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent" />
+    </RelativeLayout>
+
+<ScrollView
+    android:background="@mipmap/codeshare_bg_friends"
+    android:paddingTop="@dimen/dp30"
+    android:paddingBottom="@dimen/dp30"
+    android:layout_below="@+id/title"
+    android:id="@+id/sv"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+   >
+
+<LinearLayout
+    android:orientation="vertical"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content">
+
+
+
+
+    <LinearLayout
+        android:orientation="vertical"
+        android:background="@mipmap/bg_copy01"
+        android:layout_gravity="center_horizontal"
+        android:layout_width="328dp"
+        android:layout_height="395dp">
+
+        <TextView
+            android:textSize="@dimen/sp18"
+            android:layout_marginTop="@dimen/dp20"
+            android:layout_gravity="center_horizontal"
+            android:text="你的邀请码"
+            android:textColor="#FF494B4E"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content" />
+
+        <TextView
+            android:id="@+id/tv_code"
+            android:textSize="@dimen/sp50"
+            android:layout_marginTop="@dimen/dp30"
+            android:layout_gravity="center_horizontal"
+            android:text="你的邀请码"
+            android:textColor="#FF3164FE"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content" />
+
+
+
+        <TextView
+            android:id="@+id/tv_copy"
+            android:background="@mipmap/copymyid"
+            android:layout_marginTop="@dimen/dp30"
+            android:layout_gravity="center_horizontal"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textColor="#ffffffff"
+            android:textSize="14sp"
+            />
+        <ImageView
+            android:id="@+id/iv_code"
+            android:layout_marginTop="@dimen/dp20"
+            android:scaleType="fitXY"
+            android:layout_gravity="center_horizontal"
+            android:src="@mipmap/picture_default"
+            android:layout_width="106dp"
+            android:layout_height="106dp" />
+
+        <TextView
+            android:layout_marginTop="@dimen/dp30"
+            android:layout_gravity="center_horizontal"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="快扫我~"
+            android:textColor="#FF494B4E"
+            android:textSize="14sp"
+            />
+
+    </LinearLayout>
+
+
+    <LinearLayout
+         android:gravity="center"
+        android:layout_marginTop="@dimen/dp10"
+        android:orientation="vertical"
+        android:background="@mipmap/bg_copy02"
+        android:layout_gravity="center_horizontal"
+        android:layout_width="328dp"
+        android:layout_height="82dp">
+
+        <!--
+        记得让好友在登录页面填写邀请码 填写邀请码后视为邀请成功，成功后即送A钻
+        -->
+
+        <TextView
+             android:paddingLeft="@dimen/dp10"
+            android:paddingRight="@dimen/dp10"
+            android:text="记得让好友在登录页面填写邀请码填写邀请码后视为邀请成功，成功后即送A点"
+            android:textColor="#FF494B4E"
+            android:textSize="@dimen/sp16"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content" />
+
+    </LinearLayout>
+</LinearLayout>
+
+</ScrollView>
+
+    <LinearLayout
+        android:background="@color/color_ffffff"
+        android:layout_alignParentBottom="true"
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/dp48">
+
+        <ImageView
+            android:layout_gravity="center"
+            android:src="@mipmap/save_haibao"
+            android:id="@+id/iv_save"
+            android:layout_width="0dp"
+            android:layout_weight="1"
+            android:layout_height="wrap_content" />
+
+        <ImageView
+            android:layout_gravity="center"
+            android:src="@mipmap/share_haibao"
+            android:id="@+id/iv_share"
+            android:layout_width="0dp"
+            android:layout_weight="1"
+            android:layout_height="wrap_content" />
+    </LinearLayout>
+
+</RelativeLayout>

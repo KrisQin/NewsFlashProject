@@ -1,0 +1,201 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical"
+    android:background="#F5F5F5"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+
+
+    <LinearLayout
+        android:layout_marginTop="@dimen/dp18"
+        android:layout_marginRight="@dimen/dp13"
+        android:layout_marginLeft="@dimen/dp13"
+        android:background="@drawable/bg_r3_solid_white_cl_dfdfdf_stroke"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:gravity="center_vertical"
+        android:orientation="horizontal">
+
+        <TextView
+            android:layout_marginLeft="@dimen/dp11"
+            android:textColor="@color/color_0A0A0A"
+            android:textSize="@dimen/sp15"
+            android:text="金额"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content" />
+
+        <EditText
+            android:id="@+id/et_money"
+            android:layout_width="0dp"
+            android:inputType="numberDecimal"
+            android:hint="填写金额"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="@dimen/dp15"
+            android:layout_marginTop="@dimen/dp18"
+            android:layout_marginBottom="@dimen/dp18"
+            android:layout_weight="6"
+            android:background="@null"
+            android:layout_marginRight="@dimen/dp15"
+            android:gravity="right"
+            android:textColor="@color/color_0A0A0A"
+            android:textColorHint="@color/cl_B6B6BA"
+            android:textCursorDrawable="@drawable/my_cursor"
+            android:textSize="@dimen/sp15" />
+
+        <RadioGroup
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:orientation="horizontal">
+
+
+            <RadioButton
+                android:id="@+id/rb_Azuan"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:button="@drawable/radiobutton_background"
+                android:checked="true"
+                android:padding="@dimen/dp5"
+                android:text="A钻"
+                android:textColor="@color/color_0A0A0A"
+                android:textSize="@dimen/sp16" />
+
+            <RadioButton
+                android:id="@+id/rb_Adian"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:button="@drawable/radiobutton_background"
+                android:padding="@dimen/dp5"
+                android:text="A点"
+                android:textColor="@color/color_0A0A0A"
+                android:textSize="@dimen/sp16" />
+
+        </RadioGroup>
+
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_marginTop="@dimen/dp18"
+        android:layout_marginRight="@dimen/dp13"
+        android:layout_marginLeft="@dimen/dp13"
+        android:background="@drawable/bg_r3_solid_white_cl_dfdfdf_stroke"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:gravity="center_vertical"
+        android:orientation="horizontal">
+
+        <TextView
+            android:layout_marginLeft="@dimen/dp11"
+            android:textColor="@color/color_0A0A0A"
+            android:textSize="@dimen/sp15"
+            android:text="红包个数"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content" />
+
+        <EditText
+            android:id="@+id/et_count"
+            android:inputType="number"
+            android:layout_width="0dp"
+            android:hint="填写个数"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="@dimen/dp15"
+            android:layout_marginTop="@dimen/dp18"
+            android:layout_marginBottom="@dimen/dp18"
+            android:layout_weight="6"
+            android:background="@null"
+            android:layout_marginRight="@dimen/dp8"
+            android:gravity="right"
+            android:textColor="@color/color_0A0A0A"
+            android:textColorHint="@color/cl_B6B6BA"
+            android:textCursorDrawable="@drawable/my_cursor"
+            android:textSize="@dimen/sp16" />
+
+       <TextView
+           android:text="个"
+           android:textColor="@color/color_ff0a0a0a"
+           android:layout_marginRight="@dimen/dp19"
+           android:textSize="@dimen/sp14"
+           android:layout_width="wrap_content"
+           android:layout_height="wrap_content" />
+    </LinearLayout>
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:visibility="gone"
+        android:layout_margin="@dimen/dp13"
+        android:background="@drawable/bg_r3_solid_white_cl_dfdfdf_stroke"
+        >
+
+        <EditText
+            android:id="@+id/et_content"
+            android:layout_width="match_parent"
+            android:layout_height="99dp"
+            android:background="@null"
+            android:clickable="true"
+            android:gravity="left"
+            android:hint="恭喜发财，大吉大利"
+            android:maxLength="31"
+            android:padding="11dp"
+            android:scrollbars="vertical"
+            android:textColor="@color/color_0A0A0A"
+            android:textColorHint="@color/cl_B6B6BA"
+            android:textCursorDrawable="@drawable/my_cursor"
+            android:textSize="17sp" />
+
+
+        <TextView
+            android:id="@+id/tv_text_count"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/et_content"
+            android:layout_alignParentRight="true"
+            android:layout_marginRight="@dimen/dp5"
+            android:layout_marginBottom="@dimen/dp5"
+            android:text="0/30"
+            android:textColor="@color/color_B6B6BA"
+            android:textSize="13sp" />
+    </RelativeLayout>
+
+
+
+
+    <LinearLayout
+        android:id="@+id/layout_money"
+        android:layout_gravity="center_horizontal"
+        android:layout_marginTop="@dimen/dp53"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content">
+
+        <TextView
+            android:id="@+id/tv_money"
+            android:textColor="@color/color_ff0a0a0a"
+            android:textSize="@dimen/sp23"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content" />
+
+        <TextView
+            android:id="@+id/tv_unit"
+            android:textColor="@color/color_ff0a0a0a"
+            android:layout_marginRight="@dimen/dp19"
+            android:textSize="@dimen/sp18"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content" />
+    </LinearLayout>
+
+    <Button
+        android:id="@+id/bt_submit"
+        style="@style/common_red_btn_bg"
+        android:layout_marginLeft="@dimen/dp13"
+        android:layout_marginTop="@dimen/dp18"
+        android:layout_marginRight="@dimen/dp13"
+        android:layout_marginBottom="@dimen/dp20"
+        android:text="塞钱进红包" />
+
+
+
+</LinearLayout>

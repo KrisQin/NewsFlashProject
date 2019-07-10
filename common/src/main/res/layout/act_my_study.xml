@@ -1,0 +1,95 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:fitsSystemWindows="true"
+    android:background="@color/color_ffffff"
+    android:orientation="vertical"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+
+
+    <com.blockadm.common.comstomview.BaseTitleBar
+        android:id="@+id/tilte"
+        app:lefttext_is_show="true"
+        app:righttext_is_show="true"
+        app:lefttext_color="@color/color_0A0A0A"
+        app:centertext = "我的学习"
+        app:lefticon_src="@mipmap/ic_back"
+        app:lefttext=""
+        app:righttext_color="@color/color_0A0A0A"
+        app:lefticon_is_show="true"
+        app:righttext=""
+        app:righticon_is_show="true"
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/dp50"/>
+
+    <View
+        android:background="@color/color_fff2f3f4"
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/dp5"/>
+    <TextView
+        android:paddingLeft="@dimen/dp20"
+        android:id="@+id/tv_buy_history"
+        android:drawableRight="@mipmap/ic_group2"
+        android:text="购买历史"
+        android:textSize="@dimen/sp16"
+        android:textColor="@color/color_0A0A0A"
+        android:gravity="center_vertical"
+        android:layout_width="match_parent"
+        android:paddingRight="@dimen/dp10"
+        android:layout_height="48dp" />
+
+    <View
+        android:background="@color/color_fff2f3f4"
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/dp5"/>
+
+
+    <TextView
+        android:paddingLeft="@dimen/dp20"
+        android:id="@+id/tv_build"
+        android:drawableRight="@mipmap/ic_group2"
+        android:text="新建专栏"
+        android:textSize="@dimen/sp16"
+        android:visibility="visible"
+        android:textColor="@color/color_0A0A0A"
+        android:gravity="center_vertical"
+        android:layout_width="match_parent"
+        android:paddingRight="@dimen/dp10"
+        android:layout_height="48dp" />
+
+    <View
+        android:layout_marginLeft="@dimen/dp20"
+        android:background="@color/color_fff2f3f4"
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/dp1"/>
+
+    <TextView
+        android:id="@+id/tv_create"
+        android:paddingLeft="@dimen/dp20"
+        android:drawableRight="@mipmap/ic_group2"
+        android:text="创建课程"
+
+        android:textSize="@dimen/sp16"
+        android:paddingRight="@dimen/dp10"
+        android:gravity="center_vertical"
+        android:textColor="@color/color_0A0A0A"
+        android:layout_width="match_parent"
+        android:layout_height="48dp" />
+
+    <View
+        android:background="@color/color_fff2f3f4"
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/dp5"/>
+
+
+    <com.blockadm.common.comstomview.stateswitch.StateLayout
+        android:id="@+id/layout_state"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:background="@color/color_ffffff"
+        app:state_content_layout="@layout/act_msg_list" />
+
+</LinearLayout>
+

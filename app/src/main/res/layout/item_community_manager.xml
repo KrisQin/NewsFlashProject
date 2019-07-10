@@ -1,0 +1,125 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.constraint.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:background="@color/white"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content">
+
+
+    <com.blockadm.common.widget.RoundRectLayout
+        android:id="@+id/layout_image"
+        android:layout_width="120dp"
+        android:layout_height="@dimen/dp90"
+        android:layout_marginLeft="@dimen/dp13"
+        android:layout_marginTop="@dimen/dp15"
+        app:layout_constraintLeft_toLeftOf="parent"
+        app:layout_constraintTop_toTopOf="parent">
+
+
+        <ImageView
+            android:id="@+id/iv_image"
+            android:layout_width="156dp"
+            android:layout_height="90dp"
+            android:scaleType="fitXY"
+            android:src="@mipmap/picture_default" />
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="@dimen/dp23"
+            android:layout_alignParentBottom="true"
+            android:background="@drawable/shape_person_live_item">
+
+            <TextView
+                android:id="@+id/tv_live_status"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_centerInParent="true"
+                android:text="已结束"
+                android:textColor="@color/white"
+                android:textSize="@dimen/sp11" />
+
+        </RelativeLayout>
+
+    </com.blockadm.common.widget.RoundRectLayout>
+
+    <TextView
+        android:id="@+id/tv_title"
+        app:layout_constraintLeft_toRightOf="@+id/layout_image"
+        app:layout_constraintTop_toTopOf="@+id/layout_image"
+        android:layout_marginRight="@dimen/dp65"
+        android:layout_marginLeft="@dimen/dp13"
+        android:maxWidth="166dp"
+        app:layout_constrainedWidth="true"
+        android:textColor="@color/color_333333"
+        android:textSize="@dimen/sp18"
+        android:text="我是直播"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content" />
+
+    <TextView
+        android:id="@+id/tv_lesson_status"
+        app:layout_constraintBottom_toBottomOf="@+id/layout_image"
+        app:layout_constraintLeft_toRightOf="@+id/layout_image"
+        app:layout_goneMarginLeft="@dimen/dp13"
+        android:layout_marginRight="@dimen/dp65"
+        android:layout_marginLeft="@dimen/dp13"
+        app:layout_constrainedWidth="true"
+        android:textColor="@color/color_009F2C"
+        android:textSize="@dimen/sp17"
+        android:text="免费"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content" />
+
+    <RelativeLayout
+        android:id="@+id/layout_dian"
+        android:layout_marginTop="@dimen/dp7"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintRight_toRightOf="parent"
+        android:layout_marginRight="@dimen/dp13"
+        android:layout_width="wrap_content"
+        android:layout_height="35dp">
+
+        <TextView
+            android:text="· · ·"
+            android:textStyle="bold"
+            android:textSize="18sp"
+            android:layout_centerInParent="true"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content" />
+
+    </RelativeLayout>
+
+
+    <TextView
+        android:id="@+id/tv_time"
+        android:layout_marginTop="@dimen/dp15"
+        android:textColor="@color/color_B6B6BA"
+        android:textSize="@dimen/sp11"
+        android:layout_marginLeft="@dimen/dp13"
+        app:layout_constraintTop_toBottomOf="@+id/layout_image"
+        app:layout_constraintLeft_toLeftOf="parent"
+        android:text="直播时间：2019-04-22  18:20:12"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content" />
+
+    <TextView
+        android:id="@+id/tv_down"
+        android:layout_marginTop="@dimen/dp25"
+        android:visibility="gone"
+        android:textColor="@color/color_0A0A0A"
+        android:layout_marginRight="@dimen/dp13"
+        android:textSize="@dimen/sp12"
+        android:layout_marginLeft="@dimen/dp13"
+        app:layout_constraintBottom_toBottomOf="@+id/tv_time"
+        app:layout_constraintRight_toRightOf="parent"
+        android:text="已下架 >"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content" />
+
+    <View
+        app:layout_constraintTop_toBottomOf="@+id/tv_time"
+        app:layout_constraintLeft_toLeftOf="parent"
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/dp10"/>
+
+</android.support.constraint.ConstraintLayout>

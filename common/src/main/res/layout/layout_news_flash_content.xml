@@ -1,0 +1,127 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:scrollbars="none">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@drawable/ic_news_flash_blue_bg"
+        android:orientation="vertical">
+
+
+        <ImageView
+            android:id="@+id/iv"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_centerHorizontal="true"
+            android:layout_margin="@dimen/dp35"
+            android:src="@drawable/ic_new_flash_logo" />
+
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="@dimen/dp17"
+            android:layout_marginRight="@dimen/dp17"
+            android:layout_marginBottom="@dimen/dp24"
+            android:orientation="vertical">
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:background="@drawable/ic_news_flash_whire_top"
+                android:orientation="vertical">
+
+                <TextView
+                    android:id="@+id/tv_title"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center_horizontal"
+                    android:layout_marginTop="@dimen/dp39"
+                    android:layout_marginBottom="@dimen/dp12"
+                    android:paddingLeft="@dimen/dp33"
+                    android:paddingRight="@dimen/dp33"
+                    android:text="活动 | 全球通证经济财富高峰论坛圆满成功"
+                    android:textColor="@color/color_0A0A0A"
+                    android:textSize="@dimen/sp20" />
+
+
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="-2dp"
+                android:background="@drawable/bg_r16_white"
+                android:orientation="vertical"
+                android:paddingLeft="@dimen/dp33"
+                android:paddingRight="@dimen/dp33">
+
+
+                <LinearLayout
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:gravity="center_vertical"
+                    android:orientation="horizontal">
+
+                    <ImageView
+                        android:layout_width="@dimen/dp14"
+                        android:layout_height="@dimen/dp14"
+                        android:layout_marginTop="0.5dp"
+                        android:layout_marginRight="@dimen/dp7"
+                        android:background="@drawable/ic_time_bg" />
+
+                    <TextView
+                        android:id="@+id/tv_time"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="2019"
+                        android:textColor="@color/color_ff97979f"
+                        android:textSize="@dimen/sp13" />
+                </LinearLayout>
+
+
+                <TextView
+                    android:id="@+id/tv_content"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_below="@+id/tv_time"
+                    android:layout_alignParentStart="true"
+                    android:layout_alignParentLeft="true"
+                    android:layout_marginTop="@dimen/dp24"
+                    android:gravity="center_vertical"
+                    android:lineSpacingExtra="@dimen/dp4"
+                    android:text="爱德媒专栏获悉，2019年6月28日『全球通证经济财富高峰论坛』在泰国曼谷盛大开幕。本次高峰论坛由新媒体集团和亚泰东盟集团主办，诚邀50多位全球顶级科学家、企业家、区块链行业应用专家、技术大牛、数十家资本集团、数十家上市集团创始人，百余家全球媒体齐聚现场，共同探讨区块链通证经济应用新机遇。
+会议上，董事长许宝恩为大会致辞爱德媒专栏获悉"
+                    android:textColor="@color/color_FF494B4E"
+                    android:textSize="@dimen/sp15" />
+
+                <LinearLayout
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="@dimen/dp4"
+                    android:layout_marginTop="@dimen/dp49"
+                    android:layout_marginBottom="@dimen/dp21">
+
+                    <ImageView
+                        android:id="@+id/iv_scan_image"
+                        android:layout_width="@dimen/dp82"
+                        android:layout_height="@dimen/dp82" />
+
+                    <ImageView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginLeft="@dimen/dp22"
+                        android:layout_marginTop="@dimen/dp4"
+                        android:background="@drawable/ic_text_bg" />
+
+
+                </LinearLayout>
+
+
+            </LinearLayout>
+        </LinearLayout>
+    </LinearLayout>
+</ScrollView>

@@ -1,0 +1,46 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:orientation="vertical"
+    android:background="@android:color/background_light"
+    android:fitsSystemWindows="true"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <com.blockadm.common.comstomview.BaseTitleBar
+        android:id="@+id/tilte"
+        app:lefttext_is_show="true"
+        app:righttext_is_show="true"
+        app:lefttext_color="@color/color_0A0A0A"
+        app:centertext = "购买历史"
+        app:lefticon_src="@mipmap/ic_back"
+        app:lefttext=""
+        app:righttext_color="@color/color_0A0A0A"
+        app:lefticon_is_show="true"
+        app:righttext=""
+        app:righticon_is_show="true"
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/dp50"/>
+
+    <com.blockadm.common.comstomview.MyTabLayout
+        android:background="@color/color_ffffff"
+        app:tabMode="scrollable"
+        android:visibility="gone"
+        android:id="@+id/tl_tab"
+        app:tabIndicatorColor="#ff3164fe"
+        app:tabTextColor="@color/color_97979F"
+        android:layout_marginLeft="@dimen/dp10"
+        app:tabSelectedTextColor="@color/color_0A0A0A"
+        app:tabTextAppearance="@style/TabLayoutTextStyle"
+        android:layout_width="wrap_content"
+        android:layout_height="@dimen/dp42"
+        />
+
+
+    <com.blockadm.common.comstomview.NoScrollViewPager
+        android:background="@color/color_ffffff"
+        android:id="@+id/vp"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"/>
+
+</LinearLayout>

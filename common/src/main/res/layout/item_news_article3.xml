@@ -1,0 +1,85 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:background="@color/color_ffffff"
+    android:layout_margin="@dimen/dp10"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:orientation="vertical">
+<LinearLayout
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:background="@color/color_ffffff"
+    android:orientation="horizontal">
+
+    <RelativeLayout
+        android:layout_marginRight="@dimen/dp10"
+        android:layout_width="0dp"
+        android:layout_weight="2"
+        android:layout_height="match_parent">
+
+        <TextView
+            android:id="@+id/tv_content"
+            android:ellipsize="end"
+            android:textSize="@dimen/sp15"
+            android:textColor="@color/color_0A0A0A"
+            android:maxLines="3"
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            />
+
+        <TextView
+            android:id="@+id/tv_resName"
+            android:textColor="@color/color_97979F"
+            android:layout_alignParentBottom="true"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            />
+
+        <TextView
+            android:layout_marginLeft="@dimen/dp10"
+            android:id="@+id/tv_liulan"
+            android:layout_toRightOf="@+id/tv_resName"
+            android:textColor="@color/color_97979F"
+            android:layout_alignParentBottom="true"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            />
+
+
+        <TextView
+            android:layout_marginLeft="@dimen/dp10"
+            android:id="@+id/tv_time"
+            android:text="時間"
+            android:layout_toRightOf="@+id/tv_liulan"
+            android:textColor="@color/color_97979F"
+            android:layout_alignParentBottom="true"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            />
+
+    </RelativeLayout>
+
+
+
+
+    <com.blockadm.common.comstomview.RoundImageView
+        app:radius="@dimen/dp5"
+        app:type="round"
+        android:id="@+id/iv"
+        android:background="@color/color_ffffff"
+        android:layout_width="0dp"
+        android:layout_weight="1"
+        android:layout_alignParentRight="true"
+        android:layout_height="90dp"
+        android:scaleType="fitXY"
+        android:src="@mipmap/default_app"
+        />
+</LinearLayout>
+
+    <View
+        android:layout_marginTop="@dimen/dp5"
+        android:background="@color/color_fff2f3f4"
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/dp1"/>
+</LinearLayout>

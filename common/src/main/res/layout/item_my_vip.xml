@@ -1,0 +1,35 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical"
+    android:gravity="center_vertical"
+    android:layout_width="match_parent"
+    android:padding="@dimen/dp10"
+    android:layout_height="wrap_content">
+
+
+    <com.blockadm.common.comstomview.CircleImageView
+        android:id="@+id/civ_headimage"
+        android:layout_width="@dimen/dp56"
+        android:layout_height="@dimen/dp56"
+        android:src="@mipmap/picture_default" />
+
+    <TextView
+        android:textSize="@dimen/sp16"
+        android:id="@+id/tv_item_title"
+        android:layout_marginLeft="@dimen/dp10"
+        android:layout_toRightOf="@+id/civ_headimage"
+        android:textColor="@color/color_0A0A0A"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content" />
+
+    <TextView
+        android:textSize="@dimen/sp14"
+        android:id="@+id/tv_item_dec"
+        android:layout_marginLeft="@dimen/dp10"
+        android:layout_toRightOf="@+id/civ_headimage"
+        android:layout_below="@+id/tv_item_title"
+        android:textColor="@color/color_FFB6B6BA"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content" />
+
+</RelativeLayout>

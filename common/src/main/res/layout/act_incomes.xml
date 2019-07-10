@@ -1,0 +1,230 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:orientation="vertical"
+    android:background="@android:color/background_light"
+    android:fitsSystemWindows="true"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <com.blockadm.common.comstomview.BaseTitleBar
+        android:id="@+id/tilte"
+        app:lefttext_is_show="true"
+        app:righttext_is_show="true"
+        app:lefttext_color="@color/color_0A0A0A"
+        app:centertext = "我的收入"
+        app:lefticon_src="@mipmap/ic_back"
+        app:lefttext=""
+        app:lefticon_is_show="true"
+        app:righticon_is_show="true"
+        app:righttext=""
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/dp45" />
+<View
+    android:background="@color/cl_DDDDDD"
+    android:layout_width="match_parent"
+    android:layout_height="@dimen/dp_0.5"/>
+
+    <LinearLayout
+        android:orientation="vertical"
+        android:background="@drawable/shouru"
+        android:layout_margin="@dimen/dp10"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+        <LinearLayout
+            android:padding="@dimen/dp10"
+            android:gravity="center_vertical"
+            android:layout_width="match_parent"
+            android:layout_height="@dimen/dp48">
+
+            <TextView
+                android:text="总收益"
+                android:textSize="@dimen/sp18"
+                android:textStyle="bold"
+                android:textColor="@color/color_ffffff"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content" />
+
+            <TextView
+                android:text="总"
+                android:textSize="@dimen/sp18"
+                android:textStyle="bold"
+                android:visibility="invisible"
+                android:textColor="@color/color_ffffff"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content" />
+
+
+            <TextView
+                android:id="@+id/tv_total_point"
+                android:layout_marginLeft="80dp"
+
+                android:text="10000A点"
+                android:textSize="@dimen/sp18"
+                android:textStyle="bold"
+                android:textColor="@color/color_ffffff"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content" />
+
+
+            <TextView
+                android:id="@+id/tv_total_price"
+                android:layout_marginLeft="40dp"
+                android:text="1000000"
+                android:textSize="@dimen/sp18"
+                android:textStyle="bold"
+                android:textColor="@color/color_ffffff"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content" />
+        </LinearLayout>
+        <View
+            android:layout_marginLeft="@dimen/dp15"
+            android:layout_marginRight="@dimen/dp15"
+            android:background="@color/color_fff2f3f4"
+            android:layout_width="match_parent"
+            android:layout_height="@dimen/dp1"/>
+
+        <LinearLayout
+            android:padding="@dimen/dp10"
+            android:gravity="center_vertical"
+            android:layout_width="match_parent"
+            android:layout_height="@dimen/dp48">
+
+            <TextView
+                android:text="学习收益"
+                android:textSize="@dimen/sp18"
+                android:textStyle="bold"
+                android:textColor="@color/color_ffffff"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content" />
+
+
+            <TextView
+                android:id="@+id/tv_yes_point"
+                android:layout_marginLeft="80dp"
+                android:text="10000A点"
+                android:textSize="@dimen/sp18"
+                android:textStyle="bold"
+                android:textColor="@color/color_ffffff"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content" />
+
+
+            <TextView
+                android:id="@+id/tv_yes_price"
+                android:layout_marginLeft="40dp"
+                android:text="100"
+                android:textSize="@dimen/sp18"
+                android:textStyle="bold"
+                android:textColor="@color/color_ffffff"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content" />
+        </LinearLayout>
+
+        <View
+            android:layout_marginLeft="@dimen/dp15"
+            android:layout_marginRight="@dimen/dp15"
+            android:background="@color/color_fff2f3f4"
+            android:layout_width="match_parent"
+            android:layout_height="@dimen/dp1"/>
+
+        <LinearLayout
+            android:padding="@dimen/dp10"
+            android:gravity="center_vertical"
+            android:layout_width="match_parent"
+            android:layout_height="@dimen/dp48">
+
+            <TextView
+                android:text="社群收益"
+                android:textSize="@dimen/sp18"
+                android:textStyle="bold"
+                android:textColor="@color/color_ffffff"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content" />
+
+
+            <TextView
+                android:id="@+id/tv_today_point"
+                android:layout_marginLeft="80dp"
+                android:text="10000A点"
+                android:textSize="@dimen/sp18"
+                android:textStyle="bold"
+                android:textColor="@color/color_ffffff"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content" />
+
+
+            <TextView
+                android:id="@+id/tv_today_price"
+                android:layout_marginLeft="40dp"
+                android:text="100"
+                android:textSize="@dimen/sp18"
+                android:textStyle="bold"
+                android:textColor="@color/color_ffffff"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content" />
+        </LinearLayout>
+
+
+
+
+    </LinearLayout>
+
+    <RelativeLayout
+        android:paddingRight="@dimen/dp23"
+        android:paddingLeft="@dimen/dp23"
+        android:layout_marginTop="@dimen/dp35"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+        <TextView
+            android:layout_alignParentLeft="true"
+            android:id="@+id/tv"
+            android:textSize="@dimen/sp18"
+            android:textColor="@color/color_FF3164FE"
+            android:text="总订单量"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content" />
+
+        <TextView
+            android:layout_alignParentRight="true"
+            android:id="@+id/tv_num"
+            android:textSize="@dimen/sp18"
+            android:textColor="@color/color_0A0A0A"
+            android:text="200"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content" />
+
+
+        <TextView
+            android:layout_marginTop="@dimen/dp10"
+            android:layout_below="@+id/tv"
+            android:layout_alignParentRight="true"
+            android:textSize="@dimen/sp14"
+            android:textColor="#FF2EA245"
+            android:text="当日订单总数"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content" />
+
+        <TextView
+            android:layout_marginTop="@dimen/dp10"
+            android:layout_below="@+id/tv"
+            android:layout_alignParentLeft="true"
+            android:textSize="@dimen/sp14"
+            android:textColor="@color/color_ff97979f"
+            android:text="近7天数据"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content" />
+
+    </RelativeLayout>
+
+    <com.github.mikephil.charting.charts.LineChart
+        android:layout_marginTop="@dimen/dp15"
+        android:id="@+id/lineChart"
+        android:layout_marginLeft="@dimen/dp5"
+        android:layout_marginRight="@dimen/dp5"
+        android:layout_width="match_parent"
+        android:layout_height="230dp" />
+
+
+</LinearLayout>

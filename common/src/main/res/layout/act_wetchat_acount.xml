@@ -1,0 +1,73 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@android:color/background_light"
+    android:fitsSystemWindows="true"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:android="http://schemas.android.com/apk/res/android">
+
+    <com.blockadm.common.comstomview.BaseTitleBar
+        android:id="@+id/tilte"
+        app:lefttext_is_show="true"
+        app:righttext_is_show="true"
+        android:layout_alignParentTop="true"
+        app:lefttext_color="@color/color_0A0A0A"
+        app:centertext = "上传微信收款码"
+        app:lefttext=""
+        app:lefticon_is_show="true"
+        app:lefticon_src="@mipmap/ic_back"
+        app:righticon_is_show="true"
+        app:righttext=""
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/dp45" />
+    <View
+        android:layout_below="@+id/tilte"
+        android:id="@+id/v_line"
+        android:background="@color/color_fff2f3f4"
+        android:layout_width="match_parent"
+        android:layout_height="5dp"/>
+
+  <RelativeLayout
+      android:id="@+id/rl"
+      android:gravity="center_horizontal"
+      android:layout_marginTop="@dimen/dp80"
+      android:layout_width="match_parent"
+      android:layout_height="match_parent">
+
+
+      <ImageView
+          android:scaleType="fitXY"
+          android:src="@mipmap/wechat_account"
+          android:layout_width="wrap_content"
+          android:layout_height="wrap_content" />
+
+  </RelativeLayout>
+
+    <ImageView
+        android:layout_below="@+id/v_line"
+        android:visibility="invisible"
+        android:id="@+id/iv_code"
+        android:scaleType="fitXY"
+        android:src="@mipmap/wechat_account"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent" />
+
+
+
+
+    <TextView
+        android:id="@+id/tv_upload"
+        android:layout_alignParentBottom="true"
+        android:gravity="center"
+        android:textSize="@dimen/sp16"
+        android:textColor="@color/color_ffffff"
+        android:background="@color/color_FF3164FE"
+        android:text="立即上传"
+        android:layout_width="match_parent"
+        android:layout_height="48dp" />
+
+
+
+
+</RelativeLayout>

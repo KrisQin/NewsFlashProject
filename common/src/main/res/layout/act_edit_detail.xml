@@ -1,0 +1,216 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:fitsSystemWindows="true"
+    android:background="@color/color_ffffff"
+    android:id="@+id/rl_root"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content">
+
+    <com.blockadm.common.comstomview.BaseTitleBar
+        android:id="@+id/tilte"
+        app:lefttext_is_show="true"
+        app:righttext_is_show="true"
+        android:layout_alignParentTop="true"
+        app:lefttext_color="@color/color_0A0A0A"
+        app:centertext = "编辑详情"
+        app:lefticon_src="@mipmap/ic_back"
+        app:lefttext=""
+        app:righttext_color="@color/color_0A0A0A"
+        app:lefticon_is_show="true"
+        app:righttext="保存"
+        app:righticon_is_show="true"
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/dp50"/>
+
+    <ScrollView
+        android:layout_above="@+id/iv_addpic"
+        android:layout_below="@+id/tilte"
+        android:id="@+id/sv"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+    <LinearLayout
+        android:padding="@dimen/dp10"
+        android:id="@+id/ll_group"
+        android:orientation="vertical"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+        <EditText
+            android:background="@null"
+            android:id="@+id/et_title1"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content" />
+
+        <RelativeLayout
+            android:visibility="visible"
+            android:id="@+id/rl_1"
+            android:layout_marginTop="@dimen/dp10"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+
+            <ImageView
+                android:id="@+id/iv_pictrue1"
+                android:src="@mipmap/picture_default"
+                android:scaleType="fitXY"
+                android:layout_width="match_parent"
+                android:layout_height="220dp" />
+
+            <ImageView
+                android:id="@+id/iv_delete1"
+                android:paddingTop="@dimen/dp5"
+                android:paddingRight="@dimen/dp5"
+                android:layout_alignParentTop="true"
+                android:layout_alignParentRight="true"
+                android:src="@mipmap/deletepicture"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content" />
+
+
+        </RelativeLayout>
+
+
+        <EditText
+            android:visibility="visible"
+            android:layout_marginTop="@dimen/dp10"
+            android:background="@null"
+            android:id="@+id/et_title2"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content" />
+
+        <RelativeLayout
+            android:visibility="visible"
+            android:id="@+id/rl_2"
+            android:layout_marginTop="@dimen/dp10"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+
+            <ImageView
+                android:id="@+id/iv_pictrue2"
+                android:src="@mipmap/picture_default"
+                android:scaleType="fitXY"
+                android:layout_width="match_parent"
+                android:layout_height="220dp"  />
+
+            <ImageView
+                android:id="@+id/iv_delete2"
+                android:paddingTop="@dimen/dp5"
+                android:paddingRight="@dimen/dp5"
+                android:layout_alignParentTop="true"
+                android:layout_alignParentRight="true"
+                android:src="@mipmap/deletepicture"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content" />
+
+
+        </RelativeLayout>
+
+
+        <EditText
+            android:visibility="visible"
+            android:layout_marginTop="@dimen/dp10"
+            android:background="@null"
+            android:id="@+id/et_title3"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content" />
+        <RelativeLayout
+            android:visibility="visible"
+            android:id="@+id/rl_3"
+            android:layout_marginTop="@dimen/dp10"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+
+            <ImageView
+                android:id="@+id/iv_pictrue3"
+                android:src="@mipmap/picture_default"
+                android:scaleType="fitXY"
+                android:layout_width="match_parent"
+                android:layout_height="220dp" />
+
+            <ImageView
+                android:id="@+id/iv_delete3"
+                android:paddingTop="@dimen/dp5"
+                android:paddingRight="@dimen/dp5"
+                android:layout_alignParentTop="true"
+                android:layout_alignParentRight="true"
+                android:src="@mipmap/deletepicture"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content" />
+        </RelativeLayout>
+
+
+        <EditText
+            android:visibility="visible"
+            android:layout_marginTop="@dimen/dp10"
+            android:background="@null"
+            android:id="@+id/et_title4"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content" />
+        <RelativeLayout
+            android:visibility="visible"
+            android:id="@+id/rl_4"
+            android:layout_marginTop="@dimen/dp10"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+
+            <ImageView
+                android:id="@+id/iv_pictrue4"
+                android:src="@mipmap/picture_default"
+                android:scaleType="fitXY"
+                android:layout_width="match_parent"
+                android:layout_height="220dp"  />
+
+            <ImageView
+                android:id="@+id/iv_delete4"
+                android:paddingTop="@dimen/dp5"
+                android:paddingRight="@dimen/dp5"
+                android:layout_alignParentTop="true"
+                android:layout_alignParentRight="true"
+                android:src="@mipmap/deletepicture"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content" />
+        </RelativeLayout>
+
+        <EditText
+            android:visibility="visible"
+            android:layout_marginTop="@dimen/dp10"
+            android:background="@null"
+            android:id="@+id/et_title5"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content" />
+        <RelativeLayout
+            android:visibility="visible"
+            android:id="@+id/rl_5"
+            android:layout_marginTop="@dimen/dp10"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+
+            <ImageView
+                android:id="@+id/iv_pictrue5"
+                android:src="@mipmap/picture_default"
+                android:scaleType="fitXY"
+                android:layout_width="match_parent"
+                android:layout_height="220dp" />
+
+            <ImageView
+                android:id="@+id/iv_delete5"
+                android:paddingTop="@dimen/dp5"
+                android:paddingRight="@dimen/dp5"
+                android:layout_alignParentTop="true"
+                android:layout_alignParentRight="true"
+                android:src="@mipmap/deletepicture"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content" />
+        </RelativeLayout>
+        </LinearLayout>
+    </ScrollView>
+
+    <ImageView
+        android:src="@mipmap/addpic"
+        android:layout_marginLeft="@dimen/dp30"
+        android:id="@+id/iv_addpic"
+        android:layout_alignParentBottom="true"
+        android:layout_width="60dp"
+        android:layout_height="wrap_content" />
+
+</RelativeLayout>

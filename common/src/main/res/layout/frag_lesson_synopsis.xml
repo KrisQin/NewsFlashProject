@@ -1,0 +1,113 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:orientation="vertical"
+    android:background="@color/color_ffffff"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    tools:ignore="WebViewLayout">
+
+
+       <include
+        layout="@layout/layout_author_information"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content" />
+
+       <View
+           android:background="@color/color_fff2f3f4"
+           android:layout_width="match_parent"
+           android:layout_height="@dimen/dp3"/>
+
+       <RelativeLayout
+           android:layout_width="match_parent"
+           android:layout_height="wrap_content">
+              <LinearLayout
+                  android:id="@+id/ll"
+                  android:padding="@dimen/dp10"
+                  android:orientation="horizontal"
+                  android:layout_width="wrap_content"
+                  android:layout_height="wrap_content">
+
+                     <View
+                         android:background="@color/color_FF3164FE"
+                         android:layout_width="@dimen/dp4"
+                         android:layout_height="@dimen/dp18"/>
+
+                     <TextView
+                         android:layout_marginLeft="8dp"
+                         android:textSize="@dimen/sp14"
+                         android:text="专栏简介"
+                         android:textColor="@color/color_0A0A0A"
+                         android:layout_width="wrap_content"
+                         android:layout_height="wrap_content" />
+
+              </LinearLayout>
+
+              <TextView
+                  android:paddingLeft="@dimen/dp10"
+                  android:layout_below="@+id/ll"
+                  android:textStyle="bold"
+                  android:id="@+id/tv_title"
+                  android:maxLines="1"
+                  android:gravity="center_vertical"
+                  android:ellipsize="end"
+                  android:textSize="@dimen/sp14"
+                  android:textColor="@color/color_0A0A0A"
+                  android:layout_width="match_parent"
+                  android:layout_height="wrap_content" />
+
+              <TextView
+                  android:id="@+id/tv_lessond_count"
+                  android:paddingLeft="@dimen/dp10"
+                  android:layout_below="@+id/tv_title"
+                  android:layout_marginTop="@dimen/dp5"
+                  android:textSize="@dimen/sp14"
+                  android:text="课程数"
+                  android:textColor="@color/color_ff97979f"
+                  android:layout_width="wrap_content"
+                  android:layout_height="wrap_content" />
+
+              <TextView
+                  android:layout_toRightOf="@+id/tv_lessond_count"
+                  android:id="@+id/tv_read_count"
+                  android:paddingLeft="@dimen/dp10"
+                  android:layout_below="@+id/tv_title"
+                  android:layout_marginTop="@dimen/dp5"
+                  android:textSize="@dimen/sp14"
+                  android:text="浏览数"
+                  android:textColor="@color/color_ff97979f"
+                  android:layout_width="wrap_content"
+                  android:layout_height="wrap_content" />
+
+
+              <ImageView
+                  android:id="@+id/iv_collect"
+                  android:layout_marginRight="@dimen/dp20"
+                  android:layout_centerVertical="true"
+                  android:layout_alignParentRight="true"
+                  android:layout_width="@dimen/dp36"
+                  android:layout_height="@dimen/dp36" />
+
+
+
+       </RelativeLayout>
+
+       <LinearLayout
+           android:id="@+id/ll_web"
+           android:orientation="vertical"
+           android:layout_width="match_parent"
+           android:layout_height="wrap_content">
+
+       </LinearLayout>
+
+       <WebView
+           android:visibility="gone"
+           android:layout_marginTop="@dimen/dp10"
+           android:id="@+id/wv_content"
+           android:layout_width="match_parent"
+           android:layout_height="wrap_content" />
+
+
+
+
+</LinearLayout>

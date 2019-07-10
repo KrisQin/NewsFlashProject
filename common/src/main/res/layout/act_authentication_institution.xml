@@ -1,0 +1,141 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:orientation="vertical"
+    android:background="@android:color/background_light"
+    android:fitsSystemWindows="true"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <com.blockadm.common.comstomview.BaseTitleBar
+        android:id="@+id/tilte"
+        app:lefttext_is_show="true"
+        app:righttext_is_show="true"
+        android:layout_alignParentTop="true"
+        app:lefttext_color="@color/color_0A0A0A"
+        app:centertext = "机构认证"
+        app:lefttext=""
+        app:lefticon_is_show="true"
+        app:lefticon_src="@mipmap/ic_back"
+        app:righticon_is_show="true"
+        app:righttext="下一步"
+        app:righttext_color="@color/color_0A0A0A"
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/dp45" />
+
+    <View
+        android:background="@color/color_fff2f3f4"
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/dp5"/>
+
+
+
+        <ImageView
+            android:paddingBottom="@dimen/dp15"
+            android:layout_marginTop="@dimen/dp15"
+            android:layout_gravity="center_horizontal"
+            android:src="@mipmap/renzhenbg"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content" />
+
+    <View
+        android:background="@color/color_fff2f3f4"
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/dp10"/>
+
+  <LinearLayout
+      android:padding="@dimen/dp15"
+      android:orientation="vertical"
+      android:layout_width="match_parent"
+      android:layout_height="wrap_content">
+
+
+      <TextView
+          android:text="组织名称"
+          android:textSize="@dimen/sp18"
+          android:textColor="@color/color_0A0A0A"
+          android:layout_width="wrap_content"
+          android:layout_height="wrap_content" />
+
+      <TextView
+          android:layout_marginBottom="@dimen/dp10"
+          android:text="填写正确的组织名称，认证成功后名称不可改"
+          android:textSize="@dimen/sp14"
+          android:textColor="@color/color_FFB6B6BA"
+          android:layout_width="wrap_content"
+          android:layout_height="wrap_content" />
+
+
+      <android.support.v7.widget.AppCompatEditText
+          android:theme="@style/MyEditText"
+          android:singleLine="true"
+          android:hint="例：深圳市爱德媒信息技术有限公司"
+          android:layout_width="match_parent"
+          android:textCursorDrawable="@drawable/my_cursor"
+          android:layout_centerInParent="true"
+          android:id="@+id/et_company"
+          android:layout_height="@dimen/dp50" />
+
+
+
+  </LinearLayout>
+
+
+    <LinearLayout
+        android:padding="@dimen/dp15"
+        android:orientation="vertical"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+
+        <TextView
+            android:text="组织机构代码"
+            android:textSize="@dimen/sp18"
+            android:textColor="@color/color_0A0A0A"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content" />
+
+        <TextView
+            android:layout_marginBottom="@dimen/dp10"
+            android:text="请填写正确的9位组织机构/18位统一社会信用代码"
+            android:textSize="@dimen/sp14"
+            android:textColor="@color/color_FFB6B6BA"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content" />
+
+
+        <android.support.v7.widget.AppCompatEditText
+            android:theme="@style/MyEditText"
+            android:singleLine="true"
+            android:hint="请填写组织机构代码"
+            android:layout_width="match_parent"
+            android:textCursorDrawable="@drawable/my_cursor"
+            android:layout_centerInParent="true"
+            android:id="@+id/et_company_code"
+            android:layout_height="@dimen/dp50" />
+
+
+
+    </LinearLayout>
+
+    <ImageView
+        android:scaleType="fitXY"
+        android:id="@+id/iv_pictrue"
+        android:layout_gravity="center_horizontal"
+        android:layout_margin="@dimen/dp10"
+        android:src="@mipmap/idphoto04"
+        android:layout_width="300dp"
+        android:layout_height="170dp" />
+
+
+
+    <TextView
+        android:layout_gravity="center_horizontal"
+        android:textColor="@color/color_FFF85959"
+        android:textSize="@dimen/sp16"
+        android:text="支持jpeg/png格式，照片大小不超过5M"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content" />
+
+
+</LinearLayout>

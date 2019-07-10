@@ -1,0 +1,177 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/ic_live_lessons_bg">
+
+    <ScrollView
+        android:id="@+id/sl"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:fillViewport="true">
+
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:gravity="center_horizontal"
+            android:orientation="vertical">
+
+            <ImageView
+                android:background="@drawable/ic_live_lessons_dialog_title"
+                android:layout_marginTop="@dimen/dp48"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content" />
+
+            <LinearLayout
+                android:background="@drawable/bg_r4_white"
+                android:layout_marginLeft="@dimen/dp13"
+                android:layout_marginRight="@dimen/dp13"
+                android:layout_marginTop="28dp"
+                android:orientation="vertical"
+                android:layout_marginBottom="@dimen/dp34"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content">
+
+                <LinearLayout
+                    android:orientation="horizontal"
+                    android:gravity="center_vertical"
+                    android:layout_marginTop="@dimen/dp19"
+                    android:layout_marginLeft="@dimen/dp24"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content">
+
+
+                    <com.blockadm.common.comstomview.CircleImageView
+                        android:id="@+id/iv_head_image"
+                        android:layout_width="@dimen/dp45"
+                        android:layout_height="@dimen/dp45"
+                        android:src="@mipmap/picture_default" />
+
+
+                    <TextView
+                        android:id="@+id/tv_name"
+                        android:layout_marginLeft="5dp"
+                        android:textColor="@color/color_97979F"
+                        android:textSize="@dimen/sp13"
+                        android:text="邀请人昵称"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content" />
+
+
+
+                </LinearLayout>
+
+                <ImageView
+                    android:id="@+id/iv_pic"
+                    android:layout_marginTop="@dimen/dp11"
+                    android:layout_marginRight="@dimen/dp24"
+                    android:layout_marginLeft="@dimen/dp24"
+                    android:scaleType="fitXY"
+                    android:layout_width="match_parent"
+                    android:layout_height="174dp" />
+
+
+                <TextView
+                    android:id="@+id/tv_title"
+                    android:layout_marginTop="16dp"
+                    android:textSize="@dimen/sp18"
+                    android:textColor="@color/color_0A0A0A"
+                    android:gravity="center_horizontal"
+                    android:maxLines="2"
+                    android:ellipsize="end"
+                    android:text="直播直播的标题在这里直播直播的标题在这里在这里"
+                    android:layout_marginRight="@dimen/dp37"
+                    android:layout_marginLeft="@dimen/dp37"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content" />
+
+                <TextView
+                    android:id="@+id/tv_time"
+                    android:layout_marginTop="9dp"
+                    android:textSize="@dimen/sp12"
+                    android:textColor="@color/color_97979F"
+                    android:layout_gravity="center_horizontal"
+                    android:maxLines="2"
+                    android:ellipsize="end"
+                    android:text="2019-4-20 星期五 18:20"
+                    android:layout_marginRight="@dimen/dp37"
+                    android:layout_marginLeft="@dimen/dp37"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content" />
+
+                <ImageView
+                    android:id="@+id/iv_scan"
+                    android:layout_marginTop="@dimen/dp15"
+                    android:layout_gravity="center_horizontal"
+                    android:layout_width="120dp"
+                    android:layout_height="120dp" />
+
+                <TextView
+                    android:textSize="@dimen/sp12"
+                    android:textColor="@color/color_97979F"
+                    android:layout_gravity="center_horizontal"
+                    android:maxLines="2"
+                    android:ellipsize="end"
+                    android:text="长按识别二维码进入直播"
+                    android:layout_marginRight="@dimen/dp37"
+                    android:layout_marginLeft="@dimen/dp37"
+                    android:layout_marginBottom="@dimen/dp22"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content" />
+
+            </LinearLayout>
+
+
+        </LinearLayout>
+
+    </ScrollView>
+
+
+    <LinearLayout
+        android:layout_alignParentBottom="true"
+        android:background="@color/white"
+        android:orientation="horizontal"
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/dp53">
+
+        <RelativeLayout
+            android:id="@+id/layout_save"
+            android:layout_weight="1"
+            android:layout_width="0dp"
+            android:layout_height="match_parent">
+
+            <TextView
+                android:drawablePadding="@dimen/dp5"
+                android:drawableLeft="@mipmap/ic_pic_save"
+                android:layout_centerInParent="true"
+                android:textSize="@dimen/sp13"
+                android:textColor="@color/color_0A0A0A"
+                android:text="保存海报"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content" />
+
+        </RelativeLayout>
+
+        <RelativeLayout
+            android:id="@+id/layout_share"
+            android:layout_weight="1"
+            android:layout_width="0dp"
+            android:layout_height="match_parent">
+            <TextView
+                android:drawablePadding="@dimen/dp5"
+                android:gravity="center"
+                android:drawableLeft="@mipmap/news_reply_share"
+                android:layout_centerInParent="true"
+                android:textSize="@dimen/sp13"
+                android:textColor="@color/color_0A0A0A"
+                android:text="分享海报"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content" />
+
+        </RelativeLayout>
+
+
+
+    </LinearLayout>
+</RelativeLayout>

@@ -1,0 +1,185 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:orientation="vertical"
+    android:background="@android:color/background_light"
+    android:fitsSystemWindows="true"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <com.blockadm.common.comstomview.BaseTitleBar
+        android:id="@+id/tilte"
+        app:lefttext_is_show="true"
+        app:righttext_is_show="true"
+        app:lefttext_color="@color/color_0A0A0A"
+        app:centertext = "常见问题"
+        app:lefticon_src="@mipmap/ic_back"
+        app:lefttext=""
+        app:lefticon_is_show="true"
+        app:righticon_is_show="false"
+        app:righticon_src="@mipmap/quicknews_share"
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/dp45" />
+
+
+    <LinearLayout
+        android:padding="@dimen/dp15"
+        android:orientation="horizontal"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+        <View
+            android:background="@color/color_FF3164FE"
+            android:layout_width="@dimen/dp4"
+            android:layout_height="20dp"/>
+    <TextView
+        android:layout_marginLeft="@dimen/dp10"
+        android:layout_width="match_parent"
+        android:layout_height="25dp"
+        android:text="什么是A点/A钻？"
+        android:textColor="#ff0a0a0a"
+        android:textSize="18sp"
+        />
+    </LinearLayout>
+
+
+    <View
+        android:paddingLeft="@dimen/dp15"
+        android:paddingRight="@dimen/dp15"
+        android:background="@color/color_fff2f3f4"
+        android:layout_width="match_parent"
+        android:layout_height="1dp"/>
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:paddingLeft="@dimen/dp15"
+        android:paddingRight="@dimen/dp15"
+        android:paddingTop="@dimen/dp5"
+        android:text="A点 和 A钻 都是爱德媒平台的虚拟货币。"
+        android:textColor="#ff0a0a0a"
+        android:textSize="16sp" />
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:paddingLeft="@dimen/dp15"
+        android:paddingRight="@dimen/dp15"
+        android:paddingTop="@dimen/dp5"
+        android:text="A点 用于购买平台内的付费内容，支持随时充值和提现。"
+        android:textColor="#ff0a0a0a"
+        android:textSize="16sp" />
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="@dimen/dp15"
+        android:paddingLeft="@dimen/dp15"
+        android:paddingRight="@dimen/dp15"
+        android:paddingTop="@dimen/dp5"
+        android:text="A钻 平台发行用于等价交换的货币，目前不支持提现。"
+        android:textColor="#ff0a0a0a"
+        android:textSize="16sp" />
+
+    <View
+        android:background="@color/color_fff2f3f4"
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/dp10"/>
+
+
+    <LinearLayout
+        android:padding="@dimen/dp15"
+        android:orientation="horizontal"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+        <View
+            android:background="@color/color_FF3164FE"
+            android:layout_width="@dimen/dp4"
+            android:layout_height="20dp"/>
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="@dimen/dp10"
+            android:paddingRight="@dimen/dp10"
+            android:text="充值的A点/A钻会不会过期？"
+            android:textColor="#ff0a0a0a"
+            android:textSize="18sp" />
+    </LinearLayout>
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="@dimen/dp20"
+        android:paddingLeft="@dimen/dp15"
+        android:paddingRight="@dimen/dp10"
+        android:text="在爱德媒平台的 A点 / A钻 不会过期，会一直存在账户中，您可以随时使用。"
+        android:textColor="#ff0a0a0a"
+        android:textSize="16sp" />
+
+    <View
+        android:background="@color/color_fff2f3f4"
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/dp10"/>
+
+    <LinearLayout
+        android:padding="@dimen/dp15"
+        android:orientation="horizontal"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+        <View
+            android:background="@color/color_FF3164FE"
+            android:layout_width="@dimen/dp4"
+            android:layout_height="20dp"/>
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="@dimen/dp10"
+            android:paddingRight="@dimen/dp10"
+            android:text="为什么提示扣款成功，A点却没有到账"
+            android:textColor="#ff0a0a0a"
+            android:textSize="18sp" />
+
+
+    </LinearLayout>
+
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:paddingLeft="@dimen/dp15"
+        android:paddingRight="@dimen/dp10"
+        android:text="1.请检查您当前账户和充值的账户是否一致，您可对照查看用户名或账单；"
+        android:textColor="#ff0a0a0a"
+        android:textSize="16sp" />
+    
+    
+    <LinearLayout
+        android:paddingLeft="@dimen/dp15"
+        android:paddingRight="@dimen/dp10"
+        android:orientation="horizontal"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="2.如果一个小时后仍没有到账，请添加我们客服微信，联系我们：xxxxxx"
+            android:textColor="#ff0a0a0a"
+            android:textSize="16sp" />
+
+        <TextView
+            android:visibility="gone"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="xxxxxx"
+            android:textColor="#ff0a0a0a"
+            android:textSize="16sp" />
+    </LinearLayout>
+
+
+
+</LinearLayout>

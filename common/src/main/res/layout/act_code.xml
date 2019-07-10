@@ -1,0 +1,86 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:orientation="vertical"
+    android:fitsSystemWindows="true"
+    android:background="@color/color_ffffff"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+
+    <com.blockadm.common.comstomview.BaseTitleBar
+        android:id="@+id/tilte"
+        app:lefttext_is_show="true"
+        app:righttext_is_show="true"
+        app:lefttext_color="@color/color_0A0A0A"
+        app:centertext = "设置"
+        app:lefticon_src="@mipmap/ic_back"
+        app:lefttext=""
+        app:righttext_color="@color/color_0A0A0A"
+        app:lefticon_is_show="true"
+        app:righticon_is_show="true"
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/dp50"/>
+
+    <TextView
+        android:textSize="@dimen/sp16"
+        android:textStyle="bold"
+        android:textColor="@color/color_0A0A0A"
+        android:layout_marginTop="@dimen/dp80"
+        android:gravity="center"
+        android:id="@+id/tv_telnum"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content" />
+
+
+    <android.support.v7.widget.AppCompatEditText
+        android:theme="@style/MyEditText"
+        android:singleLine="true"
+        android:layout_below="@+id/tv_telnum"
+        android:textCursorDrawable="@drawable/my_cursor"
+        android:layout_marginTop="60dp"
+        android:id="@+id/et"
+        android:layout_marginLeft="@dimen/dp40"
+        android:layout_marginRight="@dimen/dp40"
+        android:hint="请输入短信验证码"
+        android:gravity="center"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content" />
+
+
+
+    <TextView
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="70dp"
+        android:layout_below="@+id/et"
+        android:text="60s后重新发送验证码"
+        android:gravity="center"
+        android:id="@+id/tv_send"
+        android:textColor="@color/color_FF507DAF"
+        android:layout_width="176dp"
+        android:layout_height="wrap_content" />
+
+
+    <TextView
+        android:id="@+id/tv_next"
+        android:layout_marginTop="@dimen/dp30"
+        android:layout_below="@+id/tv_send"
+        android:background="@color/color_FF3164FE"
+        android:drawablePadding="@dimen/dp10"
+        android:paddingRight="@dimen/dp15"
+        android:layout_alignParentRight="true"
+        android:paddingTop="@dimen/dp10"
+        android:textColor="@color/color_ffffff"
+        android:textSize="@dimen/sp18"
+        android:gravity="center"
+        android:text="下一步"
+        android:paddingBottom="@dimen/dp10"
+        android:layout_width="match_parent"
+        android:layout_height="50dp" />
+
+
+
+
+
+
+</RelativeLayout>

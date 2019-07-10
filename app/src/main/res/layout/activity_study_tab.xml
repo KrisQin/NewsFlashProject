@@ -1,0 +1,133 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/fl_activity"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context="com.blockadm.adm.activity.StudyTabActivity">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_marginTop="@dimen/dp30"
+        android:background="@color/white"
+        android:orientation="vertical">
+
+        <LinearLayout
+            android:id="@+id/layout_title"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:gravity="center_vertical"
+            android:orientation="horizontal">
+
+            <android.support.constraint.ConstraintLayout
+                android:id="@+id/main_title"
+                android:layout_width="0dp"
+                android:layout_weight="1"
+                android:layout_height="36dp"
+                android:layout_margin="@dimen/dp10"
+                android:background="@drawable/shape_et_bg">
+
+                <ImageView
+                    android:id="@+id/iv"
+                    android:layout_width="@dimen/dp14"
+                    android:layout_height="@dimen/dp14"
+                    android:layout_marginLeft="@dimen/dp93"
+                    android:background="@drawable/im_search_img"
+                    app:layout_constraintBottom_toBottomOf="parent"
+                    app:layout_constraintLeft_toLeftOf="parent"
+                    app:layout_constraintTop_toTopOf="parent" />
+
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="@dimen/dp4"
+                    android:text="试一试搜索“区块链”"
+                    android:textColor="@color/cl_B6B6BA"
+                    app:layout_constraintBottom_toBottomOf="parent"
+                    app:layout_constraintLeft_toRightOf="@+id/iv"
+                    app:layout_constraintTop_toTopOf="parent" />
+
+            </android.support.constraint.ConstraintLayout>
+
+            <ImageView
+                android:id="@+id/iv_sound_status"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_toRightOf="@+id/main_title"
+                android:paddingRight="@dimen/dp10"
+                android:src="@mipmap/audio" />
+        </LinearLayout>
+
+        <View
+            android:id="@+id/view_line"
+            android:background="@color/white"
+            android:layout_width="match_parent"
+            android:layout_height="@dimen/dp1"/>
+
+        <com.scwang.smartrefresh.layout.SmartRefreshLayout
+            android:id="@+id/refreshLayout"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            app:srlEnablePreviewInEditMode="false">
+
+        <!--<com.scwang.smartrefresh.layout.header.ClassicsHeader-->
+            <!--android:layout_width="match_parent"-->
+            <!--android:layout_height="wrap_content"-->
+            <!--app:srlAccentColor="@android:color/darker_gray" />-->
+        <!--<android.support.v4.widget.NestedScrollView-->
+        <com.blockadm.adm.study_module.widget.JudgeNestedScrollView
+            android:id="@+id/scrollView"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:fillViewport="true"
+            app:layout_behavior="@string/appbar_scrolling_view_behavior">
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="vertical">
+
+
+                <com.blockadm.common.comstomview.banner.BannerView
+                    android:id="@+id/bannerView"
+                    android:layout_width="match_parent"
+                    android:layout_height="176dp"
+                    android:background="@color/color_ffffff"
+                    android:padding="@dimen/dp10"
+                    app:bottomColor="#453e3e3e"
+                    app:dotDistance="2dp"
+                    app:dotIndicatorFocus="#FF3164FE"
+                    app:dotIndicatorNormal="#ffffff"
+                    app:dotSize="6dp" />
+
+                <!-- 添加的部分 -->
+                <android.support.v7.widget.RecyclerView
+                    android:id="@+id/recycler_view"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content" />
+
+                <net.lucode.hackware.magicindicator.MagicIndicator
+                    android:id="@+id/magic_indicator"
+                    android:layout_width="match_parent"
+                    android:layout_height="@dimen/dp50"
+                    android:layout_gravity="center_vertical"
+                    android:background="@color/mainWhite"
+                    android:visibility="visible" />
+
+
+                <android.support.v4.view.ViewPager
+                    android:id="@+id/view_pager"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:background="@color/colorGray" />
+            </LinearLayout>
+
+            <!--</android.support.v4.widget.NestedScrollView>-->
+        </com.blockadm.adm.study_module.widget.JudgeNestedScrollView>
+        </com.scwang.smartrefresh.layout.SmartRefreshLayout>
+    </LinearLayout>
+
+</FrameLayout>

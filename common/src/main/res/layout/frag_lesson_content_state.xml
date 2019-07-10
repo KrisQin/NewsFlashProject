@@ -1,0 +1,79 @@
+<?xml version="1.0" encoding="utf-8"?>
+<app:android.support.v4.widget.NestedScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    app:layout_behavior="@string/appbar_scrolling_view_behavior">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical">
+
+
+        <RelativeLayout
+            android:id="@+id/rl_sort"
+            android:layout_width="match_parent"
+            android:layout_height="@dimen/dp46"
+            android:gravity="center_vertical">
+
+
+            <!-- 此功能已删除，目前代码暂留，就怕以后又需要用 20190427 -->
+            <TextView
+                android:id="@+id/tv_sort_player"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignParentLeft="true"
+                android:drawableLeft="@mipmap/radio04_all"
+                android:drawablePadding="@dimen/dp10"
+                android:gravity="center_vertical"
+                android:paddingLeft="@dimen/dp10"
+                android:paddingRight="@dimen/dp10"
+                android:text="播放全部"
+                android:textColor="@color/color_0A0A0A"
+                android:textSize="@dimen/sp16"
+                android:visibility="visible" />
+
+            <LinearLayout
+                android:layout_alignParentRight="true"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content">
+
+                <TextView
+                    android:id="@+id/tv_reverse_sort"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:drawableLeft="@mipmap/order_default"
+                    android:drawablePadding="@dimen/dp6"
+                    android:text="倒序"
+                    android:textColor="@color/color_0A0A0A"
+                    android:textSize="@dimen/sp16" />
+
+                <TextView
+                    android:id="@+id/tv_order_sort"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:drawableLeft="@mipmap/order_go"
+                    android:drawablePadding="@dimen/dp6"
+                    android:layout_marginLeft="@dimen/dp23"
+                    android:layout_marginRight="@dimen/dp13"
+                    android:text="顺序"
+                    android:textColor="@color/color_0A0A0A"
+                    android:textSize="@dimen/sp16" />
+            </LinearLayout>
+
+            <!--tv_sort-->
+
+
+
+        </RelativeLayout>
+
+        <com.blockadm.common.comstomview.stateswitch.StateLayout
+            android:id="@+id/layout_state"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:background="@color/color_ffffff"
+            app:state_content_layout="@layout/fragment_lesson_content_list" />
+
+    </LinearLayout>
+</app:android.support.v4.widget.NestedScrollView>

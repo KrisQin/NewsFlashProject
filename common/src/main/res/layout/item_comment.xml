@@ -1,0 +1,119 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:layout_marginBottom="@dimen/dp15"
+    android:orientation="vertical">
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+        <com.blockadm.common.comstomview.CircleImageView
+            android:id="@+id/civ_headimage"
+            android:layout_width="@dimen/dp40"
+            android:layout_height="@dimen/dp40"
+            android:layout_alignParentLeft="true"
+            android:layout_centerVertical="true"
+            android:layout_margin="@dimen/dp5" />
+
+        <TextView
+            android:id="@+id/tv_nickname"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="@dimen/dp10"
+            android:layout_toRightOf="@+id/civ_headimage"
+            android:textColor="@color/color_97979F"
+            android:textSize="@dimen/sp14" />
+
+        <ImageView
+            android:id="@+id/iv_zuan"
+            android:layout_width="15dp"
+            android:layout_height="15dp"
+            android:layout_alignTop="@+id/tv_nickname"
+            android:layout_alignBottom="@+id/tv_nickname"
+            android:layout_marginLeft="@dimen/dp10"
+            android:layout_toRightOf="@+id/tv_nickname" />
+
+        <TextView
+            android:id="@+id/tv_content"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/tv_nickname"
+            android:layout_marginLeft="@dimen/dp10"
+            android:layout_marginTop="@dimen/dp6"
+            android:layout_toRightOf="@+id/civ_headimage"
+            android:textColor="@color/color_0A0A0A"
+            android:textSize="@dimen/sp14" />
+
+
+        <TextView
+            android:id="@+id/tv_zan"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentRight="true"
+            android:drawableLeft="@mipmap/reply_agree_default"
+            android:drawablePadding="@dimen/dp6"
+            android:textColor="@color/color_FFFF6B00"
+            android:text="111"
+            android:textSize="@dimen/sp14" />
+
+    </RelativeLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="@dimen/dp48"
+        android:background="@color/color_fff8f8f8"
+        android:orientation="vertical">
+
+        <com.blockadm.common.comstomview.ScrollDisabledListView
+            android:id="@+id/lv_reply"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:divider="#00000000" />
+
+        <TextView
+            android:id="@+id/tv_open"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_margin="@dimen/dp10"
+            android:textColor="@color/color_FF507DAF"
+            android:textSize="@dimen/sp16"
+            android:visibility="gone" />
+
+
+    </LinearLayout>
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="@dimen/dp48"
+        android:background="@color/color_ffffff"
+        android:padding="@dimen/dp6">
+
+        <TextView
+            android:id="@+id/tv_cre_time"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerVertical="true"
+            android:text=""
+            android:textColor="@color/color_97979F"
+            android:textSize="@dimen/sp14" />
+
+
+        <TextView
+            android:id="@+id/tv_follow"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentRight="true"
+            android:layout_centerVertical="true"
+            android:text="回复"
+            android:textColor="@color/color_0A0A0A"
+            android:textSize="@dimen/sp14" />
+
+
+    </RelativeLayout>
+
+
+</LinearLayout>

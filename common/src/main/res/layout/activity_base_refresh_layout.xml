@@ -1,0 +1,54 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    xmlns:app="http://schemas.android.com/apk/res-auto">
+
+    <com.blockadm.common.comstomview.BaseTitleBar
+        android:id="@+id/title_container"
+        app:layout_constraintLeft_toLeftOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        android:layout_marginTop="25dp"
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/dp45"
+        android:layout_alignParentTop="true"
+        app:lefticon_is_show="true"
+        app:lefticon_src="@mipmap/ic_back"
+        app:lefttext=""
+        app:bottomline_is_show="true"
+        app:lefttext_color="@color/color_0A0A0A"
+        app:lefttext_is_show="true"
+        app:righticon_is_show="true"
+        app:righttext_color="@color/color_blue"
+        app:righttext_is_show="true" />
+
+
+
+    <com.scwang.smartrefresh.layout.SmartRefreshLayout
+        android:id="@+id/smart_refresh_layout"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent">
+
+            <FrameLayout
+                android:id="@+id/content_layout"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"/>
+
+            <include
+                android:id="@+id/layout_empty"
+                layout="@layout/layout_customer_empty"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:background="@color/cl_ededed"
+                android:visibility="visible" />
+        </RelativeLayout>
+
+
+    </com.scwang.smartrefresh.layout.SmartRefreshLayout>
+</LinearLayout>

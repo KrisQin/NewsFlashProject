@@ -1,0 +1,30 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:orientation="vertical"
+    android:fitsSystemWindows="true"
+    android:background="@color/color_ffffff"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+     <com.blockadm.common.comstomview.BaseTitleBar
+         android:id="@+id/tilte"
+         app:lefttext_is_show="true"
+         app:righttext_is_show="true"
+         app:lefttext_color="@color/color_0A0A0A"
+         app:centertext = "设置"
+         app:lefticon_src="@mipmap/ic_back"
+         app:lefttext=""
+         app:righttext=""
+         app:righttext_color="@color/color_0A0A0A"
+         app:lefticon_is_show="true"
+         app:righticon_is_show="true"
+         android:layout_width="match_parent"
+         android:layout_height="@dimen/dp50"/>
+
+     <android.support.v7.widget.RecyclerView
+         android:id="@+id/rl"
+         android:layout_width="match_parent"
+         android:layout_height="match_parent"/>
+
+</LinearLayout>

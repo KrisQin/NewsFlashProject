@@ -1,0 +1,94 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.design.widget.CoordinatorLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:layout_margin="@dimen/dp10"
+    android:background="@color/color_ffffff"
+    xmlns:app="http://schemas.android.com/apk/res-auto">
+
+
+    <android.support.design.widget.AppBarLayout
+        app:elevation="0dp"
+        android:background="@color/color_ffffff"
+        android:id="@+id/appbar"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:theme="@style/ThemeOverlay.AppCompat.Dark.ActionBar">
+
+        <android.support.constraint.ConstraintLayout
+            android:background="@drawable/shape_et_bg"
+            app:layout_scrollFlags="scroll|enterAlways"
+            android:layout_width="match_parent"
+            android:layout_margin="@dimen/dp10"
+            android:layout_height="36dp">
+
+            <ImageView
+                android:id="@+id/iv"
+                app:layout_constraintLeft_toLeftOf="parent"
+                android:layout_marginLeft="@dimen/dp93"
+                app:layout_constraintTop_toTopOf="parent"
+                app:layout_constraintBottom_toBottomOf="parent"
+                android:background="@drawable/im_search_img"
+                android:layout_width="@dimen/dp14"
+                android:layout_height="@dimen/dp14" />
+
+
+            <TextView
+                app:layout_constraintTop_toTopOf="parent"
+                app:layout_constraintBottom_toBottomOf="parent"
+                android:layout_marginLeft="@dimen/dp4"
+                app:layout_constraintLeft_toRightOf="@+id/iv"
+                android:text="试一试搜索“区块链”"
+                android:textColor="@color/cl_B6B6BA"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content" />
+
+        </android.support.constraint.ConstraintLayout>
+
+        <com.blockadm.common.comstomview.banner.BannerView
+            android:id="@+id/bannerView"
+            android:background="@color/color_ffffff"
+            android:padding="@dimen/dp10"
+            android:layout_width="match_parent"
+            android:layout_height="176dp"
+            app:bottomColor="#453e3e3e"
+            app:layout_scrollFlags="scroll|enterAlways"
+            app:dotDistance="2dp"
+            app:dotIndicatorFocus="#FF3164FE"
+            app:dotIndicatorNormal="#ffffff"
+            app:dotSize="6dp"/>
+
+        <com.blockadm.common.comstomview.MyTabLayout
+            android:background="@color/color_ffffff"
+            android:id="@+id/tl_tab"
+            app:tabGravity="fill"
+            android:layout_alignParentRight="true"
+            app:tabMode="fixed"
+            app:tabIndicatorColor="@color/color_transparent"
+            app:tabTextColor="@color/color_FFB6B6BA"
+            app:tabSelectedTextColor="@color/color_FF3164FE"
+            app:tabTextAppearance="@style/TabLayoutTextStyle"
+            android:layout_width="wrap_content"
+            android:layout_height="48dp"
+            />
+
+
+
+    </android.support.design.widget.AppBarLayout>
+    <!--</LinearLayout>-->
+
+
+    <com.blockadm.common.comstomview.CustomViewPager
+        android:id="@+id/viewPager"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="10dp"
+        app:layout_behavior="@string/appbar_scrolling_view_behavior">
+    </com.blockadm.common.comstomview.CustomViewPager>
+
+
+
+
+
+</android.support.design.widget.CoordinatorLayout>

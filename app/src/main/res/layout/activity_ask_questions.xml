@@ -1,0 +1,197 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/white"
+    android:orientation="vertical">
+
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="20dp" />
+
+
+    <com.blockadm.common.comstomview.BaseTitleBar
+        android:id="@+id/tilte"
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/dp45"
+        android:layout_alignParentTop="true"
+        app:centertext="提问"
+        app:lefticon_is_show="true"
+        app:lefticon_src="@mipmap/ic_back"
+        app:lefttext=""
+        app:lefttext_color="@color/color_0A0A0A"
+        app:lefttext_is_show="true"
+        app:righticon_is_show="true"
+        app:righttext=""
+        app:righttext_is_show="true" />
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:background="@color/white"
+        android:fillViewport="true"
+        android:scrollbars="none">
+
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:background="@color/color_F5F5F5"
+            android:orientation="vertical">
+
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="@dimen/dp13"
+                android:layout_marginTop="@dimen/dp32"
+                android:text="请输入提问金额"
+                android:textColor="@color/color_0A0A0A"
+                android:textSize="@dimen/sp16" />
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="@dimen/dp13"
+                android:layout_marginTop="@dimen/dp19"
+                android:layout_marginRight="@dimen/dp13"
+                android:background="@color/white"
+                android:orientation="vertical">
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:gravity="center_vertical"
+                    android:orientation="horizontal">
+
+                    <EditText
+                        android:id="@+id/et_money"
+                        android:inputType="number"
+                        android:layout_width="0dp"
+                        android:layout_height="wrap_content"
+                        android:layout_marginLeft="@dimen/dp12"
+                        android:layout_marginTop="@dimen/dp18"
+                        android:layout_marginBottom="@dimen/dp18"
+                        android:layout_weight="6"
+                        android:background="@null"
+                        android:hint="*请输入提问金额"
+                        android:textColor="@color/color_0A0A0A"
+                        android:textColorHint="@color/cl_B6B6BA"
+                        android:textCursorDrawable="@drawable/my_cursor"
+                        android:textSize="@dimen/sp18" />
+
+                    <RadioGroup
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_weight="1"
+                        android:orientation="horizontal">
+
+
+                        <RadioButton
+                            android:id="@+id/rb_Azuan"
+                            android:layout_width="0dp"
+                            android:layout_height="wrap_content"
+                            android:layout_weight="1"
+                            android:button="@drawable/radiobutton_background"
+                            android:checked="true"
+                            android:padding="@dimen/dp5"
+                            android:text="A钻"
+                            android:textColor="@color/color_0A0A0A"
+                            android:textSize="@dimen/sp16" />
+
+                        <RadioButton
+                            android:id="@+id/rb_Adian"
+                            android:layout_width="0dp"
+                            android:layout_height="wrap_content"
+                            android:layout_weight="1"
+                            android:button="@drawable/radiobutton_background"
+                            android:padding="@dimen/dp5"
+                            android:text="A点"
+                            android:textColor="@color/color_0A0A0A"
+                            android:textSize="@dimen/sp16" />
+
+                    </RadioGroup>
+
+                </LinearLayout>
+
+                <View
+                    android:layout_width="match_parent"
+                    android:layout_height="0.5dp"
+                    android:background="@color/cl_DDDDDD" />
+
+                <TextView
+                    android:id="@+id/tv_min_et_money"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_margin="@dimen/dp13"
+                    android:text="最少输入5A钻"
+                    android:textColor="@color/color_F85959"
+                    android:textSize="14sp" />
+
+
+            </LinearLayout>
+
+            <RelativeLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_margin="@dimen/dp13"
+                android:background="@color/white">
+
+                <EditText
+                    android:id="@+id/et_content"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:background="@null"
+                    android:clickable="true"
+                    android:gravity="left"
+                    android:hint="请描述你的问题"
+                    android:maxLength="700"
+                    android:minHeight="150dp"
+                    android:padding="5dp"
+                    android:scrollbars="vertical"
+                    android:textColor="@color/color_0A0A0A"
+                    android:textColorHint="@color/cl_B6B6BA"
+                    android:textCursorDrawable="@drawable/my_cursor"
+                    android:textSize="17sp" />
+
+
+                <TextView
+                    android:id="@+id/tv_count"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_below="@+id/et_content"
+                    android:layout_alignParentRight="true"
+                    android:layout_marginRight="@dimen/dp5"
+                    android:layout_marginBottom="@dimen/dp5"
+                    android:text="0/500"
+                    android:textColor="@color/color_B6B6BA"
+                    android:textSize="13sp" />
+            </RelativeLayout>
+
+
+            <TextView
+                android:id="@+id/tv_status"
+                android:textSize="@dimen/sp16"
+                android:layout_gravity="center_horizontal"
+                android:textColor="@color/color_F85959"
+                android:text="余额不足"
+                android:visibility="invisible"
+                android:layout_marginTop="@dimen/dp39"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content" />
+
+            <Button
+                android:id="@+id/bt_submit"
+                style="@style/common_blue_btn_bg"
+                android:layout_marginLeft="@dimen/dp13"
+                android:layout_marginTop="@dimen/dp56"
+                android:layout_marginRight="@dimen/dp13"
+                android:layout_marginBottom="@dimen/dp20"
+                android:text="确定" />
+
+
+        </LinearLayout>
+    </ScrollView>
+
+</LinearLayout>

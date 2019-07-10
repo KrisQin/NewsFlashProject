@@ -1,0 +1,96 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/white"
+    android:orientation="vertical">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical">
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:background="@drawable/ic_hong_bao_top">
+
+            <RelativeLayout
+                android:id="@+id/layout_back"
+                android:layout_marginTop="@dimen/dp30"
+                android:layout_width="@dimen/dp50"
+                android:layout_height="@dimen/dp50">
+
+                <ImageView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_centerInParent="true"
+                    android:background="@mipmap/ic_back" />
+            </RelativeLayout>
+
+
+            <TextView
+                android:id="@+id/tv_title"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_centerHorizontal="true"
+                android:layout_marginTop="@dimen/dp42"
+                android:text="爱德媒红包"
+                android:textColor="@color/color_333333"
+                android:textSize="@dimen/sp18" />
+
+            <com.blockadm.common.comstomview.CircleImageView
+                android:id="@+id/iv_head_image"
+                android:layout_width="@dimen/dp50"
+                android:layout_height="@dimen/dp50"
+                android:layout_below="@+id/tv_title"
+                android:layout_centerHorizontal="true"
+                android:layout_marginTop="@dimen/dp30"
+                android:src="@mipmap/picture_default" />
+
+            <TextView
+                android:id="@+id/tv_name"
+                android:layout_marginTop="@dimen/dp11"
+                android:layout_below="@+id/iv_head_image"
+                android:layout_centerHorizontal="true"
+                android:textSize="@dimen/sp17"
+                android:textColor="@color/color_E9BE7A"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content" />
+
+            <TextView
+                android:layout_marginTop="@dimen/dp12"
+                android:textSize="@dimen/sp15"
+                android:layout_below="@+id/tv_name"
+                android:layout_centerHorizontal="true"
+                android:text="恭喜发财，大吉大利"
+                android:textColor="@color/color_E9BE7A"
+                android:layout_width="wrap_content"
+                android:layout_marginBottom="@dimen/dp54"
+                android:layout_height="wrap_content" />
+
+        </RelativeLayout>
+
+        <TextView
+            android:id="@+id/tv_count"
+            android:text="12/20"
+            android:textSize="@dimen/sp13"
+            android:textColor="@color/color_97979F"
+            android:layout_marginTop="@dimen/dp27"
+            android:layout_marginLeft="@dimen/dp18"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content" />
+
+
+        <com.blockadm.common.widget.MyListView
+            android:id="@+id/listview"
+            android:divider="@null"
+            android:layout_marginRight="@dimen/dp13"
+            android:layout_marginLeft="@dimen/dp13"
+            android:layout_marginTop="@dimen/dp24"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"/>
+
+    </LinearLayout>
+
+</ScrollView>

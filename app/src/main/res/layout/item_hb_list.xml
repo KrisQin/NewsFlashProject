@@ -1,0 +1,55 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content">
+
+    <RelativeLayout
+        android:layout_marginBottom="@dimen/dp24"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+        <com.blockadm.common.comstomview.CircleImageView
+            android:id="@+id/iv_head_image"
+            android:layout_width="@dimen/dp45"
+            android:layout_height="@dimen/dp45"
+            android:layout_marginRight="@dimen/dp12"
+            android:src="@mipmap/picture_default" />
+
+        <TextView
+            android:id="@+id/tv_name"
+            android:layout_toRightOf="@+id/iv_head_image"
+            android:layout_marginTop="4dp"
+            android:textColor="@color/color_0A0A0A"
+            android:text="用户A的昵称"
+            android:textSize="@dimen/sp14"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content" />
+
+        <TextView
+            android:id="@+id/tv_time"
+            android:layout_below="@+id/tv_name"
+            android:layout_toRightOf="@+id/iv_head_image"
+            android:layout_marginTop="8dp"
+            android:textColor="@color/color_97979F"
+            android:text="2019-06-01 12:20"
+            android:textSize="@dimen/sp12"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content" />
+
+        <TextView
+            android:id="@+id/tv_amount"
+            android:layout_alignParentRight="true"
+            android:textColor="@color/color_0A0A0A"
+            android:text="5.00A点"
+            android:layout_centerVertical="true"
+            android:textSize="@dimen/sp14"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content" />
+
+    </RelativeLayout>
+
+
+
+</LinearLayout>

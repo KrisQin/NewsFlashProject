@@ -1,0 +1,46 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:padding="@dimen/dp10"
+    android:gravity="center_vertical"
+    android:layout_height="80dp">
+
+    <com.blockadm.common.comstomview.CircleImageView
+        android:id="@+id/iv_image"
+        android:layout_centerVertical="true"
+        android:src="@mipmap/picture_default"
+        android:layout_width="50dp"
+        android:layout_height="50dp" />
+
+    <TextView
+        android:layout_centerVertical="true"
+        android:gravity="center_vertical"
+        android:layout_marginLeft="@dimen/dp10"
+        android:layout_toRightOf="@+id/iv_image"
+        android:textSize="@dimen/sp16"
+        android:textColor="@color/color_0A0A0A"
+        android:id="@+id/tv_nickName"
+        android:text=""
+        android:layout_width="wrap_content"
+        android:layout_height="match_parent" />
+
+    <TextView
+        android:drawablePadding="@dimen/dp10"
+        android:layout_centerVertical="true"
+        android:layout_alignParentRight="true"
+        android:text="关注"
+         android:paddingLeft="@dimen/dp15"
+        android:paddingTop="@dimen/dp5"
+        android:paddingBottom="@dimen/dp5"
+        android:paddingRight="@dimen/dp15"
+        android:background="@drawable/fans_button_bg"
+        android:gravity="center"
+        android:textColor="@color/color_0A0A0A"
+        android:id="@+id/tv_attention"
+        android:textSize="@dimen/sp14"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content" />
+
+
+
+</RelativeLayout>

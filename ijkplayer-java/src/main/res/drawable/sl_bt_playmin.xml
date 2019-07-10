@@ -1,0 +1,22 @@
+<?xml version="1.0" encoding="utf-8"?>
+<selector xmlns:android="http://schemas.android.com/apk/res/android">
+
+    <!--  JGX 16/08/05 modify bug377  START-->
+    <!--<item android:drawable="@drawable/video_pause" android:state_selected="true" />-->
+    <!--<item android:drawable="@drawable/tijiao_video_puase" android:state_checked="true" android:state_pressed="true"/>-->
+    <!--<item android:drawable="@drawable/tijiao_video_puase" android:state_checked="true" android:state_pressed="false"/>-->
+
+    <!--<item android:drawable="@drawable/video_play" android:state_selected="false" />-->
+    <!--<item android:drawable="@drawable/play" android:state_checked="false" android:state_pressed="true"/>-->
+    <!--<item android:drawable="@drawable/play" android:state_checked="false" android:state_pressed="false"/>-->
+    <item android:drawable="@drawable/btn_ic_pause" android:state_selected="true" />
+    <item android:drawable="@drawable/btn_ic_play" android:state_selected="false" />
+
+    <!--<item android:drawable="@drawable/ic_pause_n" android:state_checked="true" android:state_pressed="true"/>-->
+    <!--<item android:drawable="@drawable/ic_pause_n" android:state_checked="true" android:state_pressed="false"/>-->
+
+    <!--<item android:drawable="@drawable/ic_play_p" android:state_checked="false" android:state_pressed="true"/>-->
+    <!--<item android:drawable="@drawable/ic_play_p" android:state_checked="false" android:state_pressed="false"/>-->
+    <!--  JGX 16/08/05 modify bug377  START-->
+
+</selector>

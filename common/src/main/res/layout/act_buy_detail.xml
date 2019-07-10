@@ -1,0 +1,377 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:orientation="vertical"
+    android:fitsSystemWindows="true"
+    android:background="@color/color_fff2f3f4"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <ScrollView
+        android:layout_marginBottom="@dimen/dp50"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+<LinearLayout
+    android:orientation="vertical"
+    android:fitsSystemWindows="true"
+    android:background="@color/color_fff2f3f4"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+
+    <com.blockadm.common.comstomview.BaseTitleBar
+        android:id="@+id/tilte"
+        app:lefttext_is_show="true"
+        app:righttext_is_show="true"
+        app:lefttext_color="@color/color_0A0A0A"
+        app:centertext = "区块链自学入门"
+        app:lefticon_src="@mipmap/ic_back"
+        app:lefttext=""
+        app:lefticon_is_show="true"
+        app:righticon_is_show="true"
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/dp45" />
+    <View
+        android:background="@color/color_fff2f3f4"
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/dp1"/>
+    
+    <LinearLayout
+        android:background="@color/color_ffffff"
+        android:orientation="horizontal"
+        android:padding="@dimen/dp10"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+        <TextView
+            android:textColor="@color/color_0A0A0A"
+            android:text="购买账号："
+            android:textSize="@dimen/sp16"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content" />
+
+        <TextView
+            android:id="@+id/tv_nickName"
+            android:textColor="@color/color_0A0A0A"
+            android:text="账号"
+            android:textSize="@dimen/sp16"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content" />
+
+
+    </LinearLayout>
+
+    <View
+        android:background="@color/color_fff2f3f4"
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/dp1"/>
+
+    <TextView
+        android:paddingTop="@dimen/dp10"
+        android:paddingLeft="@dimen/dp10"
+        android:paddingRight="@dimen/dp10"
+        android:background="@color/color_ffffff"
+        android:id="@+id/tv_1"
+        android:textSize="@dimen/sp16"
+        android:textColor="#ff0a0a0a"
+        android:text="商品信息："
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content" />
+    <RelativeLayout
+        android:background="@color/color_ffffff"
+        android:padding="@dimen/dp10"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+
+
+        <com.blockadm.common.comstomview.RoundImageView
+            android:id="@+id/iv_banner"
+            app:radius="@dimen/dp5"
+            app:type="round"
+            android:layout_width="150dp"
+            android:layout_height="75dp"
+            android:background="@mipmap/picture_default"
+            android:scaleType="fitXY"
+        />
+        <ImageView
+            android:id="@+id/iv_type"
+            android:src="@mipmap/column"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content" />
+
+        <TextView
+            android:id="@+id/tv_title"
+            android:layout_marginLeft="@dimen/dp10"
+            android:layout_toRightOf="@+id/iv_banner"
+            android:textColor="@color/color_0A0A0A"
+            android:textSize="@dimen/sp16"
+            android:text="区块链入学"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content" />
+
+        <TextView
+            android:id="@+id/tv_author"
+            android:layout_marginTop="@dimen/dp5"
+            android:layout_below="@+id/tv_title"
+            android:layout_marginLeft="@dimen/dp10"
+            android:layout_toRightOf="@+id/iv_banner"
+            android:textColor="@color/color_97979F"
+            android:textSize="@dimen/sp12"
+            android:text="区块链入学"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content" />
+
+    </RelativeLayout>
+    <View
+       android:background="@color/color_fff2f3f4"
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/dp20"/>
+
+    <RelativeLayout
+        android:background="@color/color_ffffff"
+        android:padding="@dimen/dp10"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+        <TextView
+            android:textColor="@color/color_0A0A0A"
+            android:text="商品总价："
+            android:textSize="@dimen/sp16"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content" />
+
+        <TextView
+            android:id="@+id/tv_total_price"
+            android:layout_alignParentRight="true"
+            android:textColor="@color/color_0A0A0A"
+            android:text="66"
+            android:textSize="@dimen/sp16"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content" />
+
+    </RelativeLayout>
+    <View
+        android:background="@color/color_fff2f3f4"
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/dp1"/>
+
+    <RelativeLayout
+        android:background="@color/color_ffffff"
+        android:padding="@dimen/dp10"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+        <TextView
+            android:textColor="@color/color_FFFF6B00"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="会员优惠价："
+            android:textSize="@dimen/sp16" />
+
+        <TextView
+            android:id="@+id/tv_preferential_price"
+            android:layout_alignParentRight="true"
+            android:textColor="@color/color_FFFF6B00"
+            android:text="99"
+            android:textSize="@dimen/sp16"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content" />
+
+    </RelativeLayout>
+
+    <View
+        android:background="@color/color_fff2f3f4"
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/dp10"/>
+
+    <RelativeLayout
+        android:background="@color/color_ffffff"
+        android:id="@+id/rl_huiyuan"
+        android:padding="@dimen/dp10"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+        <TextView
+            android:textColor="@color/color_0A0A0A"
+            android:text="充值会员更优惠"
+            android:textSize="@dimen/sp16"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content" />
+
+        <TextView
+
+            android:drawablePadding="@dimen/dp10"
+            android:drawableRight="@mipmap/go"
+            android:layout_alignParentRight="true"
+            android:textColor="@color/color_FFFF6B00"
+            android:text="立即开通"
+            android:textSize="@dimen/sp16"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content" />
+
+    </RelativeLayout>
+
+    <View
+        android:id="@+id/v_line"
+        android:background="@color/color_fff2f3f4"
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/dp10"/>
+
+    <TextView
+        android:background="@color/color_ffffff"
+        android:paddingTop="@dimen/dp10"
+        android:paddingLeft="@dimen/dp10"
+        android:paddingBottom="@dimen/dp10"
+        android:textColor="@color/color_0A0A0A"
+        android:text="支付方式 :"
+        android:textSize="@dimen/sp16"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content" />
+
+    <RelativeLayout
+        android:background="@color/color_ffffff"
+        android:id="@+id/rl_dian"
+        android:enabled="false"
+        android:padding="@dimen/dp10"
+        android:layout_width="match_parent"
+        android:layout_height="70dp">
+
+        <ImageView
+            android:id="@+id/iv"
+            android:layout_alignParentLeft="true"
+            android:layout_centerVertical="true"
+            android:src="@mipmap/ic_wallet"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content" />
+
+        <TextView
+            android:id="@+id/tv_a"
+            android:layout_centerVertical="true"
+            android:paddingLeft="@dimen/dp10"
+            android:layout_toRightOf="@+id/iv"
+            android:text="A点支付"
+            android:textSize="@dimen/sp18"
+            android:textColor="@color/color_0A0A0A"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content" />
+
+        <TextView
+            android:id="@+id/tv_point"
+            android:layout_marginLeft="@dimen/dp10"
+            android:layout_centerVertical="true"
+            android:layout_toRightOf="@+id/tv_a"
+            android:text="99999A点"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content" />
+
+
+
+
+        <ImageView
+            android:id="@+id/iv_check"
+            android:layout_alignParentRight="true"
+            android:layout_centerVertical="true"
+            android:src="@mipmap/suggest_unselect"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content" />
+
+        <TextView
+            android:visibility="gone"
+            android:id="@+id/tv_go_recharge"
+            android:layout_marginRight="@dimen/dp10"
+            android:layout_centerVertical="true"
+            android:layout_toLeftOf="@+id/iv_check"
+            android:textColor="@color/color_FFF85959"
+            android:text="去充值"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content" />
+    </RelativeLayout>
+
+    <View
+        android:background="@color/color_fff2f3f4"
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/dp1"/>
+
+    <TextView
+        android:drawableLeft="@mipmap/ic_alipay"
+        android:background="@color/color_ffffff"
+        android:id="@+id/tv_alipay"
+        android:padding="@dimen/dp10"
+        android:drawablePadding="@dimen/dp10"
+        android:gravity="center_vertical"
+        android:drawableRight="@mipmap/checked"
+        android:layout_alignParentRight="true"
+        android:textColor="@color/color_0A0A0A"
+        android:text="支付宝"
+        android:textSize="@dimen/sp16"
+        android:layout_width="match_parent"
+        android:layout_height="70dp" />
+    <View
+        android:background="@color/color_fff2f3f4"
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/dp1"/>
+    <TextView
+        android:drawableLeft="@mipmap/ic_wechat"
+        android:background="@color/color_ffffff"
+        android:id="@+id/tv_wetchat"
+        android:padding="@dimen/dp10"
+        android:drawablePadding="@dimen/dp10"
+        android:gravity="center_vertical"
+        android:drawableRight="@mipmap/suggest_unselect"
+        android:layout_alignParentRight="true"
+        android:textColor="@color/color_0A0A0A"
+        android:text="微信"
+        android:textSize="@dimen/sp16"
+        android:layout_width="match_parent"
+        android:layout_height="70dp" />
+
+    <View
+        android:background="@color/color_fff2f3f4"
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/dp1"/>
+
+</LinearLayout>
+
+    </ScrollView>
+    <LinearLayout
+        android:background="@color/color_ffffff"
+        android:layout_alignParentBottom="true"
+        android:layout_width="match_parent"
+        android:layout_height="48dp">
+
+        <RelativeLayout
+            android:gravity="center"
+            android:layout_width="0dp"
+            android:layout_weight="1"
+            android:layout_height="match_parent">
+            <TextView
+                android:id="@+id/tv1"
+                android:textColor="@color/color_FF4A4A4A"
+                android:text="实付金额 :"
+                android:textSize="@dimen/sp16"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content" />
+
+            <TextView
+                android:id="@+id/tv_actual_amount"
+                android:layout_toRightOf="@+id/tv1"
+                android:layout_marginLeft="@dimen/dp10"
+                android:textColor="@color/color_FFF85959"
+                android:textSize="@dimen/sp16"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content" />
+
+        </RelativeLayout>
+
+        <TextView
+            android:id="@+id/tv_now_pay"
+            android:gravity="center"
+            android:background="@color/color_FF3164FE"
+            android:layout_weight="1"
+            android:textSize="@dimen/sp20"
+            android:text="@string/now_buy"
+            android:textColor="@color/color_ffffff"
+            android:layout_width="@dimen/dp0"
+            android:layout_height="match_parent" />
+
+    </LinearLayout>
+</RelativeLayout>

@@ -1,0 +1,70 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.constraint.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:background="@color/white"
+    xmlns:app="http://schemas.android.com/apk/res-auto">
+
+    <LinearLayout
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintLeft_toLeftOf="parent"
+        android:orientation="vertical"
+        android:layout_width="match_parent"
+        android:layout_height="312dp">
+
+        <TextView
+            android:layout_gravity="center_horizontal"
+            android:layout_marginTop="@dimen/dp25"
+            android:textSize="@dimen/sp20"
+            android:textColor="@color/color_0A0A0A"
+            android:text="请输入你要发布的公告"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content" />
+
+        <android.support.constraint.ConstraintLayout
+            android:layout_width="match_parent"
+            android:layout_height="148dp"
+            android:layout_margin="@dimen/dp20"
+            android:background="#F2F3F4">
+
+            <EditText
+                android:id="@+id/et_content"
+                app:layout_constraintTop_toTopOf="parent"
+                app:layout_constraintLeft_toLeftOf="parent"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:clickable="true"
+                android:gravity="left"
+                android:hint="请输入公告内容"
+                android:background="@null"
+                android:maxLength="700"
+                android:minHeight="150dp"
+                android:padding="5dp"
+                android:scrollbars="vertical"
+                android:textColor="@color/color_0A0A0A"
+                android:textColorHint="@color/cl_B6B6BA"
+                android:textCursorDrawable="@drawable/my_cursor"
+                android:textSize="16sp" />
+
+
+            <TextView
+                android:id="@+id/tv_count"
+                app:layout_constraintRight_toRightOf="@+id/et_content"
+                app:layout_constraintBottom_toBottomOf="@+id/et_content"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginRight="@dimen/dp5"
+                android:layout_marginBottom="@dimen/dp5"
+                android:text="0/30"
+                android:textColor="@color/color_B6B6BA"
+                android:textSize="13sp" />
+        </android.support.constraint.ConstraintLayout>
+
+
+        <Button
+            android:id="@+id/bt_submit"
+           android:text="确定"
+            style="@style/btn_blue_margin_bg" />
+    </LinearLayout>
+
+</android.support.constraint.ConstraintLayout>

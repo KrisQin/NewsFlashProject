@@ -1,0 +1,93 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    xmlns:app="http://schemas.android.com/apk/res-auto">
+
+    <com.blockadm.common.comstomview.BaseTitleBar
+        android:id="@+id/tilte"
+        android:layout_marginTop="@dimen/dp25"
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/dp45"
+        app:centertext="转入现金A点"
+        app:lefticon_is_show="true"
+        app:lefticon_src="@mipmap/ic_back"
+        app:lefttext=""
+        app:lefttext_color="@color/color_0A0A0A"
+        app:lefttext_is_show="true"
+        app:righticon_is_show="true"
+        app:righttext="常见问题"
+        app:righttext_is_show="true" />
+
+
+    <LinearLayout
+        android:layout_marginRight="@dimen/dp13"
+        android:layout_marginLeft="@dimen/dp13"
+        android:layout_marginTop="@dimen/dp22"
+        android:background="@drawable/bg_r8_gray_stroke"
+        android:layout_width="match_parent"
+        android:paddingLeft="@dimen/dp19"
+        android:orientation="vertical"
+        android:paddingRight="@dimen/dp19"
+        android:layout_height="wrap_content">
+
+
+        <EditText
+            android:id="@+id/et_acount"
+            android:inputType="number"
+            android:layout_marginTop="@dimen/dp28"
+            android:layout_gravity="center_vertical"
+            android:textColorHint="@color/color_B6B6BA"
+            android:background="@null"
+            android:textColor="@color/color_0A0A0A"
+            android:hint="输入转入的A点数"
+            android:textCursorDrawable="@drawable/my_cursor"
+            android:textSize="@dimen/sp25"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content" />
+
+
+        <View
+            android:layout_marginTop="@dimen/dp9"
+            android:background="@color/cl_DDDDDD"
+            android:layout_width="match_parent"
+            android:layout_height="@dimen/dp_0.5"/>
+
+        <LinearLayout
+            android:orientation="horizontal"
+            android:layout_marginBottom="@dimen/dp18"
+            android:layout_marginTop="@dimen/dp17"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content">
+
+            <TextView
+                android:id="@+id/tv_can_change"
+                android:textColor="@color/color_B6B6BA"
+                android:textSize="@dimen/sp13"
+                android:text="可兑换1000A点"
+                android:layout_marginRight="@dimen/dp17"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content" />
+
+            <TextView
+                android:id="@+id/tv_sxf"
+                android:visibility="gone"
+                android:textColor="@color/color_F85959"
+                android:textSize="@dimen/sp12"
+                android:text="手续费5%"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content" />
+
+        </LinearLayout>
+
+    </LinearLayout>
+
+
+    <Button
+        android:id="@+id/submit"
+        android:text="完成"
+        android:layout_marginTop="@dimen/dp80"
+        style="@style/btn_blue_margin_bg" />
+
+</LinearLayout>

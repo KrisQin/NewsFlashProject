@@ -1,0 +1,88 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical"
+    android:paddingLeft="@dimen/dp20"
+    android:layout_width="match_parent"
+    android:layout_height="@dimen/dp80">
+    
+    <LinearLayout
+        android:gravity="center_vertical"
+        android:orientation="horizontal"
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/dp40">
+
+        <TextView
+            android:textColor="@color/color_0A0A0A"
+            android:id="@+id/tv_title"
+            android:text="标题"
+            android:textSize="@dimen/sp16"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content" />
+
+        <TextView
+            android:visibility="gone"
+            android:textColor="@color/color_0A0A0A"
+            android:layout_marginLeft="@dimen/dp20"
+            android:text="标题"
+            android:textSize="@dimen/sp16"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content" />
+
+        <TextView
+            android:id="@+id/tv_price"
+            android:text="99"
+            android:paddingRight="@dimen/dp20"
+            android:gravity="right"
+            android:layout_centerVertical="true"
+            android:textSize="@dimen/sp18"
+            android:textColor="@color/color_FF6B00"
+            android:layout_width="0dp"
+            android:layout_weight="1"
+            android:layout_height="wrap_content" />
+
+    </LinearLayout>
+
+
+    <LinearLayout
+        android:gravity="center_vertical"
+        android:orientation="horizontal"
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/dp40">
+
+        <TextView
+            android:textColor="@color/color_97979F"
+            android:id="@+id/tv_author"
+            android:text="作者"
+            android:textSize="@dimen/sp16"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content" />
+
+        <TextView
+            android:id="@+id/tv_number_of_oourse"
+            android:textColor="@color/color_97979F"
+            android:layout_marginLeft="@dimen/dp20"
+            android:text="课程数12"
+            android:textSize="@dimen/sp16"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content" />
+
+
+        <TextView
+            android:id="@+id/tv_pageview"
+            android:textColor="@color/color_97979F"
+            android:layout_marginLeft="@dimen/dp20"
+            android:text="浏览量 20"
+            android:textSize="@dimen/sp16"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content" />
+
+
+
+
+
+    </LinearLayout>
+
+
+
+
+</LinearLayout>

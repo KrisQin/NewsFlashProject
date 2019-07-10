@@ -1,0 +1,76 @@
+<?xml version="1.0" encoding="utf-8"?>
+    <LinearLayout
+        xmlns:android="http://schemas.android.com/apk/res/android"
+        xmlns:app="http://schemas.android.com/apk/res-auto"
+        android:fitsSystemWindows="true"
+        android:background="@color/color_ffffff"
+        android:orientation="vertical"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+
+        <com.blockadm.common.comstomview.BaseTitleBar
+            android:id="@+id/tilte"
+            app:lefttext_is_show="true"
+            app:righttext_is_show="true"
+            app:lefttext_color="@color/color_0A0A0A"
+            app:centertext = "我的作品"
+            app:lefticon_src="@mipmap/ic_back"
+            app:lefttext=""
+            app:righttext_color="@color/color_0A0A0A"
+            app:lefticon_is_show="true"
+            app:righttext=""
+            app:righticon_is_show="true"
+            android:layout_width="match_parent"
+            android:layout_height="@dimen/dp50"/>
+
+        <View
+            android:background="@color/color_fff2f3f4"
+            android:layout_width="match_parent"
+            android:layout_height="@dimen/dp10"/>
+
+        <RelativeLayout
+            android:gravity="center_vertical"
+            android:background="@color/color_ffffff"
+            android:layout_width="match_parent"
+            android:layout_height="@dimen/dp48">
+
+            <TextView
+                android:layout_marginLeft="@dimen/dp30"
+                android:textColor="#FF0A0A0A"
+                android:text="累计阅读量"
+                android:textSize="@dimen/sp16"
+                android:paddingBottom="@dimen/dp10"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content" />
+
+
+
+            <TextView
+                android:paddingRight="@dimen/dp40"
+                android:layout_alignParentRight="true"
+                android:id="@+id/tv_readcount"
+                android:textColor="@color/color_0A0A0A"
+                android:textSize="@dimen/sp16"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content" />
+
+        </RelativeLayout>
+
+    <View
+        android:background="@color/color_fff2f3f4"
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/dp10"/>
+
+
+    <com.blockadm.common.comstomview.stateswitch.StateLayout
+        xmlns:android="http://schemas.android.com/apk/res/android"
+        xmlns:app="http://schemas.android.com/apk/res-auto"
+        android:id="@+id/layout_state"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:background="@color/color_ffffff"
+        app:state_content_layout="@layout/fragment_information_list" />
+
+
+</LinearLayout>

@@ -1,0 +1,112 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:layout_alignParentRight="true"
+    android:background="@color/red">
+
+    <!--<TextView-->
+        <!--android:id="@+id/tv_status"-->
+        <!--android:textColor="#00000000"-->
+        <!--android:visibility="gone"-->
+        <!--android:layout_width="wrap_content"-->
+        <!--android:layout_height="wrap_content" />-->
+
+    <!--<com.blockadm.common.comstomview.CircleImageView-->
+        <!--android:id="@+id/iv_head_image"-->
+        <!--android:layout_width="@dimen/dp45"-->
+        <!--android:layout_height="@dimen/dp45"-->
+        <!--android:layout_marginTop="@dimen/dp27"-->
+        <!--android:layout_alignParentRight="true"-->
+        <!--android:layout_marginRight="@dimen/dp13"-->
+        <!--android:src="@mipmap/picture_default"/>-->
+
+    <!--<TextView-->
+        <!--android:id="@+id/tv_name"-->
+        <!--android:layout_toLeftOf="@+id/iv_head_image"-->
+        <!--android:layout_width="wrap_content"-->
+        <!--android:layout_height="wrap_content"-->
+        <!--android:layout_marginRight="@dimen/dp11"-->
+        <!--android:text="11111"-->
+        <!--android:layout_marginTop="@dimen/dp32"-->
+        <!--android:textColor="@color/color_97979F"-->
+        <!--android:textSize="@dimen/sp15" />-->
+
+    <!--<ImageView-->
+        <!--android:id="@+id/iv_pic"-->
+        <!--android:layout_toLeftOf="@+id/iv_head_image"-->
+        <!--android:layout_below="@+id/tv_name"-->
+        <!--android:layout_width="113dp"-->
+        <!--android:layout_height="@dimen/dp95"-->
+        <!--android:layout_marginRight="@dimen/dp13"-->
+        <!--android:layout_marginBottom="@dimen/dp10"-->
+        <!--android:layout_marginTop="@dimen/dp11"-->
+        <!--android:scaleType="centerInside"-->
+        <!--android:visibility="visible" />-->
+
+
+    <!--<LinearLayout-->
+        <!--android:visibility="visible"-->
+        <!--android:layout_below="@+id/tv_name"-->
+        <!--android:layout_marginRight="@dimen/dp60"-->
+        <!--android:orientation="horizontal"-->
+        <!--android:layout_marginTop="@dimen/dp9"-->
+        <!--android:layout_width="match_parent"-->
+        <!--android:layout_height="wrap_content">-->
+
+        <!--<View-->
+            <!--android:layout_weight="1"-->
+            <!--android:background="@color/blue"-->
+            <!--android:layout_width="0dp"-->
+            <!--android:layout_height="40dp"/>-->
+
+        <!--<LinearLayout-->
+            <!--android:background="@drawable/bg_r3_gray"-->
+            <!--android:minHeight="@dimen/dp49"-->
+            <!--android:gravity="center_vertical"-->
+            <!--android:layout_width="wrap_content"-->
+            <!--android:layout_height="wrap_content">-->
+
+            <!--<TextView-->
+                <!--android:id="@+id/tv_time"-->
+                <!--android:layout_width="wrap_content"-->
+                <!--android:layout_height="wrap_content"-->
+                <!--android:layout_marginLeft="@dimen/dp13"-->
+                <!--android:layout_centerVertical="true"-->
+                <!--android:text="20"-->
+                <!--android:textColor="@color/color_0A0A0A"-->
+                <!--android:textSize="@dimen/sp12"-->
+                <!--android:visibility="visible" />-->
+
+
+            <!--<ImageView-->
+                <!--android:id="@+id/iv_player"-->
+                <!--android:layout_width="@dimen/dp19"-->
+                <!--android:layout_height="@dimen/dp19"-->
+                <!--android:layout_centerVertical="true"-->
+                <!--android:layout_marginRight="@dimen/dp13"-->
+                <!--android:background="@mipmap/ico_play_go"-->
+                <!--android:visibility="visible" />-->
+
+            <!--<TextView-->
+                <!--android:text="1111111111111"-->
+                <!--android:layout_width="wrap_content"-->
+                <!--android:layout_height="wrap_content" />-->
+
+
+
+        <!--</LinearLayout>-->
+
+        <!--<ImageView-->
+            <!--android:id="@+id/iv"-->
+            <!--android:layout_width="16dp"-->
+            <!--android:layout_height="19dp"-->
+            <!--android:layout_marginTop="@dimen/dp15"-->
+            <!--android:background="@drawable/ic_item_msg_right_sanjiao"-->
+            <!--android:padding="@dimen/dp5"/>-->
+
+    <!--</LinearLayout>-->
+
+
+
+</RelativeLayout>

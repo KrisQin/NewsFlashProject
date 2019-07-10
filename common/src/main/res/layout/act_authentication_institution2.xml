@@ -1,0 +1,208 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:orientation="vertical"
+    android:background="@android:color/background_light"
+    android:fitsSystemWindows="true"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+    <com.blockadm.common.comstomview.BaseTitleBar
+        android:id="@+id/tilte"
+        app:lefttext_is_show="true"
+        app:righttext_is_show="true"
+        android:layout_alignParentTop="true"
+        app:lefttext_color="@color/color_0A0A0A"
+        app:centertext = "个人实名认证"
+        app:lefttext=""
+        app:lefticon_is_show="true"
+        app:lefticon_src="@mipmap/ic_back"
+        app:righticon_is_show="true"
+        app:righttext="提交"
+        app:righttext_color="@color/color_0A0A0A"
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/dp45" />
+
+    <View
+        android:background="@color/color_fff2f3f4"
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/dp5"/>
+
+
+
+    <ImageView
+        android:paddingBottom="@dimen/dp15"
+        android:layout_marginTop="@dimen/dp15"
+        android:layout_gravity="center_horizontal"
+        android:src="@mipmap/renzhenbg"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content" />
+
+    <View
+        android:background="@color/color_fff2f3f4"
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/dp10"/>
+
+
+    <RelativeLayout
+        android:layout_marginLeft="@dimen/dp10"
+        android:layout_marginRight="@dimen/dp10"
+        android:background="@color/color_ffffff"
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/dp48">
+
+        <TextView
+            android:paddingLeft="@dimen/dp15"
+            android:paddingTop="@dimen/dp10"
+            android:textColor="@color/color_0A0A0A"
+            android:text="证件类型"
+            android:textSize="@dimen/sp16"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content" />
+
+
+
+        <TextView
+            android:id="@+id/tv_type"
+            android:drawablePadding="@dimen/dp10"
+            android:drawableRight="@mipmap/ic_group2"
+            android:layout_centerVertical="true"
+            android:layout_alignParentRight="true"
+            android:textColor="@color/color_FFB6B6BA"
+            android:textSize="@dimen/sp16"
+            android:minWidth="80dp"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content" />
+
+    </RelativeLayout>
+
+    <View
+        android:layout_marginLeft="@dimen/dp10"
+        android:layout_marginRight="@dimen/dp10"
+        android:background="@color/color_fff2f3f4"
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/dp1"/>
+
+
+    <LinearLayout
+        android:orientation="horizontal"
+        android:layout_marginLeft="@dimen/dp10"
+        android:layout_marginRight="@dimen/dp10"
+        android:background="@color/color_ffffff"
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/dp48">
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:paddingLeft="@dimen/dp15"
+            android:paddingTop="@dimen/dp10"
+            android:text="证件姓名"
+            android:textColor="@color/color_0A0A0A"
+            android:textSize="@dimen/sp16" />
+
+
+
+        <EditText
+            android:id="@+id/et_name"
+            android:background="@null"
+            android:paddingLeft="@dimen/dp15"
+            android:textColorHint="@color/color_FFB6B6BA"
+            android:hint="请输入您的真实名称"
+            android:layout_centerVertical="true"
+            android:textColor="@color/color_0A0A0A"
+            android:textSize="@dimen/sp16"
+            android:layout_weight="1"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content" />
+
+    </LinearLayout>
+
+    <View
+        android:layout_marginLeft="@dimen/dp10"
+        android:layout_marginRight="@dimen/dp10"
+        android:background="@color/color_fff2f3f4"
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/dp1"/>
+
+
+    <LinearLayout
+        android:orientation="horizontal"
+        android:layout_marginLeft="@dimen/dp10"
+        android:layout_marginRight="@dimen/dp10"
+        android:background="@color/color_ffffff"
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/dp48">
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:paddingLeft="@dimen/dp15"
+            android:paddingTop="@dimen/dp10"
+            android:text="证件号码"
+            android:inputType="number"
+            android:textColor="@color/color_0A0A0A"
+            android:textSize="@dimen/sp16" />
+
+
+
+        <EditText
+            android:id="@+id/et_cardnum"
+            android:background="@null"
+            android:paddingLeft="@dimen/dp15"
+            android:textColorHint="@color/color_FFB6B6BA"
+            android:hint="请输入您的证件号码"
+            android:layout_centerVertical="true"
+            android:textColor="@color/color_0A0A0A"
+            android:textSize="@dimen/sp16"
+            android:layout_weight="1"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content" />
+
+    </LinearLayout>
+
+    <View
+        android:layout_marginLeft="@dimen/dp10"
+        android:layout_marginRight="@dimen/dp10"
+        android:background="@color/color_fff2f3f4"
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/dp1"/>
+
+
+    <ImageView
+        android:scaleType="fitXY"
+        android:id="@+id/iv_one"
+        android:layout_gravity="center_horizontal"
+        android:layout_margin="@dimen/dp10"
+        android:src="@mipmap/idphoto01"
+        android:layout_width="300dp"
+        android:layout_height="170dp" />
+
+    <TextView
+        android:layout_gravity="center_horizontal"
+        android:textColor="@color/color_FFF85959"
+        android:textSize="@dimen/sp16"
+        android:text="支持jpeg/png格式，照片大小不超过5M"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content" />
+
+
+
+    <ImageView
+        android:scaleType="fitXY"
+        android:id="@+id/iv_two"
+        android:layout_gravity="center_horizontal"
+        android:layout_margin="@dimen/dp10"
+        android:src="@mipmap/idphoto02"
+        android:layout_width="300dp"
+        android:layout_height="170dp"/>
+
+    <TextView
+        android:layout_gravity="center_horizontal"
+        android:textColor="@color/color_FFF85959"
+        android:textSize="@dimen/sp16"
+        android:text="支持jpeg/png格式，照片大小不超过5M"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content" />
+
+
+</LinearLayout>

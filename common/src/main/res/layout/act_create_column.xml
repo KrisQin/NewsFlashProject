@@ -1,0 +1,243 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<RelativeLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:fitsSystemWindows="true"
+    android:background="@color/color_ffffff"
+    android:layout_height="match_parent">
+
+
+<LinearLayout
+    android:orientation="vertical"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+
+
+    <com.blockadm.common.comstomview.BaseTitleBar
+        android:id="@+id/tilte"
+        app:lefttext_is_show="true"
+        app:righttext_is_show="true"
+        app:lefttext_color="@color/color_0A0A0A"
+        app:centertext = "新建专栏"
+        app:lefticon_src="@mipmap/ic_back"
+        app:lefttext=""
+        app:righttext_color="@color/color_0A0A0A"
+        app:lefticon_is_show="true"
+        app:righttext=""
+        app:righticon_is_show="true"
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/dp50"/>
+
+    <View
+        android:background="@color/color_fff2f3f4"
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/dp5"/>
+
+    <android.support.v7.widget.AppCompatEditText
+        android:layout_margin="@dimen/dp15"
+        android:theme="@style/MyEditText"
+        android:singleLine="true"
+        android:hint="输入要创建的专栏名称"
+        android:maxLength="20"
+        android:layout_width="match_parent"
+        android:textCursorDrawable="@drawable/my_cursor"
+        android:id="@+id/et_name"
+        android:layout_height="@dimen/dp50" />
+
+   <RelativeLayout
+      android:layout_marginTop="@dimen/dp5"
+       android:layout_marginLeft="@dimen/dp15"
+       android:layout_marginRight="@dimen/dp15"
+       android:layout_marginBottom="@dimen/dp15"
+       android:orientation="horizontal"
+       android:layout_width="match_parent"
+       android:layout_height="@dimen/dp50">
+
+       <ImageView
+           android:layout_centerVertical="true"
+           android:layout_alignParentLeft="true"
+             android:id="@+id/iv"
+             android:layout_gravity="center_vertical"
+            android:src="@mipmap/ic_money"
+           android:layout_width="wrap_content"
+           android:layout_height="wrap_content" />
+
+
+       <android.support.v7.widget.AppCompatEditText
+           android:layout_toRightOf="@+id/iv"
+           android:id="@+id/et_price"
+           android:theme="@style/MyEditText"
+           android:singleLine="true"
+           android:layout_marginLeft="@dimen/dp10"
+           android:paddingRight="48dp"
+           android:inputType="numberDecimal"
+           android:hint="输入你的收费价格"
+           android:textColor="@color/color_0A0A0A"
+           android:maxLength="20"
+           android:layout_width="match_parent"
+           android:textCursorDrawable="@drawable/my_cursor"
+           android:layout_height="match_parent" />
+
+
+
+       <ImageView
+           android:id="@+id/iv_free"
+           android:layout_centerVertical="true"
+           android:layout_alignParentRight="true"
+           android:background="@mipmap/free_press_def"
+           android:layout_width="wrap_content"
+           android:layout_height="wrap_content" />
+
+   </RelativeLayout>
+
+    <RelativeLayout
+        android:layout_margin="@dimen/dp15"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+        <com.blockadm.common.comstomview.RoundImageView
+            android:src="@mipmap/picture_default"
+            android:id="@+id/banner_view"
+            app:type="round"
+            app:radius="@dimen/dp8"
+            android:scaleType="fitXY"
+            android:layout_width="134dp"
+            android:layout_height="100dp"/>
+
+
+
+        <TextView
+            android:id="@+id/tv"
+            android:layout_marginTop="@dimen/dp5"
+            android:layout_marginLeft="@dimen/dp20"
+            android:layout_toRightOf="@+id/banner_view"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="上传专栏封面"
+            android:textColor="@color/color_ff0a0a0a"
+            android:textSize="16sp"
+            />
+
+        <TextView
+            android:layout_marginLeft="@dimen/dp10"
+            android:layout_alignBottom="@+id/tv"
+            android:layout_toRightOf="@+id/tv"
+            android:textSize="@dimen/sp14"
+            android:text="必填*"
+            android:textColor="@color/color_FFF85959"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content" />
+
+
+        <TextView
+            android:layout_below="@+id/tv"
+            android:layout_marginLeft="@dimen/dp20"
+            android:layout_toRightOf="@+id/banner_view"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="请尽量上传4:3格式的图片"
+            android:textColor="#ffb6b6ba"
+            android:textSize="13sp"
+            />
+
+
+        <TextView
+            android:id="@+id/tv_select_pictrue"
+            android:layout_alignBottom="@+id/banner_view"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:padding="@dimen/dp5"
+            android:text="上传图片"
+            android:background="@drawable/select_pictrue_bg"
+            android:layout_alignParentRight="true"
+            android:textColor="@color/color_FF507DAF"
+            android:textSize="16sp"
+            />
+    </RelativeLayout>
+
+
+    <RelativeLayout
+        android:layout_margin="@dimen/dp15"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+        <com.blockadm.common.comstomview.RoundImageView
+            android:src="@mipmap/picture_default"
+            android:id="@+id/banner_view2"
+            app:type="round"
+            app:radius="@dimen/dp8"
+            android:scaleType="fitXY"
+            android:layout_width="134dp"
+            android:layout_height="100dp"/>
+
+
+
+        <TextView
+            android:id="@+id/tv2"
+            android:layout_marginTop="@dimen/dp5"
+            android:layout_marginLeft="@dimen/dp20"
+            android:layout_toRightOf="@+id/banner_view2"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="添加内容视频"
+            android:textColor="@color/color_ff0a0a0a"
+            android:textSize="16sp"
+            />
+
+        <TextView
+            android:layout_marginLeft="@dimen/dp10"
+            android:layout_alignBottom="@+id/tv2"
+            android:layout_toRightOf="@+id/tv2"
+            android:textSize="@dimen/sp14"
+            android:text="选填*"
+            android:textColor="@color/color_FF3164FE"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content" />
+
+
+        <TextView
+            android:layout_below="@+id/tv2"
+            android:layout_marginLeft="@dimen/dp20"
+            android:layout_toRightOf="@+id/banner_view2"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="请尽量上传300M内的视频"
+            android:textColor="#ffb6b6ba"
+            android:textSize="13sp"
+            />
+
+
+        <TextView
+            android:id="@+id/tv_select_video"
+            android:layout_alignBottom="@+id/banner_view2"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:padding="@dimen/dp5"
+            android:text="上传视频"
+            android:background="@drawable/select_pictrue_bg"
+            android:layout_alignParentRight="true"
+            android:textColor="@color/color_FF507DAF"
+            android:textSize="16sp"
+            />
+    </RelativeLayout>
+
+
+</LinearLayout>
+
+
+    <TextView
+        android:id="@+id/tv_edit"
+        android:background="@color/color_FF3164FE"
+        android:gravity="center"
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/dp50"
+        android:text="编辑详情"
+        android:layout_alignParentBottom="true"
+        android:textColor="@color/color_ffffff"
+        android:textSize="16sp"
+        />
+
+</RelativeLayout>

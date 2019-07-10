@@ -1,0 +1,242 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:id="@+id/rl_root"
+    android:background="@android:color/background_light"
+    android:fitsSystemWindows="true"
+    android:orientation="vertical"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <LinearLayout
+        android:padding="@dimen/dp10"
+        android:background="@mipmap/user_bg_default01"
+        android:orientation="vertical"
+        android:layout_width="match_parent"
+        android:layout_height="250dp">
+
+
+    <RelativeLayout
+        android:orientation="horizontal"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+        <TextView
+            android:layout_alignParentLeft="true"
+            android:drawableLeft="@mipmap/ic_back_w"
+            android:layout_gravity="end"
+            android:text="返回"
+            android:gravity="center"
+            android:textColor="@color/color_ffffff"
+            android:id="@+id/tv_back"
+            android:textSize="@dimen/sp14"
+            android:layout_width="@dimen/dp60"
+            android:layout_height="@dimen/dp26" />
+
+        <TextView
+            android:layout_alignParentRight="true"
+            android:text="关注"
+            android:background="@drawable/login_login_btn_ok"
+            android:gravity="center"
+            android:textColor="@color/color_ffffff"
+            android:id="@+id/tv_attention"
+            android:textSize="@dimen/sp14"
+            android:layout_width="@dimen/dp65"
+            android:layout_height="@dimen/dp26" />
+
+    </RelativeLayout>
+
+
+        <RelativeLayout
+            android:layout_marginTop="@dimen/dp10"
+            android:id="@+id/rl_image"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+
+            <com.blockadm.common.comstomview.CircleImageView
+                android:layout_centerInParent="true"
+                android:id="@+id/civ_headimage"
+                android:layout_width="@dimen/dp74"
+                android:layout_height="@dimen/dp74"
+                android:src="@mipmap/picture_default" />
+            <ImageView
+                android:layout_marginLeft="-22dp"
+                android:layout_toRightOf="@+id/civ_headimage"
+                android:layout_alignBottom="@+id/civ_headimage"
+                android:id="@+id/iv"
+                android:layout_width="25dp"
+                android:layout_height="25dp"
+                android:src="@mipmap/user_vip_copy" />
+
+        </RelativeLayout>
+
+
+
+    <LinearLayout
+        android:id="@+id/ll"
+        android:gravity="center_horizontal"
+        android:orientation="horizontal"
+        android:layout_width="match_parent"
+        android:layout_height="36dp">
+
+        <TextView
+            android:textColor="@color/color_ffffff"
+            android:textSize="@dimen/sp20"
+            android:text="name"
+            android:id="@+id/tv_name"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content" />
+
+        <TextView
+            android:padding="@dimen/dp4"
+            android:textColor="@color/color_ffffff"
+            android:background="@drawable/jigou_bg_r"
+            android:layout_marginLeft="@dimen/dp10"
+            android:textSize="@dimen/sp10"
+            android:text="机构"
+            android:id="@+id/tv_institution"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content" />
+
+    </LinearLayout>
+
+    <LinearLayout
+        android:gravity="center"
+        android:orientation="horizontal"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+        <TextView
+            android:textColor="@color/color_ffffff"
+            android:textSize="@dimen/sp12"
+            android:text="22岁"
+            android:id="@+id/tv_age"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content" />
+
+        <TextView
+            android:textColor="@color/color_ffffff"
+            android:layout_marginLeft="@dimen/dp10"
+            android:textSize="@dimen/sp14"
+            android:text="广东深圳"
+            android:id="@+id/tv_address"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content" />
+
+    </LinearLayout>
+
+
+    <LinearLayout
+        android:layout_marginTop="@dimen/dp10"
+        android:gravity="center"
+        android:orientation="horizontal"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+        <TextView
+            android:textColor="@color/color_ffffff"
+            android:textSize="@dimen/sp16"
+            android:id="@+id/tv_attention_count"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content" />
+
+        <View
+            android:layout_marginLeft="@dimen/dp10"
+            android:background="@color/color_ffffff"
+            android:layout_width="@dimen/dp1"
+            android:layout_height="@dimen/dp16"/>
+
+        <TextView
+            android:textColor="@color/color_ffffff"
+            android:layout_marginLeft="@dimen/dp10"
+            android:textSize="@dimen/sp16"
+            android:id="@+id/tv_fans"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content" />
+
+    </LinearLayout>
+
+    <TextView
+        android:layout_marginTop="@dimen/dp6"
+        android:textColor="@color/color_ffffff"
+        android:maxLines="1"
+        android:ellipsize="end"
+        android:gravity="center"
+        android:textSize="@dimen/sp16"
+        android:text=""
+        android:id="@+id/tv_jianjie"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content" />
+       </LinearLayout>
+
+    <View
+        android:background="@color/color_fff2f3f4"
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/dp3"/>
+    <RelativeLayout
+        android:id="@+id/rl_level"
+        android:padding="@dimen/dp10"
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/dp50">
+
+        <ImageView
+            android:layout_centerVertical="true"
+            android:id="@+id/civ_level"
+            android:layout_width="20dp"
+            android:layout_height="20dp"
+            android:src="@mipmap/picture_default" />
+
+        <ImageView
+            android:layout_centerVertical="true"
+            android:id="@+id/iv_level"
+            android:layout_marginLeft="@dimen/dp10"
+            android:layout_toRightOf="@+id/civ_level"
+            android:layout_width="@dimen/dp50"
+            android:layout_height="@dimen/dp15" />
+
+        <ImageView
+            android:id="@+id/tv_arrow"
+            android:layout_centerVertical="true"
+            android:layout_alignParentRight="true"
+            android:src="@mipmap/ic_group"
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent" />
+
+
+    </RelativeLayout>
+
+    <View
+        android:background="@color/color_fff2f3f4"
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/dp3"/>
+
+    <com.blockadm.common.comstomview.MyTabLayout
+        android:background="@color/color_ffffff"
+        android:id="@+id/tl_tab"
+        app:tabGravity="fill"
+        app:tabMode="fixed"
+        app:tabIndicatorColor="#FF3164FE"
+        app:tabTextColor="@color/color_97979F"
+        app:tabSelectedTextColor="@color/color_0A0A0A"
+        app:tabTextAppearance="@style/TabLayoutTextStyle"
+        android:layout_width="wrap_content"
+        android:layout_height="@dimen/dp42"
+        />
+
+
+    <View
+        android:background="@color/color_fff2f3f4"
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/dp3"/>
+
+
+
+    <android.support.v4.view.ViewPager
+        android:id="@+id/vp"
+        android:layout_below="@+id/tl_tab"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"/>
+
+
+
+</LinearLayout>

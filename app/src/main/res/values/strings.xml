@@ -1,0 +1,9 @@
+<resources xmlns:tools="http://schemas.android.com/tools" tools:ignore="MissingTranslation">
+    <!--<string name="app_name">爱德媒BlockADM</string>-->
+    <string name="app_name">爱德媒</string>
+
+    <string name="no_more">没有更多了</string>
+    <string name="more_loading">更多加载中...</string>
+    <string name="btn_sure">确定</string>
+    <string name="btn_canel">取消</string>
+</resources>

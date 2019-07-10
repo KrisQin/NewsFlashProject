@@ -1,0 +1,48 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical"
+    android:id="@+id/layout_root"
+    android:background="@drawable/shape_layout_input_pwd_bg"
+    android:gravity="center_horizontal"
+    android:layout_width="wrap_content"
+    android:layout_height="wrap_content">
+
+    <EditText
+        android:id="@+id/et_pwd"
+        android:background="@color/color_F2F3F4"
+        android:layout_width="258dp"
+        android:textColorHint="@color/color_B6B6BA"
+        android:hint="输入房间密码"
+        android:textSize="18sp"
+        android:layout_marginTop="@dimen/dp32"
+        android:textColor="@color/color_333333"
+        android:paddingLeft="@dimen/dp13"
+        android:layout_height="@dimen/dp48" />
+
+    <TextView
+        android:id="@+id/tv_pwd_error"
+        android:visibility="invisible"
+        android:textColor="@color/color_F85959"
+        android:layout_marginTop="@dimen/dp12"
+        android:text="密码错误，请重新输入"
+        android:textSize="14sp"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content" />
+
+    <View
+        android:background="@color/color_DDDDDD"
+        android:layout_marginTop="@dimen/dp31"
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/dp1"/>
+
+    <TextView
+        android:id="@+id/tv_submit"
+        android:textColor="@color/color_3164FE"
+        android:layout_margin="@dimen/dp18"
+        android:text="确定"
+        android:textSize="16sp"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content" />
+
+</LinearLayout>

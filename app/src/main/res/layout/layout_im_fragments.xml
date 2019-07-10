@@ -1,0 +1,98 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.design.widget.CoordinatorLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/activity_main"
+    android:background="@color/white"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical">
+
+    <android.support.design.widget.AppBarLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:gravity="center_horizontal"
+            android:orientation="vertical"
+            android:background="@color/white"
+            android:paddingBottom="10dp"
+            app:layout_scrollFlags="scroll">
+
+            <android.support.constraint.ConstraintLayout
+                android:background="@drawable/shape_et_bg"
+                app:layout_scrollFlags="scroll|enterAlways"
+                android:layout_width="match_parent"
+                android:layout_margin="@dimen/dp10"
+                android:layout_height="36dp">
+
+                <ImageView
+                    android:id="@+id/iv"
+                    app:layout_constraintLeft_toLeftOf="parent"
+                    android:layout_marginLeft="@dimen/dp93"
+                    app:layout_constraintTop_toTopOf="parent"
+                    app:layout_constraintBottom_toBottomOf="parent"
+                    android:background="@drawable/im_search_img"
+                    android:layout_width="@dimen/dp14"
+                    android:layout_height="@dimen/dp14" />
+
+
+                <TextView
+                    app:layout_constraintTop_toTopOf="parent"
+                    app:layout_constraintBottom_toBottomOf="parent"
+                    android:layout_marginLeft="@dimen/dp4"
+                    app:layout_constraintLeft_toRightOf="@+id/iv"
+                    android:text="试一试搜索“区块链”"
+                    android:textColor="@color/cl_B6B6BA"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content" />
+
+            </android.support.constraint.ConstraintLayout>
+
+            <com.blockadm.common.comstomview.banner.BannerView
+                android:id="@+id/bannerView"
+                android:background="@color/color_ffffff"
+                android:padding="@dimen/dp10"
+                android:layout_width="match_parent"
+                android:layout_height="176dp"
+                app:bottomColor="#453e3e3e"
+                app:layout_scrollFlags="scroll|enterAlways"
+                app:dotDistance="2dp"
+                app:dotIndicatorFocus="#FF3164FE"
+                app:dotIndicatorNormal="#ffffff"
+                app:dotSize="6dp"/>
+
+        </LinearLayout>
+
+        <LinearLayout
+            android:id="@+id/community_container_tab_container"
+            android:layout_width="match_parent"
+            android:layout_height="45dp"
+            android:background="@color/white"
+            android:gravity="bottom">
+
+            <android.support.design.widget.TabLayout
+                android:id="@+id/community_container_tab_layout"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                app:tabIndicatorColor="#3164FE"
+                app:tabSelectedTextColor="#000000"
+                app:tabTextColor="#1d1c1d"
+                android:background="@color/white"
+                app:tabMode="scrollable">
+            </android.support.design.widget.TabLayout>
+        </LinearLayout>
+    </android.support.design.widget.AppBarLayout>
+
+    <com.blockadm.adm.im_module.widget.CustomViewPager
+        android:id="@+id/viewPager"
+        android:background="@color/white"
+        android:layout_marginTop="@dimen/dp10"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        app:layout_behavior="@string/appbar_scrolling_view_behavior">
+    </com.blockadm.adm.im_module.widget.CustomViewPager>
+</android.support.design.widget.CoordinatorLayout>

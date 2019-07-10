@@ -1,0 +1,227 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+
+    <LinearLayout
+        xmlns:android="http://schemas.android.com/apk/res/android"
+        xmlns:app="http://schemas.android.com/apk/res-auto"
+        android:orientation="vertical"
+        android:background="@android:color/background_light"
+        android:fitsSystemWindows="true"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+    <com.blockadm.common.comstomview.BaseTitleBar
+        android:id="@+id/tilte"
+        app:lefttext_is_show="true"
+        app:righttext_is_show="true"
+        android:layout_alignParentTop="true"
+        app:lefttext_color="@color/color_0A0A0A"
+        app:centertext = "邀请好友有奖"
+        app:lefticon_is_show="true"
+        app:lefticon_src="@mipmap/ic_back"
+        app:righticon_is_show="true"
+        app:righttext_color="@color/color_FF3164FE"
+        app:righttext="互动"
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/dp45" />
+
+    <com.blockadm.common.comstomview.FScrollView
+
+        android:layout_below="@+id/tilte"
+        android:id="@+id/rl_root"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+
+
+<LinearLayout
+    android:orientation="vertical"
+    android:background="@android:color/background_light"
+    android:fitsSystemWindows="true"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+
+
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+
+
+        <RelativeLayout
+            android:id="@+id/rl1"
+            android:layout_below="@+id/rl_title"
+            android:gravity="center_horizontal"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+
+            <LinearLayout
+                android:orientation="vertical"
+                android:layout_width="match_parent"
+                android:layout_height="200dp">
+
+                <View
+                    android:background="@mipmap/lv_background"
+                    android:layout_width="match_parent"
+                    android:layout_weight="1"
+                    android:layout_height="0dp"/>
+
+                <View
+                    android:background="@color/color_ffffff"
+                    android:layout_width="match_parent"
+                    android:layout_weight="1"
+                    android:layout_height="0dp"/>
+
+            </LinearLayout>
+
+            <RelativeLayout
+                android:id="@+id/rl"
+                android:layout_centerHorizontal="true"
+                android:layout_marginTop="@dimen/dp15"
+                android:padding="@dimen/dp20"
+                android:background="@color/color_ffffff"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content">
+
+                <com.blockadm.common.comstomview.CircleImageView
+                    android:layout_marginTop="@dimen/dp20"
+                    android:layout_marginLeft="@dimen/dp25"
+                    android:id="@+id/civ_headimage"
+                    android:layout_width="@dimen/dp52"
+                    android:layout_height="@dimen/dp52"
+                    android:src="@mipmap/picture_default" />
+
+                <TextView
+                    android:textStyle="bold"
+                    android:textColor="@color/color_0A0A0A"
+                    android:layout_marginTop="@dimen/dp25"
+                    android:layout_marginLeft="@dimen/dp10"
+                    android:layout_toRightOf="@+id/civ_headimage"
+                    android:id="@+id/title"
+                    android:text="波兰倒计时九十九分钟"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content" />
+
+                <ImageView
+                    android:scaleType="fitXY"
+                    android:layout_alignBottom="@id/title"
+                    android:id="@+id/iv_level"
+                    android:layout_marginTop="@dimen/dp30"
+                    android:layout_marginLeft="@dimen/dp10"
+                    android:layout_toRightOf="@+id/title"
+                    android:layout_width="15dp"
+                    android:layout_height="15dp" />
+
+                <ImageView
+                    android:id="@+id/iv_name_icon"
+                    android:layout_marginTop="@dimen/dp5"
+                    android:layout_marginLeft="@dimen/dp10"
+                    android:layout_toRightOf="@+id/civ_headimage"
+                    android:layout_below="@+id/title"
+                    android:layout_width="@dimen/dp50"
+                    android:layout_height="@dimen/dp16" />
+
+                <ProgressBar
+                    android:progressDrawable="@drawable/progress_red"
+                    android:layout_marginTop="@dimen/dp50"
+                    android:layout_centerHorizontal="true"
+                    android:layout_below="@+id/civ_headimage"
+                    android:background="#FFF2F3F4"
+                    android:id="@+id/progressBar"
+                    style="@style/Widget.AppCompat.ProgressBar.Horizontal"
+                    android:layout_width="264dp"
+                    android:layout_height="8dp"
+                    android:layout_marginBottom="@dimen/dp10"
+                    />
+
+                <TextView
+                    android:id="@+id/tv_progress_left"
+                    android:layout_alignLeft="@id/progressBar"
+                    android:layout_below="@id/progressBar"
+                    android:textSize="@dimen/sp14"
+                    android:textColor="@color/color_FFB6B6BA"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content" />
+
+                <TextView
+                    android:id="@+id/tv_progress_right"
+                    android:layout_alignRight="@id/progressBar"
+                    android:layout_below="@id/progressBar"
+                    android:textSize="@dimen/sp14"
+                    android:textColor="@color/color_FFB6B6BA"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content" />
+            </RelativeLayout>
+
+        </RelativeLayout>
+
+        <ImageView
+            android:id="@+id/iv_go"
+            android:paddingLeft="@dimen/dp10"
+            android:paddingRight="@dimen/dp10"
+            android:layout_below="@+id/rl1"
+            android:src="@mipmap/lv_banner_share"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:paddingBottom="@dimen/dp10"/>
+
+        <View
+            android:id="@+id/v"
+            android:layout_below="@+id/iv_go"
+            android:background="@color/color_fff2f3f4"
+            android:layout_width="match_parent"
+            android:layout_height="@dimen/dp10"/>
+
+        <RelativeLayout
+            android:id="@+id/rl2"
+            android:layout_below="@+id/v"
+            android:paddingTop="@dimen/dp10"
+            android:paddingBottom="@dimen/dp10"
+            android:paddingLeft="@dimen/dp20"
+            android:paddingRight="@dimen/dp15"
+            android:layout_centerVertical="true"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+
+            <TextView
+                android:layout_alignParentLeft="true"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="等级特权奖励(A钻)"
+                android:textColor="#ff0a0a0a"
+                android:textSize="18sp"
+                />
+
+            <TextView
+                android:id="@+id/tv_rule"
+                android:layout_centerVertical="true"
+                android:layout_alignParentRight="true"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="规则"
+                android:textColor="#ff507daf"
+                android:textSize="14sp"
+                />
+        </RelativeLayout>
+
+
+        <com.blockadm.common.comstomview.EmptyRecyclerView
+            android:layout_below="@+id/rl2"
+            android:paddingLeft="@dimen/dp15"
+            android:paddingRight="@dimen/dp15"
+            android:background="@color/color_ffffff"
+            android:id="@+id/swipe_target"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"/>
+
+
+
+
+    </RelativeLayout>
+
+</LinearLayout>
+    </com.blockadm.common.comstomview.FScrollView>
+    </LinearLayout>
+

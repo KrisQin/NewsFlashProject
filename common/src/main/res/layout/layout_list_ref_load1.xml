@@ -1,0 +1,23 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <TextView
+        android:textSize="@dimen/dp14"
+        android:textColor="@color/color_0A0A0A"
+        android:id="@+id/tv_time"
+        android:background="@color/color_ffffff"
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/dp48" />
+
+    <com.blockadm.common.comstomview.EmptyRecyclerView
+        android:id="@+id/swipe_target"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"/>
+
+
+
+
+
+</RelativeLayout>

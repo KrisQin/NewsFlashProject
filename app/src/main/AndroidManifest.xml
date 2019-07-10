@@ -1,0 +1,583 @@
+<?xml version="1.0" encoding="utf-8"?>
+<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    xmlns:uses-permissionAndroid="http://schemas.android.com/apk/res-auto"
+    package="com.blockadm.adm">
+
+    <uses-permission android:name="android.permission.WRITE_SETTINGS" />
+    <uses-permission android:name="android.permission.VIBRATE" />
+    <!-- Optional for location -->
+    <uses-permission android:name="android.permission.SYSTEM_ALERT_WINDOW" /> <!-- 用于开启 debug 版本的应用在6.0 系统上 层叠窗口权限 -->
+    <uses-permission android:name="android.permission.CHANGE_WIFI_STATE" />
+    <uses-permission android:name="android.permission.ACCESS_LOCATION_EXTRA_COMMANDS" />
+    <uses-permission android:name="android.permission.CHANGE_NETWORK_STATE" />
+    <uses-permission android:name="android.permission.GET_TASKS" />
+    <!-- 网络权限 -->
+    <uses-permission android:name="android.permission.INTERNET" />
+    <uses-permission android:name="android.permission.ACCESS_WIFI_STATE" />
+    <uses-permission android:name="android.permission.ACCESS_NETWORK_STATE" />
+
+    <!-- 蓝牙分享所需的权限 -->
+    <uses-permission android:name="android.permission.BLUETOOTH" />
+    <uses-permission android:name="android.permission.BLUETOOTH_ADMIN" />
+    <uses-permission android:name="android.permission.WAKE_LOCK" />
+
+    <!-- 剩下的是危险权限,要获取用户权限 -->
+
+    <!-- 数据分析的定位纠正所需权限 -->
+    <uses-permission android:name="android.permission.ACCESS_FINE_LOCATION" />
+    <uses-permission android:name="android.permission.ACCESS_COARSE_LOCATION" />
+
+    <!-- 照相机权限 -->
+    <uses-permission android:name="android.permission.CAMERA" />
+    <uses-permission android:name="android.permission.RECORD_AUDIO" />
+
+    <uses-feature android:name="android.hardware.camera" />
+    <uses-feature android:name="android.hardware.camera.autofocus" />
+
+    <!--写入扩展存储，向扩展卡写入数据，用于写入缓存定位数据-->
+    <uses-permission android:name="android.permission.WRITE_EXTERNAL_STORAGE" />
+    <uses-permission android:name="android.permission.READ_EXTERNAL_STORAGE" />
+
+    <!--打电话-->
+    <uses-permission android:name="android.permission.READ_PHONE_STATE" />
+    <uses-permission android:name="android.permission.CALL_PHONE" />
+    <uses-permission android:name="android.permission.READ_LOGS" />
+    <uses-permission android:name="android.permission.MANAGE_ACCOUNTS" />
+    <uses-permission android:name="android.permission.GET_ACCOUNTS" />
+    <uses-permission android:name="android.permission.CHANGE_CONFIGURATION"/>
+    <uses-permission android:name="android.permission.REQUEST_INSTALL_PACKAGES"/>
+
+
+
+
+
+    <uses-permission android:name="android.permission.WRITE_APN_SETTINGS"
+        tools:ignore="ProtectedPermissions" />
+
+    <!--
+       android:hardwareAccelerated="false"
+        android:largeHeap="true"
+    -->
+    <application
+        android:name="com.blockadm.adm.MainApp"
+        android:allowBackup="true"
+        android:icon="@mipmap/zhuomianlogo"
+        android:label="@string/app_name"
+        android:supportsRtl="true"
+        android:largeHeap="true"
+        android:theme="@style/AppTheme">
+        <activity android:name="com.blockadm.adm.activity.BlockMainActivity"
+            android:launchMode="singleTask"
+            android:screenOrientation="portrait">
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+        </activity>
+
+        <activity android:name="com.blockadm.adm.activity.LoginComActivity"
+            android:launchMode="singleInstance"/>
+
+        <activity
+            android:name="com.blockadm.adm.activity.InfomationDetailActivty"
+            android:windowSoftInputMode="adjustPan|stateHidden"
+            android:screenOrientation="portrait"
+            />
+        <activity
+            android:name="com.blockadm.adm.im_module.activity.RewardActivity"
+            android:windowSoftInputMode="adjustPan|stateHidden"
+            android:screenOrientation="portrait"
+            />
+        <activity
+            android:name="com.blockadm.adm.im_module.activity.AskQuestionsActivity"
+            android:windowSoftInputMode="adjustPan|stateHidden"
+            android:screenOrientation="portrait"
+            />
+        <activity
+            android:name="com.blockadm.adm.im_module.activity.HBListActivity"
+            android:windowSoftInputMode="adjustPan|stateHidden"
+            android:screenOrientation="portrait"
+            />
+
+        <activity
+            android:name="com.blockadm.adm.activity.InformationTabActivity"
+            android:windowSoftInputMode="adjustPan|stateHidden"
+            android:exported="false"
+            android:screenOrientation="portrait" >
+        </activity>
+        <activity
+            android:name="com.blockadm.adm.im_module.activity.SendHBActivity"
+            android:windowSoftInputMode="adjustPan|stateHidden"
+            android:exported="false"
+            android:screenOrientation="portrait" >
+        </activity>
+        <activity
+            android:name="com.blockadm.adm.activity.CommunityTabActivity"
+            android:windowSoftInputMode="adjustPan|stateHidden"
+            android:exported="false"
+            android:screenOrientation="portrait" >
+        </activity>
+        <activity
+            android:name="com.blockadm.adm.activity.StudyTabTestActivity"
+            android:windowSoftInputMode="adjustPan|stateHidden"
+            android:exported="false"
+            android:screenOrientation="portrait" >
+        </activity>
+        <activity
+            android:name="com.blockadm.adm.activity.UserTabActivity"
+            android:windowSoftInputMode="adjustPan|stateHidden"
+            android:exported="false"
+            android:screenOrientation="portrait" >
+        </activity>
+        <activity
+            android:name="com.blockadm.adm.im_module.activity.CommunityListManagerActivity"
+            android:windowSoftInputMode="adjustPan|stateHidden"
+            android:screenOrientation="portrait"
+            />
+        <activity
+            android:name="com.blockadm.adm.im_module.activity.CommunityBuyHistoryActivity"
+            android:windowSoftInputMode="adjustPan|stateHidden"
+            android:screenOrientation="portrait"
+            />
+        <activity
+            android:name="com.blockadm.adm.im_module.activity.OpenLessonsActivity"
+            android:windowSoftInputMode="adjustPan|stateHidden"
+            android:screenOrientation="portrait"
+            />
+        <activity
+            android:name="com.blockadm.adm.im_module.activity.LessonsTypeActivity"
+            android:windowSoftInputMode="adjustPan|stateHidden"
+            android:screenOrientation="portrait"
+            />
+        <activity
+            android:name="com.blockadm.adm.im_module.activity.ShowBigImageActivity"
+            android:windowSoftInputMode="adjustPan|stateHidden"
+            android:screenOrientation="portrait"
+            />
+
+        <activity
+            android:name="com.blockadm.adm.activity.LoginPasswordComActivity"
+            android:windowSoftInputMode="adjustPan|stateHidden"
+            android:screenOrientation="portrait"
+            />
+
+        <activity
+            android:name="com.blockadm.adm.activity.CommentDetailComActivity"
+            android:windowSoftInputMode="adjustPan|stateHidden"
+            android:screenOrientation="portrait"/>
+
+        <activity
+            android:name="com.blockadm.adm.im_module.activity.LiveDetailActivity"
+            android:windowSoftInputMode="adjustResize"
+            android:screenOrientation="portrait"
+            android:launchMode="singleTask"
+            />
+        <activity
+            android:name="com.blockadm.adm.im_module.activity.SharePosterActivity"
+            android:windowSoftInputMode="adjustPan|stateHidden"
+            android:screenOrientation="portrait"
+            />
+        <activity
+            android:name="com.blockadm.adm.im_module.activity.LiveManagerActivity"
+            android:windowSoftInputMode="adjustPan|stateHidden"
+            android:screenOrientation="portrait"
+            />
+
+        <activity
+            android:name="com.blockadm.adm.activity.ColumnOneDetailComActivity"
+            android:windowSoftInputMode="adjustPan|stateHidden"
+            android:launchMode="singleTask"
+            />
+
+        <activity
+            android:name="com.blockadm.adm.activity.LesssonsDetailComActivity"
+            android:windowSoftInputMode="adjustPan|stateHidden"
+            android:screenOrientation="portrait"
+            />
+
+        <activity
+            android:name="com.blockadm.adm.activity.PersonnalIndexComActivity"
+            android:windowSoftInputMode="adjustPan|stateHidden"
+            android:screenOrientation="portrait"
+            />
+
+        <activity
+            android:name="com.blockadm.adm.activity.FansListComActivity"
+            android:windowSoftInputMode="adjustPan|stateHidden"
+            android:screenOrientation="portrait"
+            />
+
+        <activity
+            android:name="com.blockadm.adm.activity.AttentionListComActivity"
+            android:windowSoftInputMode="adjustPan|stateHidden"
+            android:screenOrientation="portrait"
+            />
+
+        <activity
+            android:name="com.blockadm.adm.activity.SearchviewComActivity"
+            android:windowSoftInputMode="adjustPan|stateHidden"
+            android:screenOrientation="portrait"
+            android:launchMode="singleTop"
+            />
+
+        <activity
+            android:name="com.blockadm.adm.activity.PictrueContentComActivity"
+            android:windowSoftInputMode="adjustPan|stateHidden"
+            android:screenOrientation="portrait"
+            />
+
+        <activity
+            android:name="com.blockadm.adm.activity.AudioContentComActivity"
+            android:windowSoftInputMode="adjustPan|stateHidden"
+            android:screenOrientation="portrait"
+            />
+
+        <activity
+            android:name="com.blockadm.adm.activity.BuyDetailComActivity"
+            android:windowSoftInputMode="adjustPan|stateHidden"
+            android:screenOrientation="portrait"
+            />
+        <activity
+            android:name="com.blockadm.adm.activity.UpdateMyActitivity"
+            android:windowSoftInputMode="adjustPan|stateHidden"
+            android:screenOrientation="portrait"
+            />
+
+
+        <activity
+            android:name="com.blockadm.adm.activity.EditNickNameComActivity"
+            android:windowSoftInputMode="adjustPan|stateHidden"
+            android:screenOrientation="portrait"
+            />
+
+        <activity
+            android:name="com.blockadm.adm.activity.EditSignComActivity"
+            android:windowSoftInputMode="adjustPan|stateHidden"
+            />
+
+        <activity
+            android:name="com.blockadm.adm.activity.PrivateSettingComActivity"
+            android:windowSoftInputMode="adjustPan|stateHidden"
+            android:screenOrientation="portrait"
+            />
+
+        <activity
+            android:name="com.blockadm.adm.activity.SettingPasswordActivtity"
+            android:windowSoftInputMode="adjustPan|stateHidden"
+            android:screenOrientation="portrait"
+            />
+
+        <activity
+            android:launchMode="singleTask"
+            android:name="com.blockadm.adm.activity.SettingComActivity"
+            android:windowSoftInputMode="adjustPan|stateHidden"
+            android:screenOrientation="portrait"
+            />
+
+        <activity
+            android:name="com.blockadm.adm.activity.UpdatePasswordComActivity"
+            android:windowSoftInputMode="adjustPan|stateHidden"
+            />
+
+        <activity
+            android:name="com.blockadm.adm.activity.CodeComActivity"
+            android:windowSoftInputMode="adjustPan|stateHidden"
+            android:screenOrientation="portrait"
+            />
+
+        <activity
+            android:name="com.blockadm.adm.activity.PayPasswordComActivity"
+            android:windowSoftInputMode="adjustPan|stateHidden"
+            android:screenOrientation="portrait"
+            />
+
+        <activity
+            android:name="com.blockadm.adm.activity.BindTelNumComActivity"
+            android:windowSoftInputMode="adjustPan|stateHidden"
+            android:screenOrientation="portrait"
+            />
+        <activity
+            android:name="com.blockadm.adm.activity.CashAzuanActivity"
+            android:screenOrientation="portrait"
+            />
+        <activity
+            android:name="com.blockadm.adm.activity.ExchangeResultActivity"
+            android:screenOrientation="portrait"
+            />
+        <activity
+            android:name="com.blockadm.adm.activity.CashAdianActivity"
+            android:screenOrientation="portrait"
+            />
+        <activity
+            android:name="com.blockadm.adm.activity.CashActivity"
+            android:screenOrientation="portrait"
+            />
+
+        <activity
+            android:name="com.blockadm.adm.activity.FeedBackComActivity"
+            android:screenOrientation="portrait"
+            />
+
+        <activity
+            android:name="com.blockadm.adm.activity.ManagerTagsComActivity"
+            android:screenOrientation="portrait"
+            />
+        <activity
+            android:name="com.blockadm.adm.activity.TagComActivity"
+            android:screenOrientation="portrait"
+            />
+
+        <activity
+            android:name="com.blockadm.adm.activity.MsgListComActivity"
+            android:screenOrientation="portrait"
+            />
+
+        <activity
+            android:name="com.blockadm.adm.activity.CollectListComActivity"
+            android:screenOrientation="portrait"
+            />
+
+        <activity
+            android:name="com.blockadm.adm.activity.MyMoneyComActivity"
+            android:launchMode="singleTask"
+            android:screenOrientation="portrait"
+            />
+
+        <activity
+            android:name="com.blockadm.adm.activity.ArechargeComActivity"
+            android:screenOrientation="portrait"
+            />
+
+        <activity
+            android:name="com.blockadm.adm.activity.AcountListComActivity"
+            android:screenOrientation="portrait"
+            />
+        <activity
+            android:name="com.blockadm.adm.activity.AcountDetailComActivity"
+            android:screenOrientation="portrait"
+            />
+
+        <activity
+            android:name="com.blockadm.adm.activity.FAQactivity"
+            android:screenOrientation="portrait"
+            />
+
+        <activity
+            android:name="com.blockadm.adm.activity.MyInComeActivty"
+            android:screenOrientation="portrait"
+            />
+
+
+        <activity
+            android:name="com.blockadm.adm.activity.AuthenticationComActivity"
+            android:screenOrientation="portrait"
+            android:launchMode="singleTask"
+            />
+        <activity
+            android:name="com.blockadm.adm.activity.AuthenticationInstitutionComActivity"
+            android:screenOrientation="portrait"
+            />
+
+        <activity
+            android:name="com.blockadm.adm.activity.AuthenticationPersonnalComActivity"
+            android:screenOrientation="portrait"
+            />
+
+        <activity
+            android:name="com.blockadm.adm.activity.AuthenticationInstitutionComActivity2"
+            android:screenOrientation="portrait"
+            />
+
+        <activity
+            android:name="com.blockadm.adm.activity.CashManagerActivty"
+            android:screenOrientation="portrait"
+            />
+
+
+
+        <activity
+            android:name="com.blockadm.adm.activity.AddAlipayAcountComActivity"
+            android:screenOrientation="portrait"
+            />
+
+        <activity
+            android:name="com.blockadm.adm.activity.UpdataAlipayAcountComActivity"
+            android:screenOrientation="portrait"
+            />
+
+        <activity
+            android:name="com.blockadm.adm.activity.AddWetchatAcountComActivity"
+            android:screenOrientation="portrait"
+            />
+
+        <activity
+            android:name="com.blockadm.adm.activity.ActivitysDetailComActivity"
+            android:screenOrientation="portrait"
+            />
+
+        <activity
+            android:name="com.blockadm.adm.activity.MyVipComActivity"
+            android:screenOrientation="portrait"
+            />
+
+        <activity
+            android:name="com.blockadm.adm.activity.ProductManagerComActivity"
+            android:screenOrientation="portrait"
+            />
+
+        <activity
+            android:name="com.blockadm.adm.activity.CreateColumnComActivity"
+            android:screenOrientation="portrait"
+            android:windowSoftInputMode="adjustPan|stateHidden"
+            />
+
+        <activity
+            android:name="com.blockadm.adm.activity.MyStudyActiviy"
+            android:launchMode="singleTask"
+            android:screenOrientation="portrait"
+            />
+
+        <activity
+            android:name="com.blockadm.adm.activity.HtmlComActivity"
+            android:screenOrientation="portrait"
+            />
+
+        <activity
+            android:name="com.blockadm.adm.activity.InvitePrizeComActivity"
+            android:screenOrientation="portrait"
+            />
+
+        <activity
+            android:name="com.blockadm.adm.activity.BountyHunterComActivity"
+            android:screenOrientation="portrait"
+            />
+
+        <activity
+            android:name="com.blockadm.adm.activity.PayOrderComActivity"
+            android:screenOrientation="portrait"
+            />
+
+        <activity
+            android:name="com.blockadm.adm.activity.EditDetailComActivity"
+            android:screenOrientation="portrait"
+           />
+
+        <activity
+            android:name="com.blockadm.adm.activity.PaySuccesComActivity"
+            android:screenOrientation="portrait"
+            />
+
+        <activity
+            android:name="com.blockadm.adm.activity.WithdrawComActivity"
+            android:screenOrientation="portrait"
+            />
+
+
+        <activity
+            android:name="com.blockadm.adm.activity.WithdrawSuccessComActivity"
+            android:screenOrientation="portrait"
+            />
+
+        <activity
+            android:name="com.blockadm.adm.activity.BuyHistoryComActivity"
+            android:screenOrientation="portrait"
+            />
+        <activity
+            android:name="com.blockadm.adm.activity.AbountUsComActivity"
+            android:screenOrientation="portrait"
+            />
+
+        <service
+            android:name="com.blockadm.adm.service.PlayService"
+            />
+
+
+        <!-- 微信支付 -->
+        <activity
+            android:name=".wxapi.WXPayEntryActivity"
+            android:exported="true"
+            android:launchMode="singleTask"/>
+
+
+
+        <provider
+            android:name="android.support.v4.content.FileProvider"
+            android:authorities="com.adm.fileprovider_app"
+            android:exported="false"
+            android:grantUriPermissions="true">
+            <meta-data
+                android:name="android.support.FILE_PROVIDER_PATHS"
+                android:resource="@xml/file_paths" />
+        </provider>
+
+
+
+        <!--分享-->
+
+        <meta-data
+            android:name="UMENG_APPKEY"
+            android:value="5c7e2c5b3fc19538fc0005ef" >
+        </meta-data>
+        <activity
+            android:name="com.tencent.tauth.AuthActivity"
+            android:launchMode="singleTask"
+            android:noHistory="true" >
+            <intent-filter>
+                <action android:name="android.intent.action.VIEW" />
+
+                <category android:name="android.intent.category.DEFAULT" />
+                <category android:name="android.intent.category.BROWSABLE" />
+
+                <data android:scheme="tencent1108074970" />
+            </intent-filter>
+        </activity>
+        <activity
+            android:name="com.tencent.connect.common.AssistActivity"
+            android:theme="@android:style/Theme.Translucent.NoTitleBar"
+            android:configChanges="orientation|keyboardHidden|screenSize"/>
+
+
+        <activity
+            android:name=".wxapi.WXEntryActivity"
+            android:configChanges="keyboardHidden|orientation|screenSize"
+            android:exported="true"
+            android:theme="@android:style/Theme.Translucent.NoTitleBar" />
+
+
+        <activity
+            android:name="com.umeng.socialize.media.WBShareCallBackActivity"
+            android:configChanges="keyboardHidden|orientation"
+            android:theme="@android:style/Theme.Translucent.NoTitleBar"
+            android:exported="false"
+            >
+        </activity>
+
+
+
+        <activity android:name="com.sina.weibo.sdk.web.WeiboSdkWebActivity"
+            android:configChanges="keyboardHidden|orientation"
+            android:exported="false"
+            android:windowSoftInputMode="adjustResize"
+            >
+
+        </activity>
+        <activity
+            android:theme="@android:style/Theme.Translucent.NoTitleBar.Fullscreen"
+            android:launchMode="singleTask"
+            android:name="com.sina.weibo.sdk.share.WbShareTransActivity">
+            <intent-filter>
+                <action android:name="com.sina.weibo.sdk.action.ACTION_SDK_REQ_ACTIVITY" />
+                <category android:name="android.intent.category.DEFAULT" />
+            </intent-filter>
+
+        </activity>
+
+
+        <!-- 录音 -->
+        <service android:name="com.zlw.main.recorderlib.recorder.RecordService" />
+
+    </application>
+
+</manifest>

@@ -1,0 +1,23 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:gravity="center"
+    android:text="订阅管理"
+    android:orientation="horizontal"
+    android:layout_width="match_parent"
+    android:layout_height="48dp">
+
+
+<TextView
+    android:id="@+id/tv_manager"
+    android:gravity="center"
+    android:text="订阅管理"
+    android:drawablePadding="@dimen/dp10"
+    android:drawableLeft="@mipmap/label"
+    android:textColor="@color/color_0A0A0A"
+    android:textSize="@dimen/sp16"
+     android:layout_width="wrap_content"
+    android:layout_height="wrap_content">
+
+</TextView>
+</LinearLayout>

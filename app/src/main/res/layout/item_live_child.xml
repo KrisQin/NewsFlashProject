@@ -1,0 +1,133 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.constraint.ConstraintLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    xmlns:app="http://schemas.android.com/apk/res-auto">
+
+    <ImageView
+        android:id="@+id/iv_image"
+        android:background="@color/red"
+        android:layout_margin="@dimen/dp12"
+        android:scaleType="fitXY"
+        app:layout_constraintLeft_toLeftOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        android:layout_width="156dp"
+        android:layout_height="@dimen/dp90" />
+
+    <ImageView
+        android:id="@+id/iv_live_status"
+        android:layout_margin="@dimen/dp17"
+        app:layout_constraintLeft_toLeftOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content" />
+
+    <ImageView
+        android:id="@+id/iv_eye"
+        app:layout_constraintBottom_toBottomOf="@+id/iv_image"
+        app:layout_constraintLeft_toLeftOf="@+id/iv_image"
+        android:background="@drawable/ic_eye"
+        android:layout_margin="@dimen/dp5"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content" />
+
+    <TextView
+        android:id="@+id/tv_visitor"
+        app:layout_constraintLeft_toRightOf="@+id/iv_eye"
+        app:layout_constraintBottom_toBottomOf="@+id/iv_image"
+        android:layout_marginTop="@dimen/dp2"
+        android:layout_marginLeft="@dimen/dp5"
+        android:textColor="@color/white"
+        android:text="1211111111111"
+        android:textSize="11sp"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content" />
+
+    <RelativeLayout
+        android:id="@+id/layout_title"
+        app:layout_constrainedWidth="true"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintRight_toRightOf="parent"
+        app:layout_constraintLeft_toRightOf="@+id/iv_image"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content">
+
+        <TextView
+            android:id="@+id/tv_title"
+            android:textColor="@color/color_333333"
+            android:textSize="15sp"
+            android:text="每天每天"
+            android:layout_marginTop="@dimen/dp12"
+            android:layout_marginLeft="@dimen/dp12"
+            android:layout_marginRight="@dimen/dp12"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content" />
+    </RelativeLayout>
+
+    <TextView
+        android:id="@+id/tv_time"
+        app:layout_constraintRight_toRightOf="@+id/iv_image"
+        app:layout_constraintBottom_toBottomOf="@+id/iv_image"
+        android:textColor="@color/color_B6B6BA"
+        android:textSize="11sp"
+        android:text="周六"
+        android:layout_margin="@dimen/dp5"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content" />
+
+    <TextView
+        android:id="@+id/tv_author"
+        android:textColor="@color/color_97979F"
+        android:textSize="12sp"
+        android:text="常烁·爱德媒签约作者"
+        android:layout_marginTop="@dimen/dp4"
+        android:layout_marginLeft="@dimen/dp12"
+        app:layout_constraintTop_toBottomOf="@+id/layout_title"
+        app:layout_constraintLeft_toRightOf="@+id/iv_image"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content" />
+
+    <!--<TextView-->
+        <!--android:id="@+id/tv_lesson_status2"-->
+        <!--android:textColor="@color/color_red"-->
+        <!--android:textSize="15sp"-->
+        <!--android:text="11"-->
+        <!--android:layout_marginLeft="@dimen/dp12"-->
+        <!--app:layout_constraintBottom_toBottomOf="@+id/iv_image"-->
+        <!--app:layout_constraintLeft_toRightOf="@+id/iv_image"-->
+        <!--android:layout_width="wrap_content"-->
+        <!--android:layout_height="wrap_content" />-->
+
+    <!--<TextView-->
+        <!--android:id="@+id/tv_time"-->
+        <!--android:textColor="@color/color_B6B6BA"-->
+        <!--android:textSize="11sp"-->
+        <!--android:text="周六"-->
+        <!--app:layout_constraintBottom_toBottomOf="@+id/iv_image"-->
+        <!--app:layout_constraintRight_toRightOf="@+id/root"-->
+        <!--android:layout_marginRight="@dimen/dp15"-->
+        <!--android:layout_width="wrap_content"-->
+        <!--android:layout_height="wrap_content" />-->
+
+    <RelativeLayout
+        app:layout_constraintBottom_toBottomOf="@+id/iv_image"
+        app:layout_constraintLeft_toLeftOf="parent"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+
+        <TextView
+            android:id="@+id/tv_lesson_status"
+            android:textColor="@color/color_red"
+            android:textSize="15sp"
+            android:text="11"
+            android:layout_alignParentRight="true"
+            android:layout_marginRight="@dimen/dp15"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content" />
+
+
+    </RelativeLayout>
+
+</android.support.constraint.ConstraintLayout>

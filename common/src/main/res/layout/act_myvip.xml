@@ -1,0 +1,175 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical"
+    android:background="@color/color_ffffff"
+    android:fitsSystemWindows="true"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+
+   <RelativeLayout
+       android:id="@+id/rl_title"
+       android:background="@color/color_0A0A0A"
+       android:gravity="center_vertical"
+       android:layout_width="match_parent"
+       android:layout_height="48dp">
+
+      <ImageView
+          android:src="@mipmap/ic_back_w"
+          android:id="@+id/iv_back"
+          android:layout_centerVertical="true"
+          android:minWidth="@dimen/dp40"
+          android:layout_width="wrap_content"
+          android:layout_height="wrap_content" />
+
+      <TextView
+          android:textColor="@color/color_ffffff"
+          android:textSize="@dimen/sp18"
+          android:layout_centerInParent="true"
+          android:text="我的VIP会员"
+          android:layout_width="wrap_content"
+          android:layout_height="wrap_content" />
+   </RelativeLayout>
+   <View
+       android:background="@color/color_0A0A0A"
+       android:layout_width="match_parent"
+       android:layout_height="15dp"/>
+
+   <ScrollView
+       android:layout_below="@+id/rl_title"
+       android:layout_above="@+id/iv_bottom"
+       android:id="@+id/sl"
+       android:layout_width="match_parent"
+       android:layout_height="match_parent">
+
+
+      <RelativeLayout
+          android:layout_width="match_parent"
+          android:layout_height="match_parent">
+
+
+   <RelativeLayout
+       android:id="@+id/rl1"
+
+       android:gravity="center_horizontal"
+       android:layout_width="match_parent"
+       android:layout_height="wrap_content">
+
+      <LinearLayout
+          android:orientation="vertical"
+          android:layout_width="match_parent"
+          android:layout_height="200dp">
+
+          <View
+              android:background="@color/color_0A0A0A"
+              android:layout_width="match_parent"
+              android:layout_weight="1"
+              android:layout_height="0dp"/>
+
+         <View
+             android:background="@color/color_ffffff"
+             android:layout_width="match_parent"
+             android:layout_weight="1"
+             android:layout_height="0dp"/>
+
+      </LinearLayout>
+
+      <RelativeLayout
+          android:layout_centerHorizontal="true"
+          android:background="@mipmap/card_projection"
+          android:layout_width="wrap_content"
+          android:layout_height="wrap_content">
+
+         <com.blockadm.common.comstomview.CircleImageView
+             android:layout_marginTop="@dimen/dp20"
+             android:layout_marginLeft="@dimen/dp25"
+             android:id="@+id/civ_headimage"
+             android:layout_width="@dimen/dp52"
+             android:layout_height="@dimen/dp52"
+             android:src="@mipmap/picture_default" />
+
+           <TextView
+               android:textStyle="bold"
+               android:textColor="@color/color_0A0A0A"
+               android:layout_marginTop="@dimen/dp25"
+               android:layout_marginLeft="@dimen/dp10"
+               android:layout_toRightOf="@+id/civ_headimage"
+               android:id="@+id/title"
+               android:text="波兰倒计时九十九分钟"
+               android:layout_width="wrap_content"
+               android:layout_height="wrap_content" />
+
+         <ImageView
+             android:layout_marginTop="@dimen/dp5"
+             android:layout_marginLeft="@dimen/dp10"
+             android:src="@mipmap/my_vip"
+             android:layout_toRightOf="@+id/civ_headimage"
+             android:layout_below="@+id/title"
+             android:layout_width="wrap_content"
+             android:layout_height="wrap_content" />
+
+
+         <ImageView
+             android:id="@+id/iv_vip"
+             android:layout_marginTop="@dimen/dp30"
+             android:layout_marginLeft="@dimen/dp30"
+             android:layout_below="@+id/civ_headimage"
+             android:src="@mipmap/idpicture03"
+             android:layout_width="wrap_content"
+             android:layout_height="wrap_content" />
+
+         <ImageView
+             android:layout_marginRight="@dimen/dp40"
+             android:layout_alignParentRight="true"
+             android:layout_alignBottom="@+id/iv_vip"
+             android:src="@mipmap/idpicture02"
+             android:layout_width="wrap_content"
+             android:layout_height="wrap_content" />
+      </RelativeLayout>
+
+
+   </RelativeLayout>
+
+   <com.blockadm.common.comstomview.EmptyRecyclerView
+       android:layout_below="@+id/rl1"
+       android:paddingLeft="@dimen/dp15"
+       android:paddingRight="@dimen/dp15"
+       android:background="@color/color_ffffff"
+       android:id="@+id/swipe_target"
+       android:layout_width="match_parent"
+       android:layout_height="wrap_content"/>
+
+   <LinearLayout
+       android:layout_marginTop="@dimen/dp15"
+       android:paddingLeft="@dimen/dp25"
+        android:gravity="center_vertical"
+       android:orientation="horizontal"
+       android:layout_below="@+id/swipe_target"
+       android:layout_width="match_parent"
+       android:layout_height="wrap_content">
+      <ImageView
+          android:layout_marginRight="@dimen/dp15"
+          android:layout_alignParentRight="true"
+          android:layout_alignBottom="@+id/iv_vip"
+          android:src="@mipmap/membership_more"
+          android:layout_width="@dimen/dp56"
+          android:layout_height="@dimen/dp56" />
+
+      <TextView
+          android:textColor="@color/color_FFB6B6BA"
+          android:layout_toRightOf="@+id/civ_headimage"
+          android:text="更多特权持续开通中，敬请期待！"
+          android:layout_width="wrap_content"
+          android:layout_height="wrap_content" />
+
+   </LinearLayout>
+      </RelativeLayout>
+   </ScrollView>
+
+   <ImageView
+       android:id="@+id/iv_bottom"
+       android:layout_width="match_parent"
+       android:layout_height="wrap_content"
+       android:layout_alignParentBottom="true"
+       android:src="@mipmap/button_vippay" />
+</RelativeLayout>

@@ -1,0 +1,24 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical"
+    android:gravity="center_horizontal"
+    android:layout_width="wrap_content"
+    android:layout_height="wrap_content">
+
+    <com.blockadm.common.comstomview.CircleImageView
+        android:id="@+id/iv_head_image"
+        android:layout_width="@dimen/dp36"
+        android:layout_height="@dimen/dp36"/>
+
+    <TextView
+        android:id="@+id/tv_title"
+        android:layout_marginTop="@dimen/dp14"
+        android:textSize="@dimen/sp13"
+        android:textColor="@color/color_333333"
+        android:layout_marginBottom="@dimen/dp26"
+        android:text="淘宝"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content" />
+
+</LinearLayout>

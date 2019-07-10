@@ -1,0 +1,62 @@
+<resources xmlns:tools="http://schemas.android.com/tools" tools:ignore="MissingTranslation">
+
+    <!-- 报红："xxx" is not translated in "en" (English) or "zh"
+    解决方式，resources下添加：xmlns:tools="http://schemas.android.com/tools"
+                   tools:ignore="MissingTranslation"-->
+
+    <string name="app_name">common</string>
+    <string name="appbar_scrolling_view_behavior">android.support.design.widget.AppBarLayout$ScrollingViewBehavior</string>
+
+    <string name="information">资讯</string>
+    <string name="special_column">专栏</string>
+    <string name="qu_and_ans">问答</string>
+    <string name="my">我的</string>
+    <string name="study">学习</string>
+    <string name="im_string">社群</string>
+    <string name="search_hint">请您输入搜索内容</string>
+
+    <string name="toast_can_not_find_file">找不到指定文件</string>
+    <string name="toast_read_file_error">读取文件内容出错</string>
+    <string name="state_ing">数据加载中......</string>
+    <string name="state_empty">无数据</string>
+    <string name="state_error">数据加载失败......</string>
+
+    <string name="data_empty">暂无数据!~</string>
+    <string name="statue_refresh">刷新</string>
+    <string name="statue_loading">加载中!~~~</string>
+    <string name="best_new">最新</string>
+    <string name="best_hot">最热</string>
+    <string name="collect">收藏</string>
+    <string name="like">点赞</string>
+    <string name="share">分享</string>
+    <string name="follow_up">跟帖</string>
+    <string name="send">发送</string>
+    <string name="now_buy">立即购买</string>
+    <string name="my_acount">我的账户</string>
+    <string name="my_production">我的作品</string>
+    <string name="my_wallet">我的钱包</string>
+    <string name="my_authentication">申请认证</string>
+    <string name="my_collect">我的收藏</string>
+    <string name="my_huntsman">赏金猎人</string>
+    <string name="my_study">我的学习</string>
+    <string name="my_setting">设置</string>
+    <string name="my_help">帮助与反馈</string>
+    <string name="bill">账单</string>
+    <string name="income">收入</string>
+
+    <string name="content_manager">内容管理</string>
+    <string name="true_name_personnal_auto">个人实名认证</string>
+    <string name="cancel">取消</string>
+    <string name="confirm">确定</string>
+
+    <string name="pay_result_tip">这个界面用于显示第三方app通过微信支付的结果</string>
+    <string name="pay_result_callback_msg" formatted="false">微信支付结果：%s</string>
+    <string name="app_tip">提示</string>
+
+    <string name="no_data_load_more">没有更多啦！</string>
+    <string name="azuan">A钻攻略</string>
+
+    <string name="dialog_data_loading">加载中，请稍候····</string>
+    <string name="button_ok">我知道了</string>
+    <string name="error_file_type">不支持的文件类型</string>
+</resources>

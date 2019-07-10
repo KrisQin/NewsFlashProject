@@ -1,0 +1,58 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="wrap_content"
+    android:layout_height="wrap_content"
+    android:gravity="center_horizontal"
+    android:orientation="vertical">
+
+    <LinearLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:background="@drawable/ic_open_hb_bg"
+        android:gravity="center_horizontal"
+        android:orientation="vertical">
+
+
+        <com.blockadm.common.comstomview.CircleImageView
+            android:id="@+id/iv_head_image"
+            android:layout_width="@dimen/dp73"
+            android:layout_height="@dimen/dp73"
+            android:layout_below="@+id/tv_title"
+            android:layout_centerHorizontal="true"
+            android:layout_marginTop="@dimen/dp72"
+            android:src="@mipmap/picture_default" />
+
+        <TextView
+            android:id="@+id/tv_desc"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="@dimen/dp47"
+            android:text="恭喜发财，大吉大利"
+            android:textColor="@color/color_E9BE7A"
+            android:textSize="@dimen/sp20" />
+
+        <ImageView
+            android:id="@+id/iv_open"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="120dp"
+            android:background="@drawable/ic_open_hb_bt" />
+
+        <TextView
+            android:id="@+id/tv_look"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="查看大家的手气 >"
+            android:textColor="@color/color_E9BE7A"
+            android:textSize="@dimen/sp14" />
+
+    </LinearLayout>
+
+    <ImageView
+        android:id="@+id/iv_close"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="@dimen/dp24"
+        android:background="@drawable/ic_close_hb_bt" />
+
+</LinearLayout>

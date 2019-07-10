@@ -1,0 +1,155 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:orientation="vertical"
+    android:layout_marginBottom="@dimen/dp10"
+    android:layout_marginRight="@dimen/dp10"
+    android:layout_marginLeft="@dimen/dp10"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content">
+
+<LinearLayout
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:orientation="horizontal">
+
+
+
+    <RelativeLayout
+        android:layout_marginBottom="@dimen/dp4"
+        android:background="@color/color_ffffff"
+        android:layout_width="0dp"
+        android:layout_weight="2"
+        android:layout_height="match_parent">
+
+        <TextView
+            android:id="@+id/tv_content"
+            android:ellipsize="end"
+            android:textSize="@dimen/sp15"
+            android:textColor="@color/color_0A0A0A"
+            android:maxLines="3"
+            android:layout_marginRight="@dimen/dp10"
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+           />
+
+        <TextView
+            android:id="@+id/tv_resName"
+            android:textColor="@color/color_97979F"
+            android:textSize="@dimen/sp12"
+            android:layout_alignParentBottom="true"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            />
+
+        <TextView
+            android:layout_marginLeft="@dimen/dp10"
+            android:id="@+id/tv_liulan"
+            android:textSize="@dimen/sp12"
+            android:layout_toRightOf="@+id/tv_resName"
+            android:textColor="@color/color_97979F"
+            android:layout_alignParentBottom="true"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            />
+        <TextView
+
+            android:layout_marginLeft="@dimen/dp10"
+            android:id="@+id/tv_time"
+            android:textSize="@dimen/sp12"
+            android:layout_toRightOf="@+id/tv_liulan"
+            android:textColor="@color/color_97979F"
+            android:layout_alignParentBottom="true"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            />
+
+    </RelativeLayout>
+
+
+
+
+
+    <com.blockadm.common.comstomview.RoundImageView
+        app:radius="@dimen/dp5"
+        app:type="round"
+        android:id="@+id/iv"
+        android:background="@color/color_ffffff"
+        android:layout_width="0dp"
+        android:layout_weight="1"
+        android:layout_alignParentRight="true"
+        android:layout_height="90dp"
+        android:scaleType="fitXY"
+        android:src="@mipmap/default_app"
+        />
+
+</LinearLayout>
+
+<!--    <View
+        android:background="@color/color_fff2f3f4"
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/dp1"/>
+
+    <LinearLayout
+        android:id="@+id/ll"
+        android:orientation="horizontal"
+        android:background="@color/color_ffffff"
+        android:layout_width="match_parent"
+        android:layout_height="48dp">
+
+        <RelativeLayout
+            android:layout_weight="1"
+            android:layout_width="0dp"
+            android:layout_height="48dp">
+            <TextView
+                android:id="@+id/tv_liulan"
+                android:drawablePadding="@dimen/dp10"
+                android:layout_centerInParent="true"
+                android:textColor="#FF97979F"
+
+                android:textSize="@dimen/dp14"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content" />
+
+        </RelativeLayout>
+&lt;!&ndash;      android:drawableLeft="@mipmap/ic_pageviews"     android:drawableLeft="@mipmap/ic_listreview"&ndash;&gt;
+        <RelativeLayout
+            android:layout_weight="1"
+            android:layout_width="0dp"
+            android:layout_height="48dp">
+            <TextView
+                android:textColor="#FF97979F"
+                android:id="@+id/tv_msg_num"
+                android:drawablePadding="@dimen/dp10"
+                android:layout_centerInParent="true"
+
+                android:textSize="@dimen/dp14"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content" />
+        </RelativeLayout>
+
+
+        <RelativeLayout
+            android:layout_weight="1"
+            android:layout_width="0dp"
+            android:layout_height="48dp">
+            &lt;!&ndash;android:drawableLeft="@mipmap/ic_collection_works"&ndash;&gt;
+            <TextView
+                android:textColor="#FF97979F"
+                android:id="@+id/tv_collect"
+                android:drawablePadding="@dimen/dp10"
+                android:layout_centerInParent="true"
+
+                android:textSize="@dimen/dp14"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content" />
+        </RelativeLayout>
+    </LinearLayout>-->
+    <View
+        android:layout_marginTop="@dimen/dp10"
+        android:background="@color/color_fff2f3f4"
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/dp1"/>
+
+</LinearLayout>

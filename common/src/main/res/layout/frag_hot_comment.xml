@@ -1,0 +1,82 @@
+<?xml version="1.0" encoding="utf-8"?>
+<app:android.support.v4.widget.NestedScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:id="@+id/nsl"
+    android:layout_marginTop="@dimen/dp15"
+    android:layout_marginLeft="@dimen/dp15"
+    android:layout_marginRight="@dimen/dp15"
+    android:paddingLeft="@dimen/dp15"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    app:layout_behavior="@string/appbar_scrolling_view_behavior">
+<LinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:background="@android:color/background_light"
+    android:orientation="vertical"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <LinearLayout
+        android:id="@+id/ll_follow_up"
+        android:layout_marginTop="@dimen/dp10"
+        android:orientation="horizontal"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content">
+
+        <View
+            android:background="@color/color_FF3164FE"
+            android:layout_width="@dimen/dp4"
+            android:layout_height="@dimen/dp18"/>
+
+        <TextView
+            android:textStyle="bold"
+            android:id="@+id/tv_follow_up"
+            android:layout_marginLeft="8dp"
+            android:textSize="@dimen/sp14"
+            android:text="@string/follow_up"
+            android:textColor="@color/color_0A0A0A"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content" />
+
+    </LinearLayout>
+
+    <com.blockadm.common.comstomview.FullRecyclerView
+        android:layout_marginTop="@dimen/dp10"
+        android:id="@+id/swipe_target"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"/>
+
+<!--    <com.blockadm.common.comstomview.swipetoloadlayout.SwipeToLoadLayout
+        xmlns:app="http://schemas.android.com/apk/res-auto"
+        android:id="@+id/swipeToLoadLayout"
+        android:layout_width="match_parent"
+        android:visibility="gone"
+        android:layout_height="wrap_content"
+        app:default_to_loading_more_scrolling_duration="500"
+        app:default_to_refreshing_scrolling_duration="1000"
+        app:load_more_complete_delay_duration="0"
+        app:load_more_final_drag_offset="@dimen/load_more_final_offset_google"
+        app:load_more_trigger_offset="@dimen/load_more_trigger_offset_google"
+        app:refresh_complete_delay_duration="0"
+        app:refresh_final_drag_offset="@dimen/refresh_final_offset_google"
+        app:refresh_trigger_offset="@dimen/refresh_trigger_offset_google"
+        app:swipe_style="above">
+
+        <include
+            android:visibility="gone"
+            android:id="@id/swipe_refresh_header"
+            layout="@layout/layout_google_header" />
+
+
+
+        <include
+            android:visibility="gone"
+            android:id="@id/swipe_load_more_footer"
+            layout="@layout/layout_google_footer" />
+
+    </com.blockadm.common.comstomview.swipetoloadlayout.SwipeToLoadLayout>-->
+
+</LinearLayout>
+    </app:android.support.v4.widget.NestedScrollView>
+
+

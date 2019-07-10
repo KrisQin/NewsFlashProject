@@ -1,0 +1,134 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<com.blockadm.common.comstomview.MySwipeRefreshLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:id="@+id/srfl"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:layout_marginLeft="@dimen/dp10"
+    android:layout_marginTop="@dimen/dp10"
+    android:layout_marginRight="@dimen/dp10"
+    android:orientation="vertical">
+
+    <android.support.v4.widget.NestedScrollView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:focusable="true"
+        android:focusableInTouchMode="true"
+        android:background="@color/color_ffffff">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical">
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:gravity="center_vertical"
+                android:orientation="horizontal">
+
+
+                <RelativeLayout
+                    android:id="@+id/main_title"
+                    android:layout_width="0dp"
+                    android:layout_height="@dimen/dp40"
+                    android:layout_weight="1"
+                    android:gravity="center_vertical"
+                    android:padding="@dimen/dp4">
+
+
+                    <TextView
+                        android:layout_width="@dimen/dp300"
+                        android:layout_height="@dimen/dp36"
+                        android:layout_marginLeft="@dimen/dp15"
+                        android:layout_toRightOf="@+id/iv_logo"
+                        android:background="@drawable/bg_r5"
+                        android:clickable="false"
+                        android:drawableLeft="@drawable/abc_ic_search_api_material"
+                        android:gravity="center_vertical"
+                        android:paddingLeft="@dimen/dp10"
+                        android:text="请您输入搜索内容"
+                        android:textColor="@color/color_FFB6B6BA" />
+
+
+                </RelativeLayout>
+
+                <ImageView
+                    android:id="@+id/iv_sound_status"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_toRightOf="@+id/main_title"
+                    android:paddingRight="@dimen/dp10"
+                    android:src="@mipmap/audio" />
+            </LinearLayout>
+
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:orientation="vertical">
+
+                <com.blockadm.common.comstomview.banner.BannerView
+                    android:id="@+id/bannerView"
+                    android:layout_width="match_parent"
+                    android:layout_height="176dp"
+                    android:background="@color/color_ffffff"
+                    android:padding="@dimen/dp10"
+                    app:bottomColor="#453e3e3e"
+                    app:dotDistance="2dp"
+                    app:dotIndicatorFocus="#FF3164FE"
+                    app:dotIndicatorNormal="#ffffff"
+                    app:dotSize="6dp" />
+
+
+                <com.blockadm.common.comstomview.FullRecyclerView
+                    android:id="@+id/frv_you_like"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="@dimen/dp5" />
+
+
+            </LinearLayout>
+            <!--   </android.support.v4.widget.NestedScrollView>-->
+            <View
+                android:id="@+id/v1"
+                android:layout_width="match_parent"
+                android:layout_height="@dimen/dp30"
+                android:background="@color/color_ffffff" />
+
+            <com.blockadm.common.comstomview.MyTabLayout
+                android:id="@+id/tl_tab"
+                android:layout_width="match_parent"
+                android:layout_height="@dimen/dp42"
+                android:layout_marginLeft="@dimen/dp5"
+                android:background="@color/color_ffffff"
+                app:tabIndicatorColor="@color/color_FF3164FE"
+                app:tabMode="scrollable"
+                app:tabSelectedTextColor="@color/color_0A0A0A"
+                app:tabTextAppearance="@style/TabLayoutTextStyle"
+                app:tabTextColor="@color/color_97979F" />
+            <!--
+                </android.support.design.widget.AppBarLayout>
+            -->
+
+            <!--<com.blockadm.common.comstomview.WrapHeightViewPager-->
+            <!--android:id="@+id/vp"-->
+            <!--android:layout_width="wrap_content"-->
+            <!--android:layout_height="wrap_content"-->
+            <!--android:layout_marginLeft="@dimen/dp5" />-->
+            <com.blockadm.common.comstomview.WrapContentHeightViewPager
+                android:id="@+id/vp"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="@dimen/dp5" />
+
+
+        </LinearLayout>
+
+    </android.support.v4.widget.NestedScrollView>
+</com.blockadm.common.comstomview.MySwipeRefreshLayout>
+
+
+

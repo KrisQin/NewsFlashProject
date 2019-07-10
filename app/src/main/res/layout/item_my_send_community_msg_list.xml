@@ -1,0 +1,103 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.constraint.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:id="@+id/root">
+
+
+    <com.blockadm.common.comstomview.CircleImageView
+        android:id="@+id/iv_head_image"
+        android:layout_width="@dimen/dp45"
+        android:layout_height="@dimen/dp45"
+        android:layout_marginTop="@dimen/dp27"
+        android:layout_marginRight="@dimen/dp13"
+        android:src="@mipmap/picture_default"
+        app:layout_constraintRight_toRightOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <RelativeLayout
+        android:id="@+id/layout_name"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="@dimen/dp13"
+        android:layout_marginTop="@dimen/dp5"
+        android:layout_marginRight="@dimen/dp11"
+        app:layout_constraintLeft_toLeftOf="parent"
+        app:layout_constraintRight_toLeftOf="@+id/iv_head_image"
+        app:layout_constraintTop_toTopOf="@+id/iv_head_image">
+
+        <TextView
+            android:id="@+id/tv_name"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentRight="true"
+            android:textColor="@color/color_97979F"
+            android:textSize="@dimen/sp15" />
+
+    </RelativeLayout>
+
+
+    <ImageView
+        android:id="@+id/iv_sanjiao"
+        android:layout_width="16dp"
+        android:layout_height="19dp"
+        android:layout_gravity="center_vertical"
+        android:layout_marginTop="@dimen/dp15"
+        android:background="@drawable/ic_item_msg_right_sanjiao"
+        android:padding="@dimen/dp5"
+        app:layout_constraintRight_toRightOf="@+id/layout_name"
+        app:layout_constraintTop_toTopOf="@+id/layout_text" />
+
+    <LinearLayout
+        android:id="@+id/layout_text"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="@dimen/dp9"
+        android:layout_marginRight="10dp"
+        android:layout_marginBottom="@dimen/dp20"
+        android:gravity="right"
+        android:orientation="horizontal"
+        android:visibility="visible"
+        app:layout_constrainedWidth="true"
+        app:layout_constraintRight_toRightOf="@+id/layout_name"
+        app:layout_constraintTop_toBottomOf="@+id/layout_name"
+        app:layout_constraintWidth_max="262dp">
+
+        <TextView
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1" />
+
+
+        <RelativeLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:background="@drawable/bg_r3_white"
+            android:minHeight="@dimen/dp49">
+
+            <TextView
+                android:id="@+id/tv_content"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="@dimen/dp13"
+                android:layout_marginTop="@dimen/dp13"
+                android:layout_marginRight="@dimen/dp13"
+                android:layout_marginBottom="@dimen/dp13"
+                android:textColor="@color/color_0A0A0A"
+                android:textSize="@dimen/sp15"
+                android:visibility="visible" />
+        </RelativeLayout>
+
+
+    </LinearLayout>
+
+
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="20dp"
+        app:layout_constraintLeft_toLeftOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/layout_text" />
+
+
+</android.support.constraint.ConstraintLayout>

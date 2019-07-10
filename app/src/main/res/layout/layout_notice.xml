@@ -1,0 +1,44 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.constraint.ConstraintLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content">
+
+    <LinearLayout
+        android:layout_marginBottom="@dimen/dp19"
+        android:background="@color/color_f8f7c9"
+        android:orientation="horizontal"
+        app:layout_constraintLeft_toLeftOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintRight_toRightOf="parent"
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/dp32">
+
+        <ImageView
+            android:background="@drawable/ic_live_notice"
+            android:layout_gravity="center_vertical"
+            android:layout_marginLeft="@dimen/dp27"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content" />
+
+        <com.blockadm.common.widget.MarqueeText
+            android:id="@+id/tv_notice"
+            android:layout_marginLeft="@dimen/dp11"
+            android:text="这里是公告，这里是群公告的地方，群公告在文字长滚动,群公告在文字长滚动"
+            android:layout_gravity="center_vertical"
+            android:textColor="@color/color_F4AA3A"
+            android:singleLine="true"
+            android:ellipsize="marquee"
+            android:marqueeRepeatLimit="marquee_forever"
+            android:focusable="true"
+            android:focusableInTouchMode="true"
+            android:layout_marginRight="@dimen/dp27"
+            android:textSize="@dimen/sp11"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content" />
+
+
+    </LinearLayout>
+
+</android.support.constraint.ConstraintLayout>

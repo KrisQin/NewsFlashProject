@@ -1,0 +1,142 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.constraint.ConstraintLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:id="@+id/root"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content">
+
+
+    <com.blockadm.common.comstomview.CircleImageView
+        android:id="@+id/iv_head_image"
+        android:layout_width="@dimen/dp40"
+        android:layout_height="@dimen/dp40"
+        android:layout_marginLeft="@dimen/dp13"
+        android:src="@mipmap/picture_default"
+        android:layout_marginTop="@dimen/dp2"
+        app:layout_constraintLeft_toLeftOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+
+    <TextView
+        android:id="@+id/tv_name"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="@dimen/dp11"
+        android:text="周生生"
+        android:textColor="@color/color_97979F"
+        android:textSize="@dimen/sp15"
+        app:layout_constraintLeft_toRightOf="@+id/iv_head_image"
+        app:layout_constraintTop_toTopOf="parent"/>
+
+    <RelativeLayout
+        android:id="@+id/layout_dian"
+        android:layout_width="wrap_content"
+        android:layout_height="@dimen/dp25"
+        android:layout_marginRight="@dimen/dp13"
+        app:layout_constraintRight_toRightOf="parent"
+        app:layout_constraintTop_toTopOf="@+id/tv_name">
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerInParent="true"
+            android:text="· · ·"
+            android:textSize="18sp"
+            android:textStyle="bold" />
+
+    </RelativeLayout>
+
+
+    <LinearLayout
+        android:id="@+id/layout_text"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="@dimen/dp9"
+        android:layout_marginBottom="@dimen/dp20"
+        android:minHeight="@dimen/dp49"
+        android:visibility="visible"
+        app:layout_constrainedWidth="true"
+        app:layout_constraintLeft_toLeftOf="@+id/tv_name"
+        app:layout_constraintTop_toBottomOf="@+id/tv_name"
+        app:layout_constraintWidth_max="262dp">
+
+        <ImageView
+            android:id="@+id/iv"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center_vertical"
+            android:background="@drawable/ic_item_msg_sanjiao"
+            android:padding="@dimen/dp5" />
+
+        <RelativeLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="-2dp"
+            android:background="@drawable/bg_r3_white">
+
+            <TextView
+                android:id="@+id/tv_content"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="@dimen/dp13"
+                android:layout_marginTop="@dimen/dp13"
+                android:layout_marginRight="@dimen/dp13"
+                android:layout_marginBottom="@dimen/dp13"
+                android:text="海通证券表海通证券表海通证券表海通证券表海通证券表海通证券表海通证券表"
+                android:textColor="@color/color_0A0A0A"
+                android:textSize="@dimen/sp15" />
+        </RelativeLayout>
+    </LinearLayout>
+
+    <TextView
+        android:id="@+id/tv_notice"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="@dimen/dp21"
+        android:layout_marginBottom="@dimen/dp6"
+        android:text="昵称A打赏了老师星星50A点"
+        android:textColor="@color/color_B6B6BA"
+        android:textSize="@dimen/sp11"
+        android:visibility="gone"
+        app:layout_constraintLeft_toLeftOf="@+id/layout_text"
+        app:layout_constraintRight_toRightOf="@+id/layout_text"
+        app:layout_constraintTop_toBottomOf="@+id/layout_text" />
+
+
+    <com.blockadm.common.widget.RoundRectLayout
+        android:id="@+id/layout_limit"
+        android:layout_width="@dimen/dp63"
+        android:layout_height="@dimen/dp28"
+        android:layout_marginRight="@dimen/dp10"
+        android:background="@color/color_333333"
+        android:visibility="gone"
+        app:layout_constraintRight_toRightOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/layout_dian">
+
+        <TextView
+            android:id="@+id/tv_limit_text"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerInParent="true"
+            android:text="禁言"
+            android:textColor="@color/white"
+            android:textSize="@dimen/sp11" />
+
+
+    </com.blockadm.common.widget.RoundRectLayout>
+
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/dp20"
+        app:layout_constraintLeft_toLeftOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/tv_notice" />
+
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/dp20"
+        app:layout_constraintLeft_toLeftOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/layout_text" />
+
+</android.support.constraint.ConstraintLayout>

@@ -1,0 +1,188 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:orientation="vertical"
+    android:fitsSystemWindows="true"
+    android:background="@color/color_fff2f3f4"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+
+    <com.blockadm.common.comstomview.BaseTitleBar
+        android:id="@+id/tilte"
+        app:lefttext_is_show="true"
+        app:righttext_is_show="true"
+        app:lefttext_color="@color/color_0A0A0A"
+        app:centertext = "提现"
+        app:lefticon_src="@mipmap/ic_back"
+        app:lefttext=""
+        app:righttext_color="@color/color_0A0A0A"
+        app:lefticon_is_show="true"
+        app:righticon_is_show="true"
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/dp50"/>
+
+    <RelativeLayout
+        android:layout_marginLeft="@dimen/dp10"
+        android:layout_marginRight="@dimen/dp10"
+        android:background="@mipmap/payfor_bg"
+        android:padding="@dimen/dp15"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content">
+
+
+        <LinearLayout
+            android:id="@+id/ll"
+            android:orientation="horizontal"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+            <TextView
+                android:layout_gravity="top"
+                android:layout_marginTop="@dimen/dp20"
+                android:layout_marginLeft="@dimen/dp20"
+                android:textSize="@dimen/sp16"
+                android:textColor="@color/color_0A0A0A"
+                android:text="到账"
+                android:layout_width="wrap_content"
+                android:layout_height="match_parent" />
+
+            <ImageView
+                android:id="@+id/iv_wechat"
+                android:layout_marginLeft="@dimen/dp20"
+                android:src="@mipmap/payforwechat_press"
+                android:layout_width="100dp"
+                android:layout_height="48dp"  />
+
+
+
+            <ImageView
+                android:id="@+id/iv_alipay"
+                android:layout_marginLeft="@dimen/dp20"
+                android:src="@mipmap/payforalipay_default"
+                android:layout_width="100dp"
+                android:layout_height="48dp" />
+
+
+        </LinearLayout>
+
+
+        <TextView
+            android:id="@+id/tv"
+            android:layout_marginLeft="@dimen/dp20"
+            android:layout_below="@+id/ll"
+            android:layout_marginTop="@dimen/dp30"
+            android:textColor="@color/color_0A0A0A"
+            android:textSize="@dimen/sp16"
+            android:text="提现金额(A点)"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content" />
+
+        <android.support.v7.widget.AppCompatEditText
+            android:layout_marginTop="@dimen/dp20"
+            android:layout_marginLeft="@dimen/dp26"
+            android:layout_below="@+id/tv"
+            android:theme="@style/MyEditText"
+            android:singleLine="true"
+            android:hint="输入金额"
+            android:inputType="number"
+            android:layout_width="match_parent"
+            android:textCursorDrawable="@drawable/my_cursor"
+            android:layout_centerInParent="true"
+            android:id="@+id/et_point"
+            android:layout_height="@dimen/dp50" />
+
+        <LinearLayout
+            android:id="@+id/ll_withdraw"
+            android:orientation="horizontal"
+            android:layout_below="@+id/et_point"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+            <TextView
+                android:id="@+id/tv_money"
+                android:textSize="@dimen/sp14"
+                android:textColor="@color/color_ff97979f"
+                android:layout_marginLeft="@dimen/dp20"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content" />
+            <TextView
+                android:layout_marginLeft="@dimen/dp10"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="手续费率2%"
+                android:textColor="#fff85959"
+                android:textSize="14sp"
+                />
+
+        </LinearLayout>
+
+
+
+        <android.support.v7.widget.AppCompatEditText
+            android:layout_marginTop="@dimen/dp10"
+            android:layout_marginLeft="@dimen/dp26"
+            android:layout_below="@+id/ll_withdraw"
+            android:theme="@style/MyEditText"
+            android:visibility="visible"
+            android:singleLine="true"
+            android:hint="输入姓名"
+            android:layout_width="match_parent"
+            android:textCursorDrawable="@drawable/my_cursor"
+            android:layout_centerInParent="true"
+            android:id="@+id/et_name"
+            android:layout_height="@dimen/dp50" />
+
+
+    </RelativeLayout>
+
+
+    <TextView
+        android:layout_marginLeft="@dimen/dp35"
+        android:layout_marginTop="@dimen/dp10"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="注：提现成功后1-3个工作日到账，若没有及时到账"
+        android:textColor="#ffb6b6ba"
+        android:textSize="14sp"
+        />
+
+ <LinearLayout
+     android:layout_marginLeft="@dimen/dp35"
+     android:layout_marginTop="@dimen/dp5"
+     android:orientation="horizontal"
+     android:layout_width="match_parent"
+     android:layout_height="wrap_content">
+
+     <TextView
+         android:layout_width="wrap_content"
+         android:layout_height="21dp"
+         android:text="请及时联系公众号："
+         android:textColor="#ffb6b6ba"
+         android:textSize="14sp" />
+     <TextView
+         android:drawablePadding="@dimen/dp10"
+         android:drawableRight="@mipmap/ic_copy"
+         android:layout_marginLeft="@dimen/dp10"
+         android:id="@+id/tv_copy"
+         android:text="BlockADM"
+         android:textSize="@dimen/sp16"
+         android:textColor="@color/color_FF507DAF"
+         android:layout_width="wrap_content"
+         android:layout_height="wrap_content" />
+
+ </LinearLayout>
+
+    <TextView
+        android:id="@+id/tv_complete"
+        android:layout_gravity="center_horizontal"
+        android:layout_marginTop="@dimen/dp30"
+        android:gravity="center"
+        android:background="@drawable/withdraw_bt_bg"
+        android:layout_width="350dp"
+        android:layout_height="48dp"
+        android:text="完成"
+        android:textColor="@color/color_ffffff"
+        android:textSize="18sp"
+        />
+
+
+</LinearLayout>

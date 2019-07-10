@@ -1,0 +1,145 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    xmlns:tl="http://schemas.android.com/apk/res-auto"
+    android:id="@+id/layout_root"
+    android:fitsSystemWindows="true"
+    android:background="@color/color_ffffff">
+
+    <RelativeLayout
+        android:id="@+id/layout_title"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:paddingTop="@dimen/dp20"
+        android:gravity="center_vertical">
+
+        <RelativeLayout
+            android:id="@+id/iv_back"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content">
+            <ImageView
+
+                android:layout_marginTop="@dimen/dp5"
+                android:layout_marginBottom="@dimen/dp5"
+                android:layout_marginRight="@dimen/dp15"
+                android:background="@mipmap/ic_back"
+                android:layout_marginLeft="@dimen/dp10"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content" />
+
+        </RelativeLayout>
+
+
+
+        <TextView
+            android:id="@+id/tv_title"
+            android:textSize="17sp"
+            android:singleLine="true"
+            android:ellipsize="end"
+            android:layout_centerHorizontal="true"
+            android:textColor="#0A0A0A"
+            android:maxWidth="150dp"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content" />
+
+        <LinearLayout
+            android:layout_below="@+id/tv_title"
+            android:layout_marginTop="@dimen/dp10"
+            android:layout_centerHorizontal="true"
+            android:orientation="horizontal"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content">
+
+            <TextView
+                android:id="@+id/tv_number_look"
+                android:textSize="12sp"
+                android:textColor="#3164FE"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content" />
+
+            <TextView
+                android:textSize="12sp"
+                android:layout_centerHorizontal="true"
+                android:textColor="#B6B6BA"
+                android:text="人一同观看"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content" />
+
+        </LinearLayout>
+
+        <ImageView
+            android:id="@+id/iv_share"
+            android:layout_marginTop="@dimen/dp5"
+            android:background="@mipmap/news_reply_share"
+            android:layout_alignParentRight="true"
+            android:layout_marginRight="@dimen/dp10"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content" />
+
+
+    </RelativeLayout>
+
+
+    <!--<com.blockadm.common.comstomview.MyTabLayout-->
+        <!--android:id="@+id/tab_layout"-->
+        <!--android:layout_below="@+id/layout_title"-->
+        <!--android:background="@color/color_ffffff"-->
+        <!--app:tabGravity="fill"-->
+        <!--app:tabMode="fixed"-->
+        <!--android:layout_marginTop="@dimen/dp10"-->
+        <!--app:tabIndicatorColor="#FF3164FE"-->
+        <!--app:tabTextColor="@color/color_97979F"-->
+        <!--app:tabSelectedTextColor="@color/color_0A0A0A"-->
+        <!--app:tabTextAppearance="@style/TabLayoutTextStyle"-->
+        <!--android:layout_width="match_parent"-->
+        <!--android:layout_height="@dimen/dp50"-->
+        <!--/>-->
+
+    <com.flyco.tablayout.SlidingTabLayout
+        android:id="@+id/tab_layout"
+        android:layout_below="@+id/layout_title"
+        android:background="#Ffffff"
+        android:layout_width="match_parent"
+        android:layout_height="46dp"
+        android:layout_marginTop="@dimen/dp10"
+        tl:tl_textBold="SELECT"
+        tl:tl_indicator_color="#FF3164FE"
+        tl:tl_indicator_corner_radius="2dp"
+        tl:tl_indicator_height="3dp"
+        tl:tl_textsize="@dimen/sp16"
+        tl:tl_tab_space_equal="true"
+        tl:tl_textSelectColor="@color/color_0A0A0A"
+        tl:tl_textUnselectColor="@color/color_97979F"
+        tl:tl_tab_padding="5dp"
+        tl:tl_indicator_width="16dp"
+        />
+
+
+    <android.support.v4.view.ViewPager
+        android:id="@+id/viewpager"
+        android:layout_below="@+id/tab_layout"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"/>
+    <!--<RelativeLayout-->
+        <!--android:orientation="vertical"-->
+        <!--android:layout_below="@+id/tab_layout"-->
+        <!--android:layout_width="match_parent"-->
+        <!--android:layout_height="match_parent">-->
+
+        <!--<android.support.v4.view.ViewPager-->
+            <!--android:id="@+id/viewpager"-->
+            <!--android:layout_width="match_parent"-->
+            <!--android:layout_height="match_parent"/>-->
+
+        <!--<include-->
+            <!--android:id="@+id/ll_foot"-->
+            <!--layout="@layout/layout_live_detail_foot"-->
+            <!--android:layout_width="match_parent"-->
+            <!--android:layout_height="50dp"-->
+            <!--android:layout_alignParentBottom="true"-->
+            <!--android:visibility="gone" />-->
+    <!--</RelativeLayout>-->
+
+
+</RelativeLayout>

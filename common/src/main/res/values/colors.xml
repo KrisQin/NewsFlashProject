@@ -1,0 +1,115 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <color name="colorPrimary">#3F51B5</color>
+    <color name="colorPrimaryDark">#303F9F</color>
+    <color name="colorAccent">#FF4081</color>
+    <color name="color_ffffff">#FFFFFF</color>
+    <color name="color_38D4C1">#38D4C1</color>
+    <color name="color_e0614b">#e0614b</color>
+    <color name="color_ff97979f">#ff97979f</color>
+    <color name="color_FF6B00">#FFFF6B00</color>
+    <color name="color_FE982E">#FE982E</color>
+    <color name="color_333333">#333333</color>
+    <color name="color_E9BE7A">#E9BE7A</color>
+    <color name="color_009F2C">#009F2C</color>
+    <color name="color_999999">#999999</color>
+    <color name="color_666666">#666666</color>
+    <color name="color_e1e1e1">#e1e1e1</color>
+    <color name="color_fff2f3f4">#f2f3f4</color>
+    <color name="cl_d9d9d9">#d9d9d9</color>
+    <color name="cl_dialog_626266">#626266</color>
+    <color name="cl_ff955b">#ff955b</color>
+    <color name="cl_dialog_96969f">#96969f</color>
+
+    <color name="color_0A0A0A">#0A0A0A</color>
+    <color name="color_97979F">#97979F</color>
+    <color name="color_B6B6BA">#B6B6BA</color>
+    <color name="color_FFFF6B00">#FFFF6B00</color>
+    <color name="color_fff8f8f8">#fff8f8f8</color>
+    <color name="color_F85959">#F85959</color>
+    <color name="cl_009F2C">#009F2C</color>
+    <color name="cl_DDDDDD">#DDDDDD</color>
+    <color name="cl_ededed">#ededed</color>
+    <color name="cl_B6B6BA">#B6B6BA</color>
+    <color name="color_blue">#3164FE</color>
+    <color name="blue">#3164FE</color>
+    <color name="gray">#DDDDDD</color>
+
+
+    <color name="style_color_primary">#d32f2f</color>
+    <color name="style_color_primary_dark">#b71c1c</color>
+    <color name="style_color_primary_light">#FFCDD2</color>
+    <color name="style_color_accent">#d32f2f</color>
+    <color name="style_window_background_light">#ffffff</color>
+
+    <color name="mainBlack">#242828</color>
+    <color name="white">#ffffff</color>
+    <color name="black">#000000</color>
+    <color name="red">#ff0000</color>
+
+    <color name="jtc_logo_color">#0099ff</color>
+    <color name="jtc_title_color">#f1f1f1</color>
+    <color name="line_color_gray">#e2e2e2</color>
+    <color name="tab_bar_text_color">#666666</color>
+    <color name="tab_bar_text_color_select">#80c02b</color>
+    <color name="transparent">#00000000</color>
+
+    <color name="google_blue">#4285F4</color>
+    <color name="google_red">#EA4335</color>
+    <color name="google_green">#34A853</color>
+    <color name="google_yellow">#FBBC05</color>
+
+    <color name="yalantis_saffron">#F4B63E</color>
+    <color name="yalantis_eggplant">#663D4E</color>
+    <color name="yalantis_sienna">#EB6460</color>
+    <color name="color_FFB6B6BA">#FFB6B6BA</color>
+    <color name="color_FF507DAF">#FF507DAF</color>
+    <color name="color_FF3164FE">#FF3164FE</color>
+    <color name="color_FF4A4A4A">#FF4A4A4A</color>
+    <color name="color_ff0000">#ff0000</color>
+    <color name="color_FFF85959">#FFF85959</color>
+    <color name="color_red">#FFF85959</color>
+    <color name="color_FF333333">#FF333333</color>
+    <color name="color_transparent">#00000000</color>
+
+    <color name="color_FF2D9DE4">#FF2D9DE4</color>
+
+
+    <color name="color_ff0a0a0a">#ff0a0a0a</color>
+    <color name="color_FF86B0FF">#FF86B0FF</color>
+    <color name="color_FF494B4E">#FF494B4E</color>
+
+
+
+
+    <item name="subscribe_item_text_color_normal" type="color">@color/default_text</item>
+    <color name="subscribe_item_text_color_pressed">#ffb9b9b9</color>
+    <color name="default_text">#ff454545</color>
+    <color name="subscribe_item_text_color_pressed_night">#ff303030</color>
+    <color name="subscribe_item_focused_stroke">#ffd9d9d9</color>
+    <color name="subscribe_item_drag_stroke">#ffd2d2d2</color>
+    <color name="subscribe_item_drag_bg">#fff5f5f5</color>
+    <color name="subscribe_item_drag_stroke_night">#ff464646</color>
+    <color name="subscribe_item_drag_bg_night">#ff252525</color>
+    <color name="subscribe_item_selected_bg">#ffffffff</color>
+    <color name="subscribe_item_selected_stroke">#ffcc3131</color>
+    <color name="subscribe_item_disabled_bg">#ffefefef</color>
+    <color name="subscribe_item_disabled_stroke">#ffd9d9d9</color>
+    <color name="subscribe_item_pressed_bg">#fff9f9f9</color>
+    <color name="subscribe_item_pressed_stroke">#ffcdcdcd</color>
+    <color name="subscribe_item_normal_bg">#fff5f5f5</color>
+    <color name="subscribe_item_normal_stroke">#ffcdcdcd</color>
+    <color name="subscribe_item_focused_bg_night">#ff252525</color>
+    <color name="subscribe_item_focused_stroke_night">#ff464646</color>
+    <color name="subscribe_item_selected_bg_night">#ff252525</color>
+    <color name="subscribe_item_selected_stroke_night">#ffbc494d</color>
+    <color name="subscribe_item_disabled_bg_night">#ff2b2b2b</color>
+
+    <color name="voice_pressed">#d2d2d2</color>
+    <color name="voice_normal">#c2c2c2</color>
+    <color name="text_color_gray">#696969</color>
+    <color name="color_f7f8fa">#f7f8fa</color>
+    <color name="color_DFDFDF">#DFDFDF</color>
+    <color name="color_ffab4f">#ffab4f</color>
+
+</resources>
