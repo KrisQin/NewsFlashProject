@@ -116,8 +116,6 @@ public class BlockMainActivity extends TabActivity implements RadioGroup.OnCheck
     private void initView(Bundle savedInstanceState) {
 
         mTabHost.addTab(mTabHost.newTabSpec("information_tab").setIndicator("0").setContent(new Intent(this, InformationTabActivity.class)));
-        //        mTabHost.addTab(mTabHost.newTabSpec("study_tab").setIndicator("1").setContent
-        //        (new Intent(this, StudyTabActivity.class)));
         mTabHost.addTab(mTabHost.newTabSpec("study_tab").setIndicator("1").setContent(new Intent(this, StudyTabTestActivity.class)));
         mTabHost.addTab(mTabHost.newTabSpec("community_tab").setIndicator("2").setContent(new Intent(this, CommunityTabActivity.class)));
         mTabHost.addTab(mTabHost.newTabSpec("user_tab").setIndicator("3").setContent(new Intent(this, UserTabActivity.class)));
