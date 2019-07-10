@@ -6,4 +6,6 @@
     <string name="more_loading">更多加载中...</string>
     <string name="btn_sure">确定</string>
     <string name="btn_canel">取消</string>
+    <string name="fastinfo">快讯</string>
+    <string name="market">行情</string>
 </resources>

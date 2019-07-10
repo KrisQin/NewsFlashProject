@@ -43,10 +43,10 @@ import com.blockadm.adm.dialog.MyComstomDialogView;
 import com.blockadm.adm.downloadapk.DownloadProgressDialog;
 import com.blockadm.adm.model.CommonModel;
 import com.blockadm.common.bean.UpdataVersionDto;
+import com.blockadm.common.call.ComCallback;
 import com.blockadm.common.config.ARouterPathConfig;
 import com.blockadm.common.http.BaseResponse;
 import com.blockadm.common.http.MyObserver;
-import com.blockadm.common.im.call.ComCallback;
 import com.blockadm.common.utils.ContextUtils;
 import com.blockadm.common.utils.L;
 import com.blockadm.common.utils.OSUtils;
@@ -104,7 +104,7 @@ public class BlockMainActivity extends TabActivity implements RadioGroup.OnCheck
 
         setContentView(R.layout.activity_main_block);
         ButterKnife.bind(this);
-        initView(savedInstanceState);
+        initView();
 
         rbInformation.setChecked(true);
         if (radioGroup != null)
@@ -113,11 +113,15 @@ public class BlockMainActivity extends TabActivity implements RadioGroup.OnCheck
         checkPermission();
     }
 
-    private void initView(Bundle savedInstanceState) {
+    private void initView() {
 
+        //资讯
         mTabHost.addTab(mTabHost.newTabSpec("information_tab").setIndicator("0").setContent(new Intent(this, InformationTabActivity.class)));
-        mTabHost.addTab(mTabHost.newTabSpec("study_tab").setIndicator("1").setContent(new Intent(this, StudyTabTestActivity.class)));
-        mTabHost.addTab(mTabHost.newTabSpec("community_tab").setIndicator("2").setContent(new Intent(this, CommunityTabActivity.class)));
+        //快讯
+        mTabHost.addTab(mTabHost.newTabSpec("fast_tab").setIndicator("1").setContent(new Intent(this, FastInfoTabActivity.class)));
+        //行情
+        mTabHost.addTab(mTabHost.newTabSpec("market_tab").setIndicator("2").setContent(new Intent(this, MarketTabActivity.class)));
+        //我的
         mTabHost.addTab(mTabHost.newTabSpec("user_tab").setIndicator("3").setContent(new Intent(this, UserTabActivity.class)));
 
     }
@@ -137,7 +141,7 @@ public class BlockMainActivity extends TabActivity implements RadioGroup.OnCheck
                             //下一次申请只申请没通过申请的权限
 
 
-                            
+
                         }
                     }
                 });

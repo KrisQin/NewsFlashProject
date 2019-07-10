@@ -108,6 +108,18 @@
             android:screenOrientation="portrait" >
         </activity>
         <activity
+            android:name="com.blockadm.adm.activity.MarketTabActivity"
+            android:windowSoftInputMode="adjustPan|stateHidden"
+            android:exported="false"
+            android:screenOrientation="portrait" >
+        </activity>
+        <activity
+            android:name="com.blockadm.adm.activity.FastInfoTabActivity"
+            android:windowSoftInputMode="adjustPan|stateHidden"
+            android:exported="false"
+            android:screenOrientation="portrait" >
+        </activity>
+        <activity
             android:name="com.blockadm.adm.im_module.activity.SendHBActivity"
             android:windowSoftInputMode="adjustPan|stateHidden"
             android:exported="false"

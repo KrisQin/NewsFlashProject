@@ -9,8 +9,6 @@ import android.view.View;
 import com.blockadm.adm.R;
 import com.blockadm.adm.activity.AuthenticationComActivity;
 import com.blockadm.adm.dialog.MyComstomDialogView;
-import com.blockadm.adm.im_module.activity.CommunityListManagerActivity;
-import com.blockadm.common.utils.CopyTextUtils;
 import com.blockadm.common.widget.CommonDialog;
 
 /**

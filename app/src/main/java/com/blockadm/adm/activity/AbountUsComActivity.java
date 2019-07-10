@@ -31,13 +31,14 @@ import com.blockadm.adm.downloadapk.DownloadProgressDialog;
 import com.blockadm.adm.model.CommonModel;
 import com.blockadm.common.base.BaseComActivity;
 import com.blockadm.common.bean.UpdataVersionDto;
+import com.blockadm.common.call.ComCallback;
 import com.blockadm.common.comstomview.BaseTitleBar;
 import com.blockadm.common.http.BaseResponse;
 import com.blockadm.common.http.MyObserver;
-import com.blockadm.common.im.call.ComCallback;
 import com.blockadm.common.utils.L;
 import com.blockadm.common.utils.OSUtils;
 import com.blockadm.common.utils.StringUtils;
+import com.blockadm.common.call.ComCallback;
 
 import java.io.File;
 import java.text.NumberFormat;

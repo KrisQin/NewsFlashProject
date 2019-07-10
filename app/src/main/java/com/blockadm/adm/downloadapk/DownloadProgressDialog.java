@@ -13,7 +13,7 @@ import android.widget.RelativeLayout;
 import android.widget.TextView;
 
 import com.blockadm.adm.R;
-import com.blockadm.common.im.call.ComCallback;
+import com.blockadm.common.call.ComCallback;
 
 /**
  * Created by Kris on 2019/6/14

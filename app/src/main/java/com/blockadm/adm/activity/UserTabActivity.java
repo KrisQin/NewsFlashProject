@@ -14,9 +14,6 @@ import com.alibaba.android.arouter.launcher.ARouter;
 import com.blockadm.adm.R;
 import com.blockadm.adm.adapter.ThirdWebButtonAdapter;
 import com.blockadm.adm.event.UserDataEvent;
-import com.blockadm.adm.im_module.activity.CommunityListManagerActivity;
-import com.blockadm.adm.im_module.activity.OpenLessonsActivity;
-import com.blockadm.adm.im_module.adapter.RewardAdapter;
 import com.blockadm.adm.model.CommonModel;
 import com.blockadm.adm.utils.DialogUtils;
 import com.blockadm.common.base.BaseComActivity;
@@ -275,9 +272,6 @@ public class UserTabActivity extends BaseComActivity {
                 startActivity(intentHuntsman);
 
                 break;
-            case R.id.tv_she_qun:
-                goSheQunManage();
-                break;
 
             case R.id.tv_fans:
                 ARouter.getInstance().build("/app/index/FansListComActivity").withInt("id",
@@ -359,23 +353,6 @@ public class UserTabActivity extends BaseComActivity {
         }
     }
 
-    private void openLessons() {
-        if (mCredentialsState == 0) {
-            DialogUtils.showRealNameAuthentLiveDialog(this);
-            return;
-        }
-
-        UserTabActivity.this.startActivity(new Intent(UserTabActivity.this,
-                OpenLessonsActivity.class));
-    }
-
-    /**
-     * 跳到社群管理界面
-     */
-    private void goSheQunManage() {
-        UserTabActivity.this.startActivity(new Intent(UserTabActivity.this,
-                CommunityListManagerActivity.class));
-    }
 
 
 }

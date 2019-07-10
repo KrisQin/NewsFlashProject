@@ -20,7 +20,6 @@ import com.blockadm.adm.Fragment.InformationListFragment;
 import com.blockadm.adm.R;
 import com.blockadm.adm.adapter.TabFragmentAdapter;
 import com.blockadm.adm.event.UserDataEvent;
-import com.blockadm.adm.im_module.fragment.PersonLiveFragment;
 import com.blockadm.adm.model.CommonModel;
 import com.blockadm.common.base.BaseComActivity;
 import com.blockadm.common.bean.PersonalDTO;
@@ -165,15 +164,11 @@ public class PersonnalIndexComActivity extends BaseComActivity {
         ExclusiveColumnFragment exclusiveColumnFragment = new ExclusiveColumnFragment(memberId+"");
         InformationListFragment informationListFragmentNew = new InformationListFragment(memberId+"");
 //        PersonLiveListFragment personLiveFragment = new PersonLiveListFragment(memberId+"");
-        PersonLiveFragment personLiveFragment = new PersonLiveFragment(memberId+"");
 
         fragments.add(exclusiveColumnFragment);
-       // fragments.add(studyLessonFragment);
         fragments.add(informationListFragmentNew);
-        fragments.add(personLiveFragment);
         tabNames1.add("精彩专栏");
         tabNames1.add("精彩文章");
-        tabNames1.add("社群直播");
         setViewpageAdapter(fragments, tabNames1);
     }
 

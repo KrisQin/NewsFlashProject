@@ -17,7 +17,6 @@ import com.blockadm.adm.Fragment.LearnFragment;
 import com.blockadm.adm.Fragment.UserListFragment;
 import com.blockadm.adm.R;
 import com.blockadm.adm.adapter.TabFragmentAdapter;
-import com.blockadm.adm.im_module.fragment.PersonLiveFragment;
 import com.blockadm.common.base.BaseComActivity;
 
 import java.lang.reflect.Field;
@@ -46,7 +45,6 @@ public class SearchviewComActivity extends BaseComActivity {
     private UserListFragment userListFragment;
     private LearnFragment mLearnFragment;
     private InfomartionListSearchFragment infomartionListSearchFragment;
-    private PersonLiveFragment mPersonLiveFragment;
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
@@ -63,18 +61,14 @@ public class SearchviewComActivity extends BaseComActivity {
         ArrayList<String> tabNames = new ArrayList<>();
         tabNames.add("资讯");
         tabNames.add("学习");
-       // tabNames.add("问答");
         tabNames.add("用户");
-        tabNames.add("社群");
         userListFragment = new UserListFragment();
         mLearnFragment = new LearnFragment();
         infomartionListSearchFragment = new InfomartionListSearchFragment();
-        mPersonLiveFragment = new PersonLiveFragment();
         fragments.add(infomartionListSearchFragment);
         fragments.add(mLearnFragment);
        // fragments.add(new UserListFragment());
         fragments.add(userListFragment);
-        fragments.add(mPersonLiveFragment);
         setViewpageAdapter(fragments, tabNames);
         mSearchView.setVisibility(View.VISIBLE);
         mSearchView.setIconifiedByDefault(true);
@@ -93,7 +87,6 @@ public class SearchviewComActivity extends BaseComActivity {
                         infomartionListSearchFragment.search(newText);
                         mLearnFragment.search(newText);
                         userListFragment.search(newText);
-                        mPersonLiveFragment.search(newText);
                 return false;
             }
         });
