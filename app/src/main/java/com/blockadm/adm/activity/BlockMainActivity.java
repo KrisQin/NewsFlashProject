@@ -102,7 +102,6 @@ public class BlockMainActivity extends TabActivity implements RadioGroup.OnCheck
         ARouter.getInstance().inject(this);
         setRequestedOrientation(ActivityInfo.SCREEN_ORIENTATION_NOSENSOR);
 
-        //        EventBus.getDefault().register(this);
         setContentView(R.layout.activity_main_block);
         ButterKnife.bind(this);
         initView(savedInstanceState);
