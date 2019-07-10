@@ -135,6 +135,9 @@ public class BlockMainActivity extends TabActivity implements RadioGroup.OnCheck
                         } else {
                             //只要有一个权限禁止，返回false，
                             //下一次申请只申请没通过申请的权限
+
+
+                            
                         }
                     }
                 });
